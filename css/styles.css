@@ -182,7 +182,8 @@ body {
     font-size: 55px;
     font-weight: 700;
     margin-top: 0;
-    padding-top: 100px; }
+    padding-top: 100px;
+    letter-spacing: 3px; }
   body #main {
     height: 100vh; }
     body #main .logo-sm img {
@@ -244,14 +245,15 @@ body {
   body #blog {
     position: relative;
     background-color: #fff;
-    padding-bottom: 100px; }
+    padding-bottom: 72px; }
     body #blog h2 {
       padding-top: 84px; }
     body #blog .blog-content {
       color: #000;
       width: 50%;
       margin: auto;
-      padding-top: 24px; }
+      padding-top: 24px;
+      padding-bottom: 17px; }
       body #blog .blog-content h5 {
         font-size: 25px;
         font-family: 'Playfair Display', serif; }
@@ -287,15 +289,19 @@ body {
   body #contact {
     background-color: #1f59d1; }
     body #contact h2 {
-      color: #fff; }
+      color: #fff;
+      padding-top: 75px; }
     body #contact p {
       font-family: 'Playfair Display', serif;
       font-size: 16px; }
     body #contact .contact-inner {
       width: 50%;
-      margin: auto; }
+      margin: auto;
+      padding-top: 20px; }
       body #contact .contact-inner .contact-owner {
-        width: 100%; }
+        width: 100%;
+        padding-top: 40px;
+        margin-left: -27px; }
         body #contact .contact-inner .contact-owner .photo {
           text-align: right; }
         body #contact .contact-inner .contact-owner .contact-data {

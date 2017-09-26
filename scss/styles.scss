@@ -219,6 +219,7 @@ body {
         font-weight: 700;
         margin-top: 0;
         padding-top: 100px;
+        letter-spacing: 3px;
     }
     /*MAIN*/
     #main {
@@ -305,7 +306,7 @@ body {
     #blog {
         position: relative;
         background-color: #fff;
-        padding-bottom: 100px;
+        padding-bottom: 72px;
         h2{
             padding-top: 84px;
         }
@@ -314,6 +315,7 @@ body {
             width: 50%;
             margin: auto;
             padding-top: 24px;
+            padding-bottom: 17px;
             h5 {
                 font-size: 25px;
                 font-family: 'Playfair Display', serif;
@@ -362,6 +364,7 @@ body {
         background-color: #1f59d1;
         h2 {
             color: #fff;
+            padding-top: 75px;
         }
         p {
             font-family: 'Playfair Display', serif;
@@ -370,8 +373,12 @@ body {
         .contact-inner {
             width: 50%;
             margin: auto;
+            padding-top: 20px;
             .contact-owner {
                 width: 100%;
+                padding-top: 40px;
+               
+    margin-left: -27px;
                 .photo {
                     text-align: right;
                 }

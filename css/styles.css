@@ -307,10 +307,11 @@ body {
         body #contact .contact-inner .contact-owner .contact-data {
           text-align: left;
           padding-left: 9px;
-          margin-top: -7px h6;
-            margin-top-font-family: 'Saira Extra Condensed', sans-serif;
-            margin-top-font-weight: 700;
-            margin-top-font-size: 25px; }
+          margin-top: -7px; }
+          body #contact .contact-inner .contact-owner .contact-data h6 {
+            font-family: 'Saira Extra Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 25px; }
           body #contact .contact-inner .contact-owner .contact-data p {
             font-family: 'Muli', sans-serif;
             font-size: 15px; }

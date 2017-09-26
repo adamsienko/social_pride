@@ -145,12 +145,13 @@ body {
     .cd-scroll-down {
         position: absolute;
         bottom: 20px;
+        left: 49%;
     }
     /*DOTS NAV*/
     #cd-vertical-nav {
         position: fixed;
         left: 37px;
-        top: 55%; 
+        top: 55%;
         bottom: auto;
         transform: translateY(-50%);
         z-index: 1;

@@ -123,7 +123,8 @@ body {
         width: 65%; }
   body .cd-scroll-down {
     position: absolute;
-    bottom: 20px; }
+    bottom: 20px;
+    left: 49%; }
   body #cd-vertical-nav {
     position: fixed;
     left: 37px;

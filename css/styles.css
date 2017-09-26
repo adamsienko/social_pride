@@ -14,9 +14,9 @@ body {
   /*KONTAKT*/ }
   body .sidebar {
     position: fixed;
-    width: 250px;
+    width: 304px;
     height: 100vh;
-    transform: skew(-7deg);
+    transform: skew(-8deg);
     background-color: #1f59d1;
     transition: left 1s;
     z-index: 2; }
@@ -28,7 +28,8 @@ body {
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      padding-right: 60px; }
+      padding-right: 59px;
+      padding-top: 54px; }
       body .sidebar .centered li,
       body .sidebar .centered li a {
         font-family: 'Saira Extra Condensed', sans-serif;
@@ -38,13 +39,14 @@ body {
         text-decoration: none;
         padding-bottom: 20px;
         font-size: 30px;
-        transform: skew(7deg);
-        font-weight: 700; }
+        transform: skew(8deg);
+        font-weight: 700;
+        padding-top: 17px; }
         body .sidebar .centered li a:hover,
         body .sidebar .centered li a a:hover {
           opacity: 0.7; }
   body .hide-sidebar {
-    left: -300px; }
+    left: -365px; }
   body .show-sidebar {
     left: -60px; }
   body #hamburger {
@@ -55,7 +57,7 @@ body {
     body #hamburger .menu {
       width: 45px;
       height: 45px;
-      margin: 50px 20px;
+      margin: 81px 17px;
       transform: rotate(0deg);
       transition: .5s ease-in-out;
       cursor: pointer;
@@ -90,7 +92,7 @@ body {
         body #hamburger .menu .menu-inner span:nth-child(6) {
           top: 27px; }
     body #hamburger .menu-clicked {
-      margin-left: 150px; }
+      margin-left: 210px; }
       body #hamburger .menu-clicked .menu-inner span:nth-child(1),
       body #hamburger .menu-clicked .menu-inner span:nth-child(6) {
         transform: rotate(50deg); }

@@ -1,0 +1,309 @@
+body {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  text-align: center;
+  color: #fff;
+  /*    SCROLL PAGE*/
+  /*DOTS NAV*/
+  /*SECTIONS*/
+  /*MAIN*/
+  /*ABOUT*/
+  /*OFFER*/
+  /*BLOG*/
+  /*KONTAKT*/ }
+  body .sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    transform: skew(-7deg);
+    background-color: #1f59d1;
+    transition: left 1s;
+    z-index: 2; }
+    body .sidebar .centered {
+      width: inherit;
+      direction: rtl;
+      text-align: right;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      padding-right: 60px; }
+      body .sidebar .centered li,
+      body .sidebar .centered li a {
+        font-family: 'Saira Extra Condensed', sans-serif;
+        color: #fff;
+        cursor: pointer;
+        transition: all 1s;
+        text-decoration: none;
+        padding-bottom: 20px;
+        font-size: 30px;
+        transform: skew(7deg);
+        font-weight: 700; }
+        body .sidebar .centered li a:hover,
+        body .sidebar .centered li a a:hover {
+          opacity: 0.7; }
+  body .hide-sidebar {
+    left: -300px; }
+  body .show-sidebar {
+    left: -60px; }
+  body #hamburger {
+    position: fixed;
+    z-index: 3; }
+    body #hamburger img {
+      margin-top: 50px; }
+    body #hamburger .menu {
+      width: 45px;
+      height: 45px;
+      margin: 50px 20px;
+      transform: rotate(0deg);
+      transition: .5s ease-in-out;
+      cursor: pointer;
+      opacity: 0.7;
+      border-radius: 50%;
+      border: solid 2px #fff;
+      float: left; }
+      body #hamburger .menu .menu-inner {
+        position: relative;
+        width: 50%;
+        height: 100%;
+        margin: auto; }
+        body #hamburger .menu .menu-inner span {
+          display: block;
+          position: absolute;
+          height: 2px;
+          width: 50%;
+          background: #fff;
+          transform: rotate(0deg);
+          transition: .25s ease-in-out; }
+        body #hamburger .menu .menu-inner span:nth-child(even) {
+          left: 50%; }
+        body #hamburger .menu .menu-inner span:nth-child(odd) {
+          left: 0px; }
+        body #hamburger .menu .menu-inner span:nth-child(1),
+        body #hamburger .menu .menu-inner span:nth-child(2) {
+          top: 13px; }
+        body #hamburger .menu .menu-inner span:nth-child(3),
+        body #hamburger .menu .menu-inner span:nth-child(4) {
+          top: 20px; }
+        body #hamburger .menu .menu-inner span:nth-child(5),
+        body #hamburger .menu .menu-inner span:nth-child(6) {
+          top: 27px; }
+    body #hamburger .menu-clicked {
+      margin-left: 150px; }
+      body #hamburger .menu-clicked .menu-inner span:nth-child(1),
+      body #hamburger .menu-clicked .menu-inner span:nth-child(6) {
+        transform: rotate(50deg); }
+      body #hamburger .menu-clicked .menu-inner span:nth-child(2),
+      body #hamburger .menu-clicked .menu-inner span:nth-child(5) {
+        transform: rotate(-50deg); }
+      body #hamburger .menu-clicked .menu-inner span:nth-child(1) {
+        left: 0;
+        top: 14px;
+        width: 65%; }
+      body #hamburger .menu-clicked .menu-inner span:nth-child(2) {
+        left: calc(50% - 2px);
+        top: 14px;
+        width: 65%; }
+      body #hamburger .menu-clicked .menu-inner span:nth-child(3) {
+        left: -50%;
+        opacity: 0; }
+      body #hamburger .menu-clicked .menu-inner span:nth-child(4) {
+        left: 100%;
+        opacity: 0; }
+      body #hamburger .menu-clicked .menu-inner span:nth-child(5) {
+        left: 0;
+        top: 24px;
+        width: 65%; }
+      body #hamburger .menu-clicked .menu-inner span:nth-child(6) {
+        left: calc(50% - 2px);
+        top: 24px;
+        width: 65%; }
+  body .cd-scroll-down {
+    position: absolute;
+    bottom: 20px; }
+  body #cd-vertical-nav {
+    position: fixed;
+    left: 40px;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    z-index: 1; }
+    body #cd-vertical-nav ul {
+      list-style: none;
+      direction: rtl; }
+    body #cd-vertical-nav li {
+      text-align: left; }
+    body #cd-vertical-nav a {
+      display: inline-block;
+      backface-visibility: hidden; }
+      body #cd-vertical-nav a:after {
+        content: "";
+        display: table;
+        clear: both; }
+      body #cd-vertical-nav a span {
+        float: left;
+        display: inline-block;
+        transform: scale(0.6); }
+      body #cd-vertical-nav a:hover span {
+        transform: scale(1); }
+      body #cd-vertical-nav a:hover .cd-label {
+        opacity: 0.7; }
+      body #cd-vertical-nav a.is-selected .cd-dot {
+        background-color: red; }
+    body #cd-vertical-nav .cd-dot {
+      position: relative;
+      top: 7px;
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      background-color: #fff;
+      transition: transform 0.2s, background-color 0.5s;
+      transform-origin: 50% 50%; }
+    body #cd-vertical-nav .cd-label {
+      position: relative;
+      margin-right: 10px;
+      padding: .4em .5em;
+      color: #fff;
+      font-size: 12px;
+      font-family: 'Muli', sans-serif;
+      transition: transform 0.2s, opacity 0.2s;
+      opacity: 0;
+      transform-origin: 0 50%; }
+  body h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 8vh; }
+  body h2 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    color: #1f59d1;
+    font-size: 55px;
+    font-weight: 700;
+    margin-top: 0;
+    padding-top: 50px; }
+  body #main {
+    height: 100vh; }
+    body #main .logo-sm img {
+      position: fixed;
+      left: 80px;
+      top: 50px; }
+    body #main .main-header {
+      position: absolute;
+      top: 20%;
+      width: 100%; }
+  body #about {
+    position: relative; }
+    body #about .about-header {
+      width: 50%;
+      margin: auto;
+      font-family: 'Playfair Display', serif;
+      font-size: 16px; }
+    body #about .about-main {
+      width: 80%;
+      padding: 40px 0 80px; }
+      body #about .about-main h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 18px; }
+        body #about .about-main h3 span {
+          font-size: 32px; }
+      body #about .about-main p {
+        font-family: 'Muli', sans-serif;
+        font-size: 15px; }
+  body #offer {
+    position: relative;
+    background-color: #2b2c31; }
+    body #offer .offer-header {
+      width: 50%;
+      margin: auto;
+      font-family: 'Playfair Display', serif;
+      font-size: 16px; }
+    body #offer .offer-main {
+      width: 80%;
+      padding-bottom: 80px; }
+      body #offer .offer-main h4 {
+        font-size: 35px;
+        font-family: 'Saira Extra Condensed', sans-serif;
+        font-weight: 700; }
+      body #offer .offer-main p {
+        font-family: 'Muli', sans-serif;
+        font-size: 15px; }
+      body #offer .offer-main .offer-marketing,
+      body #offer .offer-main .offer-szkolenia {
+        text-align: left;
+        margin-top: -90px; }
+      body #offer .offer-main .offer-social {
+        text-align: right;
+        margin-top: -90px; }
+      body #offer .offer-main .offer-marketing {
+        margin-top: 0; }
+  body #blog {
+    position: relative;
+    background-color: #fff;
+    padding-bottom: 100px; }
+    body #blog .blog-content {
+      color: #000;
+      width: 50%;
+      margin: auto; }
+      body #blog .blog-content h5 {
+        font-size: 25px;
+        font-family: 'Playfair Display', serif; }
+      body #blog .blog-content p {
+        font-size: 15px;
+        font-family: 'Muli', sans-serif; }
+      body #blog .blog-content .more {
+        border-top: solid 1px #1f59d1;
+        width: 70px;
+        margin: auto; }
+        body #blog .blog-content .more a {
+          font-family: 'Saira Extra Condensed', sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          color: #1f59d1; }
+        body #blog .blog-content .more :hover {
+          text-decoration: none; }
+    body #blog .blog-middle {
+      background-image: url(../img/blog-back.jpg);
+      background-position: bottom;
+      width: 100%;
+      background-size: cover; }
+      body #blog .blog-middle h5,
+      body #blog .blog-middle p {
+        width: 50%;
+        margin: auto; }
+    body #blog a {
+      font-size: 16px;
+      font-family: 'Saira Extra Condensed', sans-serif;
+      color: #1f59d1; }
+    body #blog :hover {
+      text-decoration: none; }
+  body #contact {
+    background-color: #1f59d1; }
+    body #contact h2 {
+      color: #fff; }
+    body #contact p {
+      font-family: 'Playfair Display', serif;
+      font-size: 16px; }
+    body #contact .contact-inner {
+      width: 50%;
+      margin: auto; }
+      body #contact .contact-inner .contact-owner {
+        width: 100%; }
+        body #contact .contact-inner .contact-owner .photo {
+          text-align: right; }
+        body #contact .contact-inner .contact-owner .contact-data {
+          text-align: left; }
+          body #contact .contact-inner .contact-owner .contact-data h6 {
+            font-family: 'Saira Extra Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 25px; }
+          body #contact .contact-inner .contact-owner .contact-data p {
+            font-family: 'Muli', sans-serif;
+            font-size: 15px; }
+            body #contact .contact-inner .contact-owner .contact-data p a {
+              text-decoration: none;
+              color: #fff; }
+              body #contact .contact-inner .contact-owner .contact-data p a :hover {
+                text-decoration: none; }
+      body #contact .contact-inner address,
+      body #contact .contact-inner p {
+        font-family: 'Muli', sans-serif;
+        font-size: 16px; }

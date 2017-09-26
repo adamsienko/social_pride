@@ -101,11 +101,11 @@ body {
         transform: rotate(-50deg); }
       body #hamburger .menu-clicked .menu-inner span:nth-child(1) {
         left: 0;
-        top: 12px;
+        top: 14px;
         width: 65%; }
       body #hamburger .menu-clicked .menu-inner span:nth-child(2) {
         left: calc(50% - 2px);
-        top: 12px;
+        top: 14px;
         width: 65%; }
       body #hamburger .menu-clicked .menu-inner span:nth-child(3) {
         left: -50%;
@@ -115,11 +115,11 @@ body {
         opacity: 0; }
       body #hamburger .menu-clicked .menu-inner span:nth-child(5) {
         left: 0;
-        top: 26px;
+        top: 23px;
         width: 65%; }
       body #hamburger .menu-clicked .menu-inner span:nth-child(6) {
         left: calc(50% - 2px);
-        top: 26px;
+        top: 23px;
         width: 65%; }
   body .cd-scroll-down {
     position: absolute;

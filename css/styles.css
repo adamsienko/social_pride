@@ -57,7 +57,7 @@ body {
     body #hamburger .menu {
       width: 40px;
       height: 40px;
-      margin: 83px 19px;
+      margin: 83px 0 0 19px;
       transform: rotate(0deg);
       transition: .5s ease-in-out;
       cursor: pointer;
@@ -126,16 +126,19 @@ body {
     bottom: 20px; }
   body #cd-vertical-nav {
     position: fixed;
-    left: 40px;
-    top: 50%;
+    left: 37px;
+    top: 55%;
     bottom: auto;
     transform: translateY(-50%);
-    z-index: 1; }
+    z-index: 1;
+    border-left: dotted white 2px; }
     body #cd-vertical-nav ul {
       list-style: none;
-      direction: rtl; }
+      direction: rtl;
+      margin-left: -7px; }
     body #cd-vertical-nav li {
-      text-align: left; }
+      text-align: left;
+      line-height: 7vh; }
     body #cd-vertical-nav a {
       display: inline-block;
       backface-visibility: hidden; }
@@ -155,7 +158,7 @@ body {
         background-color: red; }
     body #cd-vertical-nav .cd-dot {
       position: relative;
-      top: 7px;
+      top: 22px;
       height: 12px;
       width: 12px;
       border-radius: 50%;

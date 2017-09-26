@@ -189,7 +189,11 @@ body {
     padding-top: 80px;
     letter-spacing: 3px; }
   body #main {
-    height: 100vh; }
+    height: 100vh;
+    background-image: url(../img/background-main.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
     body #main .logo-sm img {
       position: fixed;
       left: 84px;
@@ -199,7 +203,11 @@ body {
       top: 20%;
       width: 100%; }
   body #about {
-    position: relative; }
+    position: relative;
+    background-image: url(../img/background-main.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
     body #about .about-header {
       width: 50%;
       margin: auto;

@@ -228,6 +228,10 @@ body {
     /*MAIN*/
     #main {
         height: 100vh;
+        background-image: url(../img/background-main.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
         .logo-sm {
             img {
                 position: fixed;
@@ -244,6 +248,10 @@ body {
     /*ABOUT*/
     #about {
         position: relative;
+         background-image: url(../img/background-main.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
         .about-header {
             width: 50%;
             margin: auto;

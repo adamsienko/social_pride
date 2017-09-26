@@ -218,7 +218,7 @@ body {
         font-size: 55px;
         font-weight: 700;
         margin-top: 0;
-        padding-top: 100px;
+        padding-top: 80px;
         letter-spacing: 3px;
     }
     /*MAIN*/
@@ -362,6 +362,7 @@ body {
     /*KONTAKT*/
     #contact {
         background-color: #1f59d1;
+        padding-bottom: 165px;
         h2 {
             color: #fff;
             padding-top: 75px;
@@ -407,9 +408,10 @@ body {
             p {
                 font-family: 'Muli', sans-serif;
                 font-size: 16px;
-                address{
+            }
+            address {
                 padding-top: 40px;
-                }
+                padding-bottom: 10px;
             }
         }
     }

@@ -55,15 +55,15 @@ body {
     body #hamburger img {
       margin-top: 50px; }
     body #hamburger .menu {
-      width: 45px;
-      height: 45px;
-      margin: 81px 17px;
+      width: 40px;
+      height: 40px;
+      margin: 83px 19px;
       transform: rotate(0deg);
       transition: .5s ease-in-out;
       cursor: pointer;
       opacity: 0.7;
       border-radius: 50%;
-      border: solid 2px #fff;
+      border: solid 1px #fff;
       float: left; }
       body #hamburger .menu .menu-inner {
         position: relative;
@@ -73,7 +73,7 @@ body {
         body #hamburger .menu .menu-inner span {
           display: block;
           position: absolute;
-          height: 2px;
+          height: 1px;
           width: 50%;
           background: #fff;
           transform: rotate(0deg);
@@ -84,13 +84,13 @@ body {
           left: 0px; }
         body #hamburger .menu .menu-inner span:nth-child(1),
         body #hamburger .menu .menu-inner span:nth-child(2) {
-          top: 13px; }
+          top: 12px; }
         body #hamburger .menu .menu-inner span:nth-child(3),
         body #hamburger .menu .menu-inner span:nth-child(4) {
-          top: 20px; }
+          top: 19px; }
         body #hamburger .menu .menu-inner span:nth-child(5),
         body #hamburger .menu .menu-inner span:nth-child(6) {
-          top: 27px; }
+          top: 26px; }
     body #hamburger .menu-clicked {
       margin-left: 210px; }
       body #hamburger .menu-clicked .menu-inner span:nth-child(1),
@@ -174,20 +174,21 @@ body {
       transform-origin: 0 50%; }
   body h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 8vh; }
+    font-size: 9vh;
+    line-height: 1.3; }
   body h2 {
     font-family: 'Saira Extra Condensed', sans-serif;
     color: #1f59d1;
     font-size: 55px;
     font-weight: 700;
     margin-top: 0;
-    padding-top: 50px; }
+    padding-top: 100px; }
   body #main {
     height: 100vh; }
     body #main .logo-sm img {
       position: fixed;
-      left: 80px;
-      top: 50px; }
+      left: 84px;
+      top: 80px; }
     body #main .main-header {
       position: absolute;
       top: 20%;
@@ -201,7 +202,7 @@ body {
       font-size: 16px; }
     body #about .about-main {
       width: 80%;
-      padding: 40px 0 80px; }
+      padding: 74px 0 175px; }
       body #about .about-main h3 {
         font-family: 'Playfair Display', serif;
         font-size: 18px; }

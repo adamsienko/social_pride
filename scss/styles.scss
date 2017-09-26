@@ -55,15 +55,15 @@ body {
             margin-top: 50px;
         }
         .menu {
-            width: 45px;
-            height: 45px;
-            margin: 81px 17px;
+            width: 40px;
+            height: 40px;
+            margin: 83px 19px;
             transform: rotate(0deg);
             transition: .5s ease-in-out;
             cursor: pointer;
             opacity: 0.7;
             border-radius: 50%;
-            border: solid 2px #fff;
+            border: solid 1px #fff;
             float: left;
             .menu-inner {
                 position: relative;
@@ -73,7 +73,7 @@ body {
                 span {
                     display: block;
                     position: absolute;
-                    height: 2px;
+                    height: 1px;
                     width: 50%;
                     background: #fff;
                     transform: rotate(0deg);
@@ -87,15 +87,15 @@ body {
                 }
                 span:nth-child(1),
                 span:nth-child(2) {
-                    top: 13px;
+                    top: 12px;
                 }
                 span:nth-child(3),
                 span:nth-child(4) {
-                    top: 20px;
+                    top: 19px;
                 }
                 span:nth-child(5),
                 span:nth-child(6) {
-                    top: 27px;
+                    top: 26px;
                 }
             }
         }
@@ -209,7 +209,8 @@ body {
     /*SECTIONS*/
     h1 {
         font-family: 'Playfair Display', serif;
-        font-size: 8vh;
+        font-size: 9vh;
+        line-height: 1.3;
     }
     h2 {
         font-family: 'Saira Extra Condensed', sans-serif;
@@ -217,7 +218,7 @@ body {
         font-size: 55px;
         font-weight: 700;
         margin-top: 0;
-        padding-top: 50px;
+        padding-top: 100px;
     }
     /*MAIN*/
     #main {
@@ -225,8 +226,8 @@ body {
         .logo-sm {
             img {
                 position: fixed;
-                left: 80px;
-                top: 50px;
+                left: 84px;
+                top: 80px;
             }
         }
         .main-header {
@@ -246,7 +247,7 @@ body {
         }
         .about-main {
             width: 80%;
-            padding: 40px 0 80px;
+            padding: 74px 0 175px;
             h3 {
                 font-family: 'Playfair Display', serif;
                 font-size: 18px;

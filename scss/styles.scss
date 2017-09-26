@@ -21,8 +21,8 @@ body {
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
-            padding-right: 59px;
-            padding-top: 54px;
+            padding-right: 57px;
+            padding-top: 77px;
             li,
             li a {
                 font-family: 'Saira Extra Condensed', sans-serif;
@@ -100,7 +100,7 @@ body {
             }
         }
         .menu-clicked {
-            margin-left: 210px;
+            margin-left: 214px;
             .menu-inner {
                 span:nth-child(1),
                 span:nth-child(6) {
@@ -112,12 +112,12 @@ body {
                 }
                 span:nth-child(1) {
                     left: 0;
-                    top: 14px;
+                    top: 12px;
                     width: 65%;
                 }
                 span:nth-child(2) {
                     left: calc(50% - 2px);
-                    top: 14px;
+                    top: 12px;
                     width: 65%;
                 }
                 span:nth-child(3) {
@@ -130,12 +130,12 @@ body {
                 }
                 span:nth-child(5) {
                     left: 0;
-                    top: 24px;
+                    top: 26px;
                     width: 65%;
                 }
                 span:nth-child(6) {
                     left: calc(50% - 2px);
-                    top: 24px;
+                    top: 26px;
                     width: 65%;
                 }
             }
@@ -265,6 +265,10 @@ body {
     #offer {
         position: relative;
         background-color: #2b2c31;
+        padding-bottom: 30px;
+        h2{
+            padding-top: 77px;
+        }
         .offer-header {
             width: 50%;
             margin: auto;
@@ -286,14 +290,14 @@ body {
             .offer-marketing,
             .offer-szkolenia {
                 text-align: left;
-                margin-top: -90px;
+                margin-top: -50px;
             }
             .offer-social {
                 text-align: right;
-                margin-top: -90px;
+                margin-top: -74px;
             }
             .offer-marketing{
-                margin-top: 0;
+                padding-top: 87px;
             }
         }
     }
@@ -302,10 +306,14 @@ body {
         position: relative;
         background-color: #fff;
         padding-bottom: 100px;
+        h2{
+            padding-top: 84px;
+        }
         .blog-content {
             color: #000;
             width: 50%;
             margin: auto;
+            padding-top: 24px;
             h5 {
                 font-size: 25px;
                 font-family: 'Playfair Display', serif;

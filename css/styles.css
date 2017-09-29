@@ -6,6 +6,7 @@ body {
   color: #fff;
   /*    SCROLL PAGE*/
   /*DOTS NAV*/
+  /*NAV MOBILE*/
   /*SECTIONS*/
   /*MAIN*/
   /*ABOUT*/
@@ -19,7 +20,7 @@ body {
     transform: skew(-8deg);
     background-color: #1f59d1;
     transition: left 1s;
-    z-index: 2; }
+    z-index: 3; }
 
 @media only screen and (max-width: 768px) {
   body .sidebar {
@@ -55,7 +56,7 @@ body {
     left: -60px; }
   body #hamburger {
     position: fixed;
-    z-index: 3; }
+    z-index: 4; }
 
 @media only screen and (max-width: 768px) {
   body #hamburger {
@@ -192,6 +193,12 @@ body {
 @media only screen and (min-width: 768px) {
   body .navbar-mobile {
     display: none; } }
+  body .navbar-mobile .collapse {
+    background: #1f59d1; }
+  body .navbar-mobile .collapsed .icon-bar {
+    background-color: #1f59d1; }
+  body .navbar-mobile .icon-bar {
+    background-color: #fff; }
   body h1 {
     font-family: 'Playfair Display', serif;
     font-size: 9vh;
@@ -222,8 +229,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   body #main .logo-sm img {
-    left: 10px;
-    top: 10px; } }
+    display: none; } }
     body #main .logo-sm #logo-main {
       opacity: 1; }
     body #main .logo-sm #logo-blog {
@@ -441,6 +447,10 @@ body {
     body #blog .blog-all {
       width: 80%;
       display: none; }
+
+@media only screen and (max-width: 768px) {
+  body #blog .blog-all {
+    width: 90%; } }
       body #blog .blog-all .blog-all-image {
         background-image: url(../img/blog-back.jpg);
         background-position: bottom; }
@@ -456,6 +466,10 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center; }
+
+@media only screen and (max-width: 768px) {
+  body #contact {
+    padding-bottom: 80px; } }
     body #contact h2 {
       color: #fff;
       padding-top: 75px; }
@@ -474,22 +488,29 @@ body {
 
 @media only screen and (max-width: 768px) {
   body #contact .contact-inner {
-    width: 70%;
-    font-size: 13px; } }
-
-@media only screen and (max-width: 768px) {
-  body #contact .contact-inner p {
-    font-size: 13px; } }
+    width: 70%; } }
       body #contact .contact-inner .contact-owner {
         width: 100%;
         padding-top: 40px;
         margin-left: -27px; }
+
+@media only screen and (max-width: 768px) {
+  body #contact .contact-inner .contact-owner {
+    margin-left: 0; } }
         body #contact .contact-inner .contact-owner .photo {
           text-align: right; }
+
+@media only screen and (max-width: 768px) {
+  body #contact .contact-inner .contact-owner .photo {
+    text-align: center; } }
         body #contact .contact-inner .contact-owner .contact-data {
           text-align: left;
           padding-left: 9px;
           margin-top: -7px; }
+
+@media only screen and (max-width: 768px) {
+  body #contact .contact-inner .contact-owner .contact-data {
+    text-align: center; } }
           body #contact .contact-inner .contact-owner .contact-data h6 {
             font-family: 'Saira Extra Condensed', sans-serif;
             font-weight: 700;
@@ -497,10 +518,6 @@ body {
           body #contact .contact-inner .contact-owner .contact-data p {
             font-family: 'Muli', sans-serif;
             font-size: 15px; }
-
-@media only screen and (max-width: 768px) {
-  body #contact .contact-inner .contact-owner .contact-data p {
-    font-size: 13px; } }
             body #contact .contact-inner .contact-owner .contact-data p a {
               text-decoration: none;
               color: #fff; }
@@ -510,6 +527,11 @@ body {
       body #contact .contact-inner p {
         font-family: 'Muli', sans-serif;
         font-size: 16px; }
+
+@media only screen and (max-width: 768px) {
+  body #contact .contact-inner address,
+  body #contact .contact-inner p {
+    font-size: 13px; } }
       body #contact .contact-inner address {
         padding-top: 40px;
         padding-bottom: 10px; }

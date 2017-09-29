@@ -16,7 +16,7 @@ body {
         transform: skew(-8deg);
         background-color: #1f59d1;
         transition: left 1s;
-        z-index: 2;
+        z-index: 3;
         .centered {
             width: inherit;
             direction: rtl;
@@ -54,7 +54,7 @@ body {
     //HAMBURGER MENU
     #hamburger {
         position: fixed;
-        z-index: 3;
+        z-index: 4;
         @media#{$tablet} {
             display: none;
         }
@@ -221,9 +221,22 @@ body {
             transform-origin: 0 50%;
         }
     }
+    /*NAV MOBILE*/
     .navbar-mobile {
         @media#{$mobileonly} {
             display: none;
+        }
+                .collapse {
+        	background: #1f59d1;
+                    
+        }
+        .collapsed {
+            .icon-bar {
+                background-color: #1f59d1;
+            }
+        }
+        .icon-bar {
+            background-color: #fff;
         }
     }
     /*SECTIONS*/
@@ -258,8 +271,7 @@ body {
                 top: 80px;
                 z-index: 1;
                 @media#{$tablet} {
-                    left: 10px;
-                    top: 10px;
+                    display: none
                 }
             }
             #logo-main {
@@ -437,7 +449,6 @@ body {
                 font-family: 'Playfair Display', serif;
                 @media#{$tablet} {
                     font-size: 22px;
-                    
                 }
             }
             p {
@@ -485,6 +496,9 @@ body {
         .blog-all {
             width: 80%;
             display: none;
+            @media#{$tablet} {
+                width: 90%;
+            }
             .blog-all-image {
                 background-image: url(../img/blog-back.jpg);
                 background-position: bottom;
@@ -505,76 +519,76 @@ body {
         background-repeat: no-repeat;
         background-size: auto;
         background-position: center;
+        @media#{$tablet} {
+            padding-bottom: 80px;
+        }
         h2 {
             color: #fff;
             padding-top: 75px;
             @media#{$tablet} {
                 padding-top: 45px;
             }
-        } 
-//                p {
-//                    font-family: 'Playfair Display', serif;
-//                    font-size: 16px;
-//                    @media#{$tablet} {
-//                        font-size: 13px;
-//                    }
-//    }
-    .contact-inner {
-        width: 50%;
-        margin: auto;
-        padding-top: 20px;
-        @media#{$desktop} {
-            width: 60%;
         }
-        @media#{$tablet} {
-            width: 70%;
-            font-size: 13px;
-        }
-        p {
+        .contact-inner {
+            width: 50%;
+            margin: auto;
+            padding-top: 20px;
+            @media#{$desktop} {
+                width: 60%;
+            }
             @media#{$tablet} {
-                font-size: 13px;
+                width: 70%;
             }
-        }
-        .contact-owner {
-            width: 100%;
-            padding-top: 40px;
-            margin-left: -27px;
-            .photo {
-                text-align: right;
-            }
-            .contact-data {
-                text-align: left;
-                padding-left: 9px;
-                margin-top: -7px;
-                h6 {
-                    font-family: 'Saira Extra Condensed', sans-serif;
-                    font-weight: 700;
-                    font-size: 25px;
+            .contact-owner {
+                width: 100%;
+                padding-top: 40px;
+                margin-left: -27px;
+                @media#{$tablet} {
+                    margin-left: 0;
                 }
-                p {
-                    font-family: 'Muli', sans-serif;
-                    font-size: 15px;
-                     @media#{$tablet} {
-                font-size: 13px;
-            }
-                    a {
-                        text-decoration: none;
-                        color: #fff;
-                         :hover {
+                .photo {
+                    text-align: right;
+                    @media#{$tablet} {
+                        text-align: center;
+                    }
+                }
+                .contact-data {
+                    text-align: left;
+                    padding-left: 9px;
+                    margin-top: -7px;
+                    @media#{$tablet} {
+                        text-align: center;
+                    }
+                    h6 {
+                        font-family: 'Saira Extra Condensed', sans-serif;
+                        font-weight: 700;
+                        font-size: 25px;
+                    }
+                    p {
+                        font-family: 'Muli', sans-serif;
+                        font-size: 15px;
+                        a {
                             text-decoration: none;
+                            color: #fff;
+                             :hover {
+                                text-decoration: none;
+                            }
                         }
                     }
                 }
             }
-        }
-        address,
-        p {
-            font-family: 'Muli', sans-serif;
-            font-size: 16px;
-        }
-        address {
-            padding-top: 40px;
-            padding-bottom: 10px;
+            address,
+            p {
+                font-family: 'Muli', sans-serif;
+                font-size: 16px;
+                @media#{$tablet} {
+                    font-size: 13px;
+                }
+            }
+            address {
+                padding-top: 40px;
+                padding-bottom: 10px;
+            }
         }
     }
-    }}
+}

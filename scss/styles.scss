@@ -1,3 +1,4 @@
+@import 'responsive';
 body {
     width: 100%;
     height: 100%;
@@ -6,6 +7,9 @@ body {
     color: #fff;
     //BLUE MENU
     .sidebar {
+        @media#{$tablet} {
+            display: none;
+        }
         position: fixed;
         width: 304px;
         height: 100vh;
@@ -51,8 +55,14 @@ body {
     #hamburger {
         position: fixed;
         z-index: 3;
+        @media#{$tablet} {
+            display: none;
+        }
         img {
-            margin-top: 50px;
+            position: absolute;
+            left: 37px;
+            top: 110px;
+            height: 90vh;
         }
         .menu {
             width: 40px;
@@ -61,9 +71,8 @@ body {
             transform: rotate(0deg);
             transition: .5s ease-in-out;
             cursor: pointer;
-            opacity: 0.7;
             border-radius: 50%;
-            border: solid 1px #fff;
+            border: solid 1px #898989;
             float: left;
             .menu-inner {
                 position: relative;
@@ -75,7 +84,7 @@ body {
                     position: absolute;
                     height: 1px;
                     width: 50%;
-                    background: #fff;
+                    background: #898989;
                     transform: rotate(0deg);
                     transition: .25s ease-in-out;
                 }
@@ -101,14 +110,17 @@ body {
         }
         .menu-clicked {
             margin-left: 214px;
+            border-color: #fff;
             .menu-inner {
                 span:nth-child(1),
                 span:nth-child(6) {
                     transform: rotate(50deg);
+                    background-color: #fff;
                 }
                 span:nth-child(2),
                 span:nth-child(5) {
                     transform: rotate(-50deg);
+                    background-color: #fff;
                 }
                 span:nth-child(1) {
                     left: 0;
@@ -155,11 +167,10 @@ body {
         bottom: auto;
         transform: translateY(-50%);
         z-index: 1;
-        border-left: dotted white 2px;
         ul {
             list-style: none;
             direction: rtl;
-            margin-left: -7px;
+            margin-left: -5px;
         }
         li {
             text-align: left;
@@ -191,10 +202,10 @@ body {
         .cd-dot {
             position: relative;
             top: 22px;
-            height: 12px;
-            width: 12px;
+            height: 13px;
+            width: 13px;
             border-radius: 50%;
-            background-color: #fff;
+            background-color: #898989;
             transition: transform 0.2s, background-color 0.5s;
             transform-origin: 50% 50%;
         }
@@ -202,12 +213,17 @@ body {
             position: relative;
             margin-right: 10px;
             padding: .4em .5em;
-            color: #fff;
+            color: #898989;
             font-size: 12px;
             font-family: 'Muli', sans-serif;
             transition: transform 0.2s, opacity 0.2s;
             opacity: 0;
             transform-origin: 0 50%;
+        }
+    }
+    .navbar-mobile {
+        @media#{$mobileonly} {
+            display: none;
         }
     }
     /*SECTIONS*/
@@ -224,6 +240,9 @@ body {
         margin-top: 0;
         padding-top: 80px;
         letter-spacing: 3px;
+        @media#{$tablet} {
+            font-size: 43px;
+        }
     }
     /*MAIN*/
     #main {
@@ -237,6 +256,20 @@ body {
                 position: fixed;
                 left: 84px;
                 top: 80px;
+                z-index: 1;
+                @media#{$tablet} {
+                    left: 10px;
+                    top: 10px;
+                }
+            }
+            #logo-main {
+                opacity: 1;
+            }
+            #logo-blog {
+                display: none;
+            }
+            #logo-contact {
+                display: none;
             }
         }
         .main-header {
@@ -248,7 +281,7 @@ body {
     /*ABOUT*/
     #about {
         position: relative;
-         background-image: url(../img/background-main.png);
+        background-image: url(../img/background-main.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -257,28 +290,61 @@ body {
             margin: auto;
             font-family: 'Playfair Display', serif;
             font-size: 16px;
+            @media#{$desktop} {
+                width: 60%;
+            }
+            @media#{$tablet} {
+                font-size: 14px;
+                width: 70%;
+            }
         }
         .about-main {
             width: 80%;
             padding: 74px 0 175px;
+            @media#{$tablet} {
+                padding: 50px 0 100px;
+            }
             h3 {
                 font-family: 'Playfair Display', serif;
                 font-size: 18px;
+                @media#{$tablet} {
+                    font-size: 16px;
+                }
                 span {
                     font-size: 32px;
+                    @media#{$tablet} {
+                        font-size: 28px;
+                    }
                 }
             }
             p {
                 font-family: 'Muli', sans-serif;
                 font-size: 15px;
+                @media#{$tablet} {
+                    font-size: 13px;
+                }
             }
         }
     }
     /*OFFER*/
     #offer {
         position: relative;
-        background-color: #2b2c31;
         padding-bottom: 30px;
+        background-image: url(../img/background-offer.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(90deg, #2b2c31 47px, transparent 1%) center, linear-gradient(#3c3d41 3px, transparent 1%) center, #2b2c31;
+            background-size: 50px 50px;
+            z-index: -1;
+        }
         h2 {
             padding-top: 77px;
         }
@@ -287,6 +353,13 @@ body {
             margin: auto;
             font-family: 'Playfair Display', serif;
             font-size: 16px;
+            @media#{$tablet} {
+                font-size: 13px;
+                width: 60%;
+            }
+            @media#{$desktop} {
+                width: 70%;
+            }
         }
         .offer-main {
             width: 80%;
@@ -295,22 +368,43 @@ body {
                 font-size: 35px;
                 font-family: 'Saira Extra Condensed', sans-serif;
                 font-weight: 700;
+                @media#{$tablet} {
+                    font-size: 28px;
+                }
             }
             p {
                 font-family: 'Muli', sans-serif;
                 font-size: 15px;
+                @media#{$tablet} {
+                    font-size: 13px;
+                }
             }
             .offer-marketing,
             .offer-szkolenia {
                 text-align: left;
                 margin-top: -50px;
+                @media#{$desktop} {
+                    margin-top: 10px;
+                }
+                @media#{$tablet} {
+                    text-align: center;
+                }
             }
             .offer-social {
                 text-align: right;
                 margin-top: -74px;
+                @media#{$desktop} {
+                    margin-top: 10px;
+                }
+                @media#{$tablet} {
+                    text-align: center;
+                }
             }
             .offer-marketing {
                 padding-top: 87px;
+                @media#{$desktop} {
+                    padding-top: 0;
+                }
             }
         }
     }
@@ -321,25 +415,43 @@ body {
         padding-bottom: 72px;
         h2 {
             padding-top: 84px;
+            @media#{$tablet} {
+                padding-top: 45px;
+            }
         }
-        .blog-content {
+        .blog-content,
+        .blog-all {
             color: #000;
             width: 50%;
             margin: auto;
             padding-top: 24px;
             padding-bottom: 17px;
+            @media#{$desktop} {
+                width: 60%;
+            }
+            @media#{$tablet} {
+                width: 70%;
+            }
             h5 {
                 font-size: 25px;
                 font-family: 'Playfair Display', serif;
+                @media#{$tablet} {
+                    font-size: 22px;
+                    
+                }
             }
             p {
                 font-size: 15px;
                 font-family: 'Muli', sans-serif;
+                @media#{$tablet} {
+                    font-size: 13px;
+                }
             }
             .more {
                 border-top: solid 1px #1f59d1;
                 width: 70px;
                 margin: auto;
+                margin-top: 20px;
                 a {
                     font-family: 'Saira Extra Condensed', sans-serif;
                     font-size: 16px;
@@ -370,61 +482,99 @@ body {
          :hover {
             text-decoration: none;
         }
+        .blog-all {
+            width: 80%;
+            display: none;
+            .blog-all-image {
+                background-image: url(../img/blog-back.jpg);
+                background-position: bottom;
+            }
+            p,
+            h5 {
+                width: 80%;
+                margin: auto;
+                padding-top: 20px;
+            }
+        }
     }
     /*KONTAKT*/
     #contact {
         background-color: #1f59d1;
         padding-bottom: 165px;
+        background-image: url(../img/background-contact.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
         h2 {
             color: #fff;
             padding-top: 75px;
+            @media#{$tablet} {
+                padding-top: 45px;
+            }
+        } 
+//                p {
+//                    font-family: 'Playfair Display', serif;
+//                    font-size: 16px;
+//                    @media#{$tablet} {
+//                        font-size: 13px;
+//                    }
+//    }
+    .contact-inner {
+        width: 50%;
+        margin: auto;
+        padding-top: 20px;
+        @media#{$desktop} {
+            width: 60%;
+        }
+        @media#{$tablet} {
+            width: 70%;
+            font-size: 13px;
         }
         p {
-            font-family: 'Playfair Display', serif;
-            font-size: 16px;
+            @media#{$tablet} {
+                font-size: 13px;
+            }
         }
-        .contact-inner {
-            width: 50%;
-            margin: auto;
-            padding-top: 20px;
-            .contact-owner {
-                width: 100%;
-                padding-top: 40px;
-                margin-left: -27px;
-                .photo {
-                    text-align: right;
+        .contact-owner {
+            width: 100%;
+            padding-top: 40px;
+            margin-left: -27px;
+            .photo {
+                text-align: right;
+            }
+            .contact-data {
+                text-align: left;
+                padding-left: 9px;
+                margin-top: -7px;
+                h6 {
+                    font-family: 'Saira Extra Condensed', sans-serif;
+                    font-weight: 700;
+                    font-size: 25px;
                 }
-                .contact-data {
-                    text-align: left;
-                    padding-left: 9px;
-                    margin-top: -7px;
-                    h6 {
-                        font-family: 'Saira Extra Condensed', sans-serif;
-                        font-weight: 700;
-                        font-size: 25px;
-                    }
-                    p {
-                        font-family: 'Muli', sans-serif;
-                        font-size: 15px;
-                        a {
+                p {
+                    font-family: 'Muli', sans-serif;
+                    font-size: 15px;
+                     @media#{$tablet} {
+                font-size: 13px;
+            }
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                         :hover {
                             text-decoration: none;
-                            color: #fff;
-                             :hover {
-                                text-decoration: none;
-                            }
                         }
                     }
                 }
             }
-            address,
-            p {
-                font-family: 'Muli', sans-serif;
-                font-size: 16px;
-            }
-            address {
-                padding-top: 40px;
-                padding-bottom: 10px;
-            }
+        }
+        address,
+        p {
+            font-family: 'Muli', sans-serif;
+            font-size: 16px;
+        }
+        address {
+            padding-top: 40px;
+            padding-bottom: 10px;
         }
     }
-}
+    }}

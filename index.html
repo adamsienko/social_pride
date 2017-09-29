@@ -10,14 +10,14 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:400,500,700" rel="stylesheet">
-<!--    <link rel="stylesheet" href="../app/font-awesome-4.7.0/css/font-awesome.min.css">-->
+    <!--    <link rel="stylesheet" href="../app/font-awesome-4.7.0/css/font-awesome.min.css">-->
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
 <body>
-    <div id="hamburger">        
+    <div id="hamburger">
         <div id="nav-icon2" class="menu">
             <div class="menu-inner">
                 <span></span>
@@ -27,6 +27,9 @@
                 <span></span>
                 <span></span>
             </div>
+        </div>
+        <div class="dots-nav">
+            <img src="img/dots.png" alt="">
         </div>
     </div>
     <div class="sidebar hide-sidebar">
@@ -72,11 +75,37 @@
             </li>
         </ul>
     </nav>
+    
+     <nav class="navbar navbar-mobile navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#main">SOCIAL PRIDE</a></li>
+                    <li><a href="#about">O NAS</a></li>
+                    <li><a href="#offer">OFERTA</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#contact">KONTAKT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <section id="main">
-       <div class="logo-sm">
-           <img src="img/logo-sm.png" alt="">
-       </div>
+        <div class="logo-sm">
+            <img id="logo-main" src="img/logo-sm.png" alt="">
+            <img id="logo-blog" src="img/logo-on-white.png" alt="">
+            <img id="logo-contact" src="img/logo-on-blue.png" alt="">
+        </div>
         <div class="main-header">
             <img src="img/logo.png" alt="social pride">
             <h1>Kreatywne<br>pomysły,<br>komercyjna<br>rzeczywistość</h1>
@@ -106,7 +135,7 @@
                 </div>
             </div>
         </div>
-<a href="#offer" class="cd-scroll-down"><img src="img/scroll.png" alt=""></a>
+        <a href="#offer" class="cd-scroll-down"><img src="img/scroll.png" alt=""></a>
     </section>
     <section id="offer">
         <h2>OFERTA</h2>
@@ -140,32 +169,103 @@
                 </div>
             </div>
         </div>
-<a href="#blog" class="cd-scroll-down"><img src="img/scroll.png" alt=""></a>
+        <a href="#blog" class="cd-scroll-down"><img src="img/scroll.png" alt=""></a>
     </section>
     <section id="blog">
         <h2>BLOG</h2>
-        <div class="blog-content blog-top">
-            <h5>Najnowszy wpis na blogu</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque recusandae neque reiciendis veritatis distinctio eaque repellat totam provident animi magni ducimus, eveniet, obcaecati quisquam, earum libero officiis ipsa esse quas!</p>
-            <div class="more">
-                <a href="">WIĘCEJ</a>
+        <div class="blog-main">
+            <div class="blog-content blog-top">
+                <h5>Najnowszy wpis na blogu</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque recusandae neque reiciendis veritatis distinctio eaque repellat totam provident animi magni ducimus, eveniet, obcaecati quisquam, earum libero officiis ipsa esse quas!</p>
+                <div class="more">
+                    <a href="">WIĘCEJ</a>
+                </div>
+            </div>
+            <div class="blog-content blog-middle">
+                <h5>Prawie najnowszy wpis na blogu</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque recusandae neque reiciendis veritatis distinctio eaque repellat totam provident animi magni ducimus, eveniet, obcaecati quisquam, earum libero officiis ipsa esse quas!</p>
+                <div class="more">
+                    <a href="">WIĘCEJ</a>
+                </div>
+            </div>
+            <div class="blog-content blog-bottom">
+                <h5>Trzeci najnowszy wpis na blogu</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque recusandae neque reiciendis veritatis distinctio eaque repellat totam provident animi magni ducimus, eveniet, obcaecati quisquam, earum libero officiis ipsa esse quas!</p>
+                <div class="more">
+                    <a href="">WIĘCEJ</a>
+                </div>
             </div>
         </div>
-        <div class="blog-content blog-middle">
-            <h5>Prawie najnowszy wpis na blogu</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque recusandae neque reiciendis veritatis distinctio eaque repellat totam provident animi magni ducimus, eveniet, obcaecati quisquam, earum libero officiis ipsa esse quas!</p>
-            <div class="more">
-                <a href="">WIĘCEJ</a>
+        <div id="button">
+            <a href="#/" id="see-all">zobacz wszystkie</a>
+        </div>
+        <div class="container blog-all" id="blog-all" style="display: none">
+            <div class="row">
+                <div class="col-md-6 blog-all-content">
+                    <h5>Najnowszy lub czwarty wpis na blogu</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque recusandae neque reiciendis veritatis distinctio eaque repellat totam provident animi magni ducimus, eveniet, obcaecati quisquam, earum libero officiis ipsa esse quas!</p>
+                    <div class="more">
+                        <a href="">WIĘCEJ</a>
+                    </div>
+                </div>
+                <div class="col-md-6 blog-all-content">
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque recusandae neque reiciendis veritatis distinctio eaque repellat totam provident animi magni ducimus, eveniet, obcaecati quisquam, earum libero officiis ipsa esse quas!</p>
+                    <div class="more">
+                        <a href="">WIĘCEJ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 blog-all-content blog-all-image">
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque recusandae neque reiciendis veritatis distinctio eaque repellat totam provident animi magni ducimus, eveniet, obcaecati quisquam, earum libero officiis ipsa esse quas!</p>
+                    <div class="more">
+                        <a href="">WIĘCEJ</a>
+                    </div>
+                </div>
+                <div class="col-md-6 blog-all-content">
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque recusandae neque reiciendis veritatis distinctio eaque repellat totam provident animi magni ducimus, eveniet, obcaecati quisquam, earum libero officiis ipsa esse quas!</p>
+                    <div class="more">
+                        <a href="">WIĘCEJ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 blog-all-content">
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque recusandae neque reiciendis veritatis distinctio eaque repellat totam provident animi magni ducimus, eveniet, obcaecati quisquam, earum libero officiis ipsa esse quas!</p>
+                    <div class="more">
+                        <a href="">WIĘCEJ</a>
+                    </div>
+                </div>
+                <div class="col-md-6 blog-all-content">
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque recusandae neque reiciendis veritatis distinctio eaque repellat totam provident animi magni ducimus, eveniet, obcaecati quisquam, earum libero officiis ipsa esse quas!</p>
+                    <div class="more">
+                        <a href="">WIĘCEJ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 blog-all-content">
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque recusandae neque reiciendis veritatis distinctio eaque rLorem ipsum dolor sit amet, consectetur adipisicing elit.epellat totam provident animi magni ducimus, eveniet, obcaecati quisquam, earum libero officiis ipsa esse quas!</p>
+                    <div class="more">
+                        <a href="">WIĘCEJ</a>
+                    </div>
+                </div>
+                <div class="col-md-6 blog-all-content">
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque recusandae neque reiciendis veritatis distinctio eaque repellat totam provident animi magni ducimus, eveniet, obcaecati quisquam, earum libero officiis ipsa esse quas!</p>
+                    <div class="more">
+                        <a href="">WIĘCEJ</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="blog-content blog-bottom">
-            <h5>Trzeci najnowszy wpis na blogu</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque recusandae neque reiciendis veritatis distinctio eaque repellat totam provident animi magni ducimus, eveniet, obcaecati quisquam, earum libero officiis ipsa esse quas!</p>
-            <div class="more">
-                <a href="">WIĘCEJ</a>
-            </div>
-        </div>
-        <a href="">zobacz wszystkie</a>
+
         <a href="#contact" class="cd-scroll-down"><img src="img/scroll-black.png" alt=""></a>
     </section>
 
@@ -192,9 +292,7 @@
             ul. Marszałkowska 1<br>
             00-500 Warszawa
             </address>
-            <p>Zapraszam do kontaktu w godzinach:<br>
-               Pon. - Pt.: 9:00 - 17:00<br>
-               Sob. - Niedz.: 11:00 - 15:00                
+            <p>Zapraszam do kontaktu w godzinach:<br> Pon. - Pt.: 9:00 - 17:00<br> Sob. - Niedz.: 11:00 - 15:00
             </p>
         </div>
     </section>

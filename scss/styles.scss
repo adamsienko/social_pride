@@ -226,17 +226,34 @@ body {
         @media#{$mobileonly} {
             display: none;
         }
-                .collapse {
-        	background: #1f59d1;
-                    
-        }
-        .collapsed {
-            .icon-bar {
-                background-color: #1f59d1;
+        .container {
+            background: #1f59d1;
+            .navbar-brand {
+                padding: 11px 15px;
+                img {
+                    width: 70px;
+                }
             }
+            a{
+                color: #fff;
+                font-family: 'Saira Extra Condensed', sans-serif;
+                font-size: 26px;
+                
+                &:hover{
+                    color: #000;
+                   
+                }
+            }
+            
+            
         }
         .icon-bar {
             background-color: #fff;
+            width: 30px;
+            height: 2px;
+        }
+        .icon-bar+.icon-bar {
+            margin-top: 7px;
         }
     }
     /*SECTIONS*/

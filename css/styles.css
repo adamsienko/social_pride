@@ -193,12 +193,24 @@ body {
 @media only screen and (min-width: 768px) {
   body .navbar-mobile {
     display: none; } }
-  body .navbar-mobile .collapse {
+  body .navbar-mobile .container {
     background: #1f59d1; }
-  body .navbar-mobile .collapsed .icon-bar {
-    background-color: #1f59d1; }
+    body .navbar-mobile .container .navbar-brand {
+      padding: 11px 15px; }
+      body .navbar-mobile .container .navbar-brand img {
+        width: 70px; }
+    body .navbar-mobile .container a {
+      color: #fff;
+      font-family: 'Saira Extra Condensed', sans-serif;
+      font-size: 26px; }
+      body .navbar-mobile .container a:hover {
+        color: #000; }
   body .navbar-mobile .icon-bar {
-    background-color: #fff; }
+    background-color: #fff;
+    width: 30px;
+    height: 2px; }
+  body .navbar-mobile .icon-bar + .icon-bar {
+    margin-top: 7px; }
   body h1 {
     font-family: 'Playfair Display', serif;
     font-size: 9vh;

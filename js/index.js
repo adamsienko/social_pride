@@ -73,7 +73,7 @@ $(function () {
 
     //SMOOTH SCROLL
 
-    $(".sidebar a").on('click', function (event) {
+    $(".sidebar a, nav a").on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
 

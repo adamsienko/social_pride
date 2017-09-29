@@ -158,6 +158,10 @@ body {
         position: absolute;
         bottom: 20px;
         left: 49%;
+         @media#{$tablet} {
+            display: none;
+        }
+        
     }
     /*DOTS NAV*/
     #cd-vertical-nav {

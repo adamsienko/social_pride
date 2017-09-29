@@ -102,6 +102,12 @@ $(function () {
         }
     });
     
+/*HIDE NAV MENU AFTER CLICK  */
+    
+      $('.nav a').click(function () {
+        $('.navbar-collapse').collapse('hide');
+    });
+    
 //    CHANGING LOGO
    $("#blog").scroll(function(){
         $("#logo-blog").fadeIn();

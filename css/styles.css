@@ -229,14 +229,13 @@ body {
     font-size: 55px;
     font-weight: 700;
     margin-top: 0;
-    padding-top: 80px;
+    padding-top: 3%;
     letter-spacing: 3px; }
 
 @media only screen and (max-width: 768px) {
   body h2 {
     font-size: 43px; } }
   body #main {
-    height: 100vh;
     background-image: url(../img/background-main.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -328,8 +327,6 @@ body {
       background: linear-gradient(90deg, #2b2c31 47px, transparent 1%) center, linear-gradient(#3c3d41 3px, transparent 1%) center, #2b2c31;
       background-size: 50px 50px;
       z-index: -1; }
-    body #offer h2 {
-      padding-top: 77px; }
     body #offer .offer-header {
       width: 50%;
       margin: auto;
@@ -397,12 +394,6 @@ body {
     position: relative;
     background-color: #fff;
     padding-bottom: 72px; }
-    body #blog h2 {
-      padding-top: 84px; }
-
-@media only screen and (max-width: 768px) {
-  body #blog h2 {
-    padding-top: 45px; } }
     body #blog .blog-content,
     body #blog .blog-all {
       color: #000;
@@ -495,12 +486,7 @@ body {
   body #contact {
     padding-bottom: 80px; } }
     body #contact h2 {
-      color: #fff;
-      padding-top: 75px; }
-
-@media only screen and (max-width: 768px) {
-  body #contact h2 {
-    padding-top: 45px; } }
+      color: #fff; }
     body #contact .contact-inner {
       width: 50%;
       margin: auto;

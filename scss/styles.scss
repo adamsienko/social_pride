@@ -158,10 +158,9 @@ body {
         position: absolute;
         bottom: 20px;
         left: 49%;
-         @media#{$tablet} {
+        @media#{$tablet} {
             display: none;
         }
-        
     }
     /*DOTS NAV*/
     #cd-vertical-nav {
@@ -171,7 +170,7 @@ body {
         bottom: auto;
         transform: translateY(-50%);
         z-index: 1;
-         @media#{$tablet} {
+        @media#{$tablet} {
             display: none;
         }
         ul {
@@ -241,18 +240,14 @@ body {
                     width: 70px;
                 }
             }
-            a{
+            a {
                 color: #fff;
                 font-family: 'Saira Extra Condensed', sans-serif;
                 font-size: 26px;
-                
-                &:hover{
+                &:hover {
                     color: #000;
-                   
                 }
             }
-            
-            
         }
         .icon-bar {
             background-color: #fff;
@@ -275,7 +270,7 @@ body {
         font-size: 55px;
         font-weight: 700;
         margin-top: 0;
-        padding-top: 80px;
+        padding-top: 3%;
         letter-spacing: 3px;
         @media#{$tablet} {
             font-size: 43px;
@@ -283,7 +278,7 @@ body {
     }
     /*MAIN*/
     #main {
-        height: 100vh;
+//        height: 100vh;
         background-image: url(../img/background-main.png);
         background-repeat: no-repeat;
         background-size: contain;
@@ -370,9 +365,9 @@ body {
         background-repeat: no-repeat;
         background-size: auto;
         background-position: center;
-         @media#{$desktop} {
-                padding-bottom: 0;
-            }
+        @media#{$desktop} {
+            padding-bottom: 0;
+        }
         &:before {
             content: '';
             position: absolute;
@@ -384,9 +379,7 @@ body {
             background-size: 50px 50px;
             z-index: -1;
         }
-        h2 {
-            padding-top: 77px;
-        }
+      
         .offer-header {
             width: 50%;
             margin: auto;
@@ -452,12 +445,6 @@ body {
         position: relative;
         background-color: #fff;
         padding-bottom: 72px;
-        h2 {
-            padding-top: 84px;
-            @media#{$tablet} {
-                padding-top: 45px;
-            }
-        }
         .blog-content,
         .blog-all {
             color: #000;
@@ -551,10 +538,7 @@ body {
         }
         h2 {
             color: #fff;
-            padding-top: 75px;
-            @media#{$tablet} {
-                padding-top: 45px;
-            }
+           
         }
         .contact-inner {
             width: 50%;

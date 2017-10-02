@@ -171,6 +171,9 @@ body {
         bottom: auto;
         transform: translateY(-50%);
         z-index: 1;
+         @media#{$tablet} {
+            display: none;
+        }
         ul {
             list-style: none;
             direction: rtl;
@@ -367,6 +370,9 @@ body {
         background-repeat: no-repeat;
         background-size: auto;
         background-position: center;
+         @media#{$desktop} {
+                padding-bottom: 0;
+            }
         &:before {
             content: '';
             position: absolute;

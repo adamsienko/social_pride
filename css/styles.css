@@ -150,6 +150,10 @@ body {
     bottom: auto;
     transform: translateY(-50%);
     z-index: 1; }
+
+@media only screen and (max-width: 768px) {
+  body #cd-vertical-nav {
+    display: none; } }
     body #cd-vertical-nav ul {
       list-style: none;
       direction: rtl;
@@ -310,6 +314,10 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center; }
+
+@media only screen and (max-width: 992px) {
+  body #offer {
+    padding-bottom: 0; } }
     body #offer:before {
       content: '';
       position: absolute;

@@ -87,10 +87,8 @@ $(function () {
 /*FULL PAGE JS*/
 
 $(document).ready(function () {
-    $('#fullpage').fullpage({});
-//    anchors: ['main', 'about', 'offer', 'blog', 'contact'],
-//        menu: '#myMenu'
+    $('#fullpage').fullpage({
+    anchors: ['main', 'about', 'offer', 'blog', 'contact'],
+        menu: '#myMenu'
 });
-$(document).on('click', '#moveTo', function () {
-    $.fn.fullpage.moveTo('page2', 1);
 });

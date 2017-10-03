@@ -276,9 +276,19 @@ body {
             font-size: 43px;
         }
     }
+     .logo-sm {
+            img {
+                position: fixed;
+                left: 84px;
+                top: 80px;
+                z-index: 1;
+                @media#{$tablet} {
+                    display: none
+                }
+         }
+    }
     /*MAIN*/
-    #main {
-        //        height: 100vh;
+    #main1 {
         background-image: url(../img/background-main.png);
         background-repeat: no-repeat;
         background-size: contain;
@@ -310,7 +320,7 @@ body {
         }
     }
     /*ABOUT*/
-    #about {
+    #about1 {
         position: relative;
         background-image: url(../img/background-main.png);
         background-repeat: no-repeat;
@@ -379,7 +389,7 @@ body {
 
 /*OFFER*/
 
-#offer {
+#offer1 {
     position: relative;
     //    padding-bottom: 30px;
     background-image: url(../img/background-offer.png);
@@ -489,7 +499,7 @@ body {
 
 /*BLOG*/
 
-#blog {
+#blog1 {
     position: relative;
     background-color: #fff; 
     h2{
@@ -574,7 +584,7 @@ body {
 
 /*KONTAKT*/
 
-#contact {
+#contact1 {
     background-color: #1f59d1;
     padding-bottom: 165px;
     background-image: url(../img/background-contact.png);

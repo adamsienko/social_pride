@@ -84,7 +84,8 @@ $(function () {
 
 $(document).ready(function () {
     $('#fullpage').fullpage({
-    anchors: ['main1', 'about1', 'offer1', 'blog1', 'contact1'],
+        anchors: ['main', 'about', 'offer', 'blog', 'contact'],
         menu: '#myMenu'
-});
+
+    });
 });

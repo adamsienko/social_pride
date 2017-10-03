@@ -232,99 +232,108 @@ body {
 @media only screen and (max-width: 768px) {
   body h2 {
     font-size: 43px; } }
-  body #main {
+  body .logo-sm img {
+    position: fixed;
+    left: 84px;
+    top: 80px;
+    z-index: 1; }
+
+@media only screen and (max-width: 768px) {
+  body .logo-sm img {
+    display: none; } }
+  body #main1 {
     background-image: url(../img/background-main.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center; }
-    body #main .logo-sm img {
+    body #main1 .logo-sm img {
       position: fixed;
       left: 84px;
       top: 80px;
       z-index: 1; }
 
 @media only screen and (max-width: 768px) {
-  body #main .logo-sm img {
+  body #main1 .logo-sm img {
     display: none; } }
-    body #main .logo-sm #logo-main {
+    body #main1 .logo-sm #logo-main {
       opacity: 1; }
-    body #main .logo-sm #logo-blog {
+    body #main1 .logo-sm #logo-blog {
       display: none; }
-    body #main .logo-sm #logo-contact {
+    body #main1 .logo-sm #logo-contact {
       display: none; }
-    body #main .main-header {
+    body #main1 .main-header {
       position: absolute;
       top: 20%;
       width: 100%; }
-  body #about {
+  body #about1 {
     position: relative;
     background-image: url(../img/background-main.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center; }
-    body #about .about-header {
+    body #about1 .about-header {
       width: 60%;
       margin: auto;
       font-family: 'Playfair Display', serif;
       font-size: 15px; }
 
 @media only screen and (max-width: 992px) {
-  body #about .about-header {
+  body #about1 .about-header {
     width: 70%;
     font-size: 14px; } }
 
 @media only screen and (max-width: 768px) {
-  body #about .about-header {
+  body #about1 .about-header {
     font-size: 12px;
     width: 80%; } }
-    body #about .about-main {
+    body #about1 .about-main {
       width: 80%;
       padding-top: 40px; }
 
 @media only screen and (max-width: 992px) {
-  body #about .about-main {
+  body #about1 .about-main {
     padding-top: 10px;
     width: 90%; } }
 
 @media only screen and (max-width: 992px) {
-  body #about .about-main img {
+  body #about1 .about-main img {
     width: 40px; } }
 
 @media only screen and (max-width: 768px) {
-  body #about .about-main img {
+  body #about1 .about-main img {
     display: none; } }
-    body #about h3 {
+    body #about1 h3 {
       font-family: 'Playfair Display', serif;
       font-size: 16px; }
 
 @media only screen and (max-width: 992px) {
-  body #about h3 {
+  body #about1 h3 {
     font-size: 14px;
     margin-top: 8px; } }
 
 @media only screen and (max-width: 768px) {
-  body #about h3 {
+  body #about1 h3 {
     font-size: 13px; } }
-      body #about h3 span {
+      body #about1 h3 span {
         font-size: 28px; }
 
 @media only screen and (max-width: 992px) {
-  body #about h3 span {
+  body #about1 h3 span {
     font-size: 23px; } }
 
 @media only screen and (max-width: 768px) {
-  body #about h3 span {
+  body #about1 h3 span {
     font-size: 21px; } }
-    body #about p {
+    body #about1 p {
       font-family: 'Muli', sans-serif;
       font-size: 13px; }
 
 @media only screen and (max-width: 768px) {
-  body #about p {
+  body #about1 p {
     font-size: 11px; } }
 
 /*OFFER*/
-#offer {
+#offer1 {
   position: relative;
   background-image: url(../img/background-offer.png);
   background-repeat: no-repeat;
@@ -333,7 +342,7 @@ body {
   /* @mediaonly screen and (max-width: 992px) {
         padding-bottom: 0;
     }*/ }
-  #offer:before {
+  #offer1:before {
     content: '';
     position: absolute;
     top: 0;
@@ -343,107 +352,107 @@ body {
     background: linear-gradient(90deg, #2b2c31 47px, transparent 1%) center, linear-gradient(#3c3d41 3px, transparent 1%) center, #2b2c31;
     background-size: 50px 50px;
     z-index: -1; }
-  #offer .offer-header {
+  #offer1 .offer-header {
     width: 60%;
     margin: auto;
     font-family: 'Playfair Display', serif;
     font-size: 15px; }
 
 @media only screen and (max-width: 992px) {
-  #offer .offer-header {
+  #offer1 .offer-header {
     width: 70%;
     font-size: 14px; } }
 
 @media only screen and (max-width: 768px) {
-  #offer .offer-header {
+  #offer1 .offer-header {
     font-size: 12px;
     width: 80%; } }
-  #offer .offer-main {
+  #offer1 .offer-main {
     width: 80%; }
-    #offer .offer-main h4 {
+    #offer1 .offer-main h4 {
       font-size: 32px;
       font-family: 'Saira Extra Condensed', sans-serif;
       font-weight: 700; }
 
 @media only screen and (max-width: 992px) {
-  #offer .offer-main h4 {
+  #offer1 .offer-main h4 {
     font-size: 30px; } }
 
 @media only screen and (max-width: 768px) {
-  #offer .offer-main h4 {
+  #offer1 .offer-main h4 {
     font-size: 28px; } }
-    #offer .offer-main p {
+    #offer1 .offer-main p {
       font-family: 'Muli', sans-serif;
       font-size: 13px; }
 
 @media only screen and (max-width: 768px) {
-  #offer .offer-main p {
+  #offer1 .offer-main p {
     font-size: 11px; } }
 
 @media only screen and (max-width: 1200px) {
-  #offer .offer-main img {
+  #offer1 .offer-main img {
     width: 40px; } }
 
 @media only screen and (max-width: 992px) {
-  #offer .offer-main img {
+  #offer1 .offer-main img {
     display: none; } }
-    #offer .offer-main .offer-marketing,
-    #offer .offer-main .offer-szkolenia {
+    #offer1 .offer-main .offer-marketing,
+    #offer1 .offer-main .offer-szkolenia {
       text-align: left;
       padding: 0; }
 
 @media only screen and (max-width: 1200px) {
-  #offer .offer-main .offer-marketing,
-  #offer .offer-main .offer-szkolenia {
+  #offer1 .offer-main .offer-marketing,
+  #offer1 .offer-main .offer-szkolenia {
     margin-top: 0; } }
 
 @media only screen and (max-width: 992px) {
-  #offer .offer-main .offer-marketing,
-  #offer .offer-main .offer-szkolenia {
+  #offer1 .offer-main .offer-marketing,
+  #offer1 .offer-main .offer-szkolenia {
     margin-top: 10px; } }
 
 @media only screen and (max-width: 768px) {
-  #offer .offer-main .offer-marketing,
-  #offer .offer-main .offer-szkolenia {
+  #offer1 .offer-main .offer-marketing,
+  #offer1 .offer-main .offer-szkolenia {
     text-align: center; } }
-    #offer .offer-main .offer-marketing {
+    #offer1 .offer-main .offer-marketing {
       margin-top: -50px;
       padding-top: 0; }
 
 @media only screen and (max-width: 1200px) {
-  #offer .offer-main .offer-marketing {
+  #offer1 .offer-main .offer-marketing {
     margin-top: -20px; } }
-    #offer .offer-main .offer-social {
+    #offer1 .offer-main .offer-social {
       text-align: right;
       margin-top: -115px;
       padding: 0; }
 
 @media only screen and (max-width: 1200px) {
-  #offer .offer-main .offer-social {
+  #offer1 .offer-main .offer-social {
     margin-top: -20px; } }
 
 @media only screen and (max-width: 992px) {
-  #offer .offer-main .offer-social {
+  #offer1 .offer-main .offer-social {
     margin-top: 10px; } }
 
 @media only screen and (max-width: 768px) {
-  #offer .offer-main .offer-social {
+  #offer1 .offer-main .offer-social {
     text-align: center; } }
-    #offer .offer-main .offer-szkolenia {
+    #offer1 .offer-main .offer-szkolenia {
       margin-top: -115px; }
 
 @media only screen and (max-width: 1200px) {
-  #offer .offer-main .offer-szkolenia {
+  #offer1 .offer-main .offer-szkolenia {
     margin-top: 0; } }
 
 /*BLOG*/
-#blog {
+#blog1 {
   position: relative;
   background-color: #fff; }
-  #blog h2 {
+  #blog1 h2 {
     margin-bottom: 0; }
-  #blog .blog-content,
-  #blog .blog-all {
+  #blog1 .blog-content,
+  #blog1 .blog-all {
     color: #000;
     width: 60%;
     margin: auto;
@@ -451,78 +460,78 @@ body {
     padding-bottom: 0; }
 
 @media only screen and (max-width: 992px) {
-  #blog .blog-content,
-  #blog .blog-all {
+  #blog1 .blog-content,
+  #blog1 .blog-all {
     width: 70%; } }
 
 @media only screen and (max-width: 768px) {
-  #blog .blog-content,
-  #blog .blog-all {
+  #blog1 .blog-content,
+  #blog1 .blog-all {
     width: 80%; } }
-    #blog .blog-content h5,
-    #blog .blog-all h5 {
+    #blog1 .blog-content h5,
+    #blog1 .blog-all h5 {
       font-size: 23px;
       font-family: 'Playfair Display', serif; }
 
 @media only screen and (max-width: 992px) {
-  #blog .blog-content h5,
-  #blog .blog-all h5 {
+  #blog1 .blog-content h5,
+  #blog1 .blog-all h5 {
     font-size: 21px; } }
 
 @media only screen and (max-width: 768px) {
-  #blog .blog-content h5,
-  #blog .blog-all h5 {
+  #blog1 .blog-content h5,
+  #blog1 .blog-all h5 {
     font-size: 19px; } }
-    #blog .blog-content p,
-    #blog .blog-all p {
+    #blog1 .blog-content p,
+    #blog1 .blog-all p {
       font-size: 13px;
       font-family: 'Muli', sans-serif;
       margin-bottom: 0; }
 
 @media only screen and (max-width: 768px) {
-  #blog .blog-content p,
-  #blog .blog-all p {
+  #blog1 .blog-content p,
+  #blog1 .blog-all p {
     font-size: 11px; } }
-    #blog .blog-content .more,
-    #blog .blog-all .more {
+    #blog1 .blog-content .more,
+    #blog1 .blog-all .more {
       border-top: solid 1px #1f59d1;
       width: 70px;
       margin: auto;
       margin-top: 10px; }
-      #blog .blog-content .more a,
-      #blog .blog-all .more a {
+      #blog1 .blog-content .more a,
+      #blog1 .blog-all .more a {
         font-family: 'Saira Extra Condensed', sans-serif;
         font-size: 16px;
         font-weight: 500;
         color: #1f59d1; }
-      #blog .blog-content .more :hover,
-      #blog .blog-all .more :hover {
+      #blog1 .blog-content .more :hover,
+      #blog1 .blog-all .more :hover {
         text-decoration: none; }
-  #blog a {
+  #blog1 a {
     font-size: 16px;
     font-family: 'Saira Extra Condensed', sans-serif;
     color: #000;
     margin-top: 20px; }
-  #blog :hover {
+  #blog1 :hover {
     text-decoration: none; }
-  #blog .blog-all {
+  #blog1 .blog-all {
     width: 80%;
     display: none; }
 
 @media only screen and (max-width: 768px) {
-  #blog .blog-all {
+  #blog1 .blog-all {
     width: 90%; } }
-    #blog .blog-all .blog-all-image {
+    #blog1 .blog-all .blog-all-image {
       background-image: url(../img/blog-back.jpg);
       background-position: bottom; }
-    #blog .blog-all p,
-    #blog .blog-all h5 {
+    #blog1 .blog-all p,
+    #blog1 .blog-all h5 {
       width: 80%;
       margin: auto;
       padding-top: 20px; }
 
 /*KONTAKT*/
-#contact {
+#contact1 {
   background-color: #1f59d1;
   padding-bottom: 165px;
   background-image: url(../img/background-contact.png);
@@ -531,65 +540,65 @@ body {
   background-position: center; }
 
 @media only screen and (max-width: 768px) {
-  #contact {
+  #contact1 {
     padding-bottom: 80px; } }
-  #contact h2 {
+  #contact1 h2 {
     color: #fff; }
-  #contact .contact-inner {
+  #contact1 .contact-inner {
     width: 50%;
     margin: auto;
     padding-top: 20px; }
 
 @media only screen and (max-width: 992px) {
-  #contact .contact-inner {
+  #contact1 .contact-inner {
     width: 70%; } }
 
 @media only screen and (max-width: 768px) {
-  #contact .contact-inner {
+  #contact1 .contact-inner {
     width: 80%; } }
-    #contact .contact-inner .contact-owner {
+    #contact1 .contact-inner .contact-owner {
       width: 100%;
       padding-top: 40px;
       margin-left: -27px; }
 
 @media only screen and (max-width: 768px) {
-  #contact .contact-inner .contact-owner {
+  #contact1 .contact-inner .contact-owner {
     margin-left: 0; } }
-      #contact .contact-inner .contact-owner .photo {
+      #contact1 .contact-inner .contact-owner .photo {
         text-align: right; }
 
 @media only screen and (max-width: 768px) {
-  #contact .contact-inner .contact-owner .photo {
+  #contact1 .contact-inner .contact-owner .photo {
     text-align: center; } }
-      #contact .contact-inner .contact-owner .contact-data {
+      #contact1 .contact-inner .contact-owner .contact-data {
         text-align: left;
         padding-left: 9px;
         margin-top: -7px; }
 
 @media only screen and (max-width: 768px) {
-  #contact .contact-inner .contact-owner .contact-data {
+  #contact1 .contact-inner .contact-owner .contact-data {
     text-align: center; } }
-        #contact .contact-inner .contact-owner .contact-data h6 {
+        #contact1 .contact-inner .contact-owner .contact-data h6 {
           font-family: 'Saira Extra Condensed', sans-serif;
           font-weight: 700;
           font-size: 25px; }
-        #contact .contact-inner .contact-owner .contact-data p {
+        #contact1 .contact-inner .contact-owner .contact-data p {
           font-family: 'Muli', sans-serif;
           font-size: 15px; }
-          #contact .contact-inner .contact-owner .contact-data p a {
+          #contact1 .contact-inner .contact-owner .contact-data p a {
             text-decoration: none;
             color: #fff; }
-            #contact .contact-inner .contact-owner .contact-data p a :hover {
+            #contact1 .contact-inner .contact-owner .contact-data p a :hover {
               text-decoration: none; }
-    #contact .contact-inner address,
-    #contact .contact-inner p {
+    #contact1 .contact-inner address,
+    #contact1 .contact-inner p {
       font-family: 'Muli', sans-serif;
       font-size: 16px; }
 
 @media only screen and (max-width: 768px) {
-  #contact .contact-inner address,
-  #contact .contact-inner p {
+  #contact1 .contact-inner address,
+  #contact1 .contact-inner p {
     font-size: 13px; } }
-    #contact .contact-inner address {
+    #contact1 .contact-inner address {
       padding-top: 40px;
       padding-bottom: 10px; }

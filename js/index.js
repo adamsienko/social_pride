@@ -78,17 +78,13 @@ $(function () {
         $('.navbar-collapse').collapse('hide');
     });
 
-
-
-
-
 });
 
 /*FULL PAGE JS*/
 
 $(document).ready(function () {
     $('#fullpage').fullpage({
-    anchors: ['main', 'about', 'offer', 'blog', 'contact'],
+    anchors: ['main1', 'about1', 'offer1', 'blog1', 'contact1'],
         menu: '#myMenu'
 });
 });

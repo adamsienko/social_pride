@@ -292,7 +292,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   body #about .about-main img {
-    width: 30px; } }
+    display: none; } }
     body #about h3 {
       font-family: 'Playfair Display', serif;
       font-size: 16px; }
@@ -359,8 +359,7 @@ body {
     font-size: 12px;
     width: 80%; } }
   #offer .offer-main {
-    width: 80%;
-    padding-bottom: 80px; }
+    width: 80%; }
     #offer .offer-main h4 {
       font-size: 32px;
       font-family: 'Saira Extra Condensed', sans-serif;
@@ -413,15 +412,15 @@ body {
 
 @media only screen and (max-width: 1200px) {
   #offer .offer-main .offer-marketing {
-    margin-top: 0; } }
+    margin-top: -20px; } }
     #offer .offer-main .offer-social {
       text-align: right;
-      margin-top: -120px;
+      margin-top: -115px;
       padding: 0; }
 
 @media only screen and (max-width: 1200px) {
   #offer .offer-main .offer-social {
-    margin-top: 0; } }
+    margin-top: -20px; } }
 
 @media only screen and (max-width: 992px) {
   #offer .offer-main .offer-social {
@@ -431,7 +430,7 @@ body {
   #offer .offer-main .offer-social {
     text-align: center; } }
     #offer .offer-main .offer-szkolenia {
-      margin-top: -120px; }
+      margin-top: -115px; }
 
 @media only screen and (max-width: 1200px) {
   #offer .offer-main .offer-szkolenia {
@@ -440,15 +439,16 @@ body {
 /*BLOG*/
 #blog {
   position: relative;
-  background-color: #fff;
-  padding-bottom: 72px; }
+  background-color: #fff; }
+  #blog h2 {
+    margin-bottom: 0; }
   #blog .blog-content,
   #blog .blog-all {
     color: #000;
-    width: 50%;
+    width: 60%;
     margin: auto;
-    padding-top: 24px;
-    padding-bottom: 17px; }
+    padding-top: 10px;
+    padding-bottom: 0; }
 
 @media only screen and (max-width: 992px) {
   #blog .blog-content,
@@ -461,28 +461,34 @@ body {
     width: 80%; } }
     #blog .blog-content h5,
     #blog .blog-all h5 {
-      font-size: 25px;
+      font-size: 23px;
       font-family: 'Playfair Display', serif; }
+
+@media only screen and (max-width: 992px) {
+  #blog .blog-content h5,
+  #blog .blog-all h5 {
+    font-size: 21px; } }
 
 @media only screen and (max-width: 768px) {
   #blog .blog-content h5,
   #blog .blog-all h5 {
-    font-size: 22px; } }
+    font-size: 19px; } }
     #blog .blog-content p,
     #blog .blog-all p {
-      font-size: 15px;
-      font-family: 'Muli', sans-serif; }
+      font-size: 13px;
+      font-family: 'Muli', sans-serif;
+      margin-bottom: 0; }
 
 @media only screen and (max-width: 768px) {
   #blog .blog-content p,
   #blog .blog-all p {
-    font-size: 13px; } }
+    font-size: 11px; } }
     #blog .blog-content .more,
     #blog .blog-all .more {
       border-top: solid 1px #1f59d1;
       width: 70px;
       margin: auto;
-      margin-top: 20px; }
+      margin-top: 10px; }
       #blog .blog-content .more a,
       #blog .blog-all .more a {
         font-family: 'Saira Extra Condensed', sans-serif;
@@ -492,19 +498,11 @@ body {
       #blog .blog-content .more :hover,
       #blog .blog-all .more :hover {
         text-decoration: none; }
-  #blog .blog-middle {
-    background-image: url(../img/blog-back.jpg);
-    background-position: bottom;
-    width: 100%;
-    background-size: cover; }
-    #blog .blog-middle h5,
-    #blog .blog-middle p {
-      width: 50%;
-      margin: auto; }
   #blog a {
     font-size: 16px;
     font-family: 'Saira Extra Condensed', sans-serif;
-    color: #1f59d1; }
+    color: #000;
+    margin-top: 20px; }
   #blog :hover {
     text-decoration: none; }
   #blog .blog-all {

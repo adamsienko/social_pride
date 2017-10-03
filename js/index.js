@@ -84,7 +84,7 @@ $(function () {
 
 $(document).ready(function () {
     $('#fullpage').fullpage({
-        anchors: ['main', 'about', 'offer', 'blog', 'contact'],
+        anchors: ['main', 'about', 'offer', 'blog', 'blog2', 'contact'],
         menu: '#myMenu'
 
     });

@@ -27,6 +27,7 @@ body {
             transform: translate(-50%, -50%);
             padding-right: 57px;
             padding-top: 58px;
+            
             li,
             li a {
                 font-family: 'Saira Extra Condensed', sans-serif;
@@ -177,6 +178,7 @@ body {
             list-style: none;
             direction: rtl;
             margin-left: -5px;
+            padding-right: 0;
         }
         li {
             text-align: left;
@@ -259,6 +261,15 @@ body {
         }
     }
     /*SECTIONS*/
+    .shadowfilter {
+	-webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));
+	-webkit-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+	
+}.shadowfilter:hover {
+	-webkit-filter: drop-shadow(0px 0px 8px rgba(0, 231, 255, 0.8));
+}
     h1 {
         font-family: 'Playfair Display', serif;
         font-size: 9vh;
@@ -276,16 +287,16 @@ body {
             font-size: 43px;
         }
     }
-     .logo-sm {
-            img {
-                position: fixed;
-                left: 84px;
-                top: 80px;
-                z-index: 1;
-                @media#{$tablet} {
-                    display: none
-                }
-         }
+    .logo-sm {
+        img {
+            position: absolute;
+            left: 84px;
+            top: 80px;
+            z-index: 1;
+            @media#{$tablet} {
+                display: none
+            }
+        }
     }
     /*MAIN*/
     #main1 {
@@ -293,7 +304,7 @@ body {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
-        .logo-sm {
+        /*      .logo-sm {
             img {
                 position: fixed;
                 left: 84px;
@@ -312,7 +323,7 @@ body {
             #logo-contact {
                 display: none;
             }
-        }
+        }*/
         .main-header {
             position: absolute;
             top: 20%;
@@ -347,6 +358,10 @@ body {
                 padding-top: 10px;
                 width: 90%;
             }
+            
+
+
+
             img {
                 @media#{$desktop} {
                     width: 40px;
@@ -501,8 +516,8 @@ body {
 
 #blog1 {
     position: relative;
-    background-color: #fff; 
-    h2{
+    background-color: #fff;
+    h2 {
         margin-bottom: 0;
     }
     .blog-content,
@@ -521,7 +536,7 @@ body {
         h5 {
             font-size: 23px;
             font-family: 'Playfair Display', serif;
-             @media#{$desktop} {
+            @media#{$desktop} {
                 font-size: 21px;
             }
             @media#{$tablet} {
@@ -552,7 +567,6 @@ body {
             }
         }
     }
-
     a {
         font-size: 16px;
         font-family: 'Saira Extra Condensed', sans-serif;
@@ -585,6 +599,7 @@ body {
 /*KONTAKT*/
 
 #contact1 {
+    position: relative;
     background-color: #1f59d1;
     padding-bottom: 165px;
     background-image: url(../img/background-contact.png);

@@ -154,7 +154,8 @@ body {
     body #cd-vertical-nav ul {
       list-style: none;
       direction: rtl;
-      margin-left: -5px; }
+      margin-left: -5px;
+      padding-right: 0; }
     body #cd-vertical-nav li {
       text-align: left;
       line-height: 7vh; }
@@ -216,6 +217,13 @@ body {
     height: 2px; }
   body .navbar-mobile .icon-bar + .icon-bar {
     margin-top: 7px; }
+  body .shadowfilter {
+    -webkit-filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.8));
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear; }
+  body .shadowfilter:hover {
+    -webkit-filter: drop-shadow(0px 0px 8px rgba(0, 231, 255, 0.8)); }
   body h1 {
     font-family: 'Playfair Display', serif;
     font-size: 9vh;
@@ -233,7 +241,7 @@ body {
   body h2 {
     font-size: 43px; } }
   body .logo-sm img {
-    position: fixed;
+    position: absolute;
     left: 84px;
     top: 80px;
     z-index: 1; }
@@ -245,22 +253,27 @@ body {
     background-image: url(../img/background-main.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center; }
-    body #main1 .logo-sm img {
-      position: fixed;
-      left: 84px;
-      top: 80px;
-      z-index: 1; }
-
-@media only screen and (max-width: 768px) {
-  body #main1 .logo-sm img {
-    display: none; } }
-    body #main1 .logo-sm #logo-main {
-      opacity: 1; }
-    body #main1 .logo-sm #logo-blog {
-      display: none; }
-    body #main1 .logo-sm #logo-contact {
-      display: none; }
+    background-position: center;
+    /*      .logo-sm {
+            img {
+                position: fixed;
+                left: 84px;
+                top: 80px;
+                z-index: 1;
+                @mediaonly screen and (max-width: 768px) {
+                    display: none
+                }
+            }
+            #logo-main {
+                opacity: 1;
+            }
+            #logo-blog {
+                display: none;
+            }
+            #logo-contact {
+                display: none;
+            }
+        }*/ }
     body #main1 .main-header {
       position: absolute;
       top: 20%;
@@ -532,6 +545,7 @@ body {
 
 /*KONTAKT*/
 #contact1 {
+  position: relative;
   background-color: #1f59d1;
   padding-bottom: 165px;
   background-image: url(../img/background-contact.png);

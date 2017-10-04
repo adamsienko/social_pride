@@ -13,13 +13,12 @@
     <!--    <link rel="stylesheet" href="../app/font-awesome-4.7.0/css/font-awesome.min.css">-->
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <script src="js/index.js"></script>
-    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <link rel="stylesheet" href="css/dots.css">
+    <script src="js/modernizr.min.js"></script>
 </head>
 
 <body>
+   
     <div id="hamburger">
         <div id="nav-icon2" class="menu">
             <div class="menu-inner">
@@ -44,40 +43,17 @@
             <li data-menuanchor="contact"><a href="#contact">KONTAKT</a></li>
         </ul>
     </div>
-    <nav id="cd-vertical-nav">
+
+    <div class="dotstyle dotstyle-tooltip">
         <ul>
-            <li>
-                <a href="#main" data-number="1">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">Strona główna</span>
-                </a>
-            </li>
-            <li>
-                <a href="#about" data-number="2">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">O nas</span>
-                </a>
-            </li>
-            <li>
-                <a href="#offer" data-number="3">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">Oferta</span>
-                </a>
-            </li>
-            <li>
-                <a href="#blog" data-number="4">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">Blog</span>
-                </a>
-            </li>
-            <li>
-                <a href="#contact" data-number="5">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">Kontakt</span>
-                </a>
-            </li>
+            <li class="current"><a href="#main1">Strona główna</a></li>
+            <li><a href="#about1">O nas</a></li>
+            <li><a href="#offer1">Oferta</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Kontakt</a></li>
         </ul>
-    </nav>
+    </div>
+
 
     <nav class="navbar navbar-mobile navbar-fixed-top">
         <div class="container">
@@ -89,10 +65,8 @@
                 <span class="icon-bar"></span>
               </button>
                 <a class="navbar-brand" href="#main"><img src="img/logo-on-blue.png" alt=""></a>
-
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#main">SOCIAL PRIDE</a></li>
                     <li><a href="#about">O NAS</a></li>
@@ -105,6 +79,7 @@
     </nav>
 
     <div id="fullpage">
+
         <section id="main1" class="section">
 
             <div class="main-header">
@@ -209,13 +184,12 @@
             <div id="button">
                 <a href="#/" id="see-all">zobacz wszystkie</a>
             </div>
-
-
             <a href="#contact" class="cd-scroll-down"><img src="img/scroll-black.png" alt=""></a>
             <div class="logo-sm">
                 <img id="logo-main" src="img/logo-on-white.png" alt="">
             </div>
         </section>
+
         <div class="container blog-all section" id="blog-all" style="display: none">
             <div class="row">
                 <div class="col-md-6 blog-all-content">
@@ -314,6 +288,21 @@
         </section>
     </div>
 
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script src="js/dots.js"></script>
+    <script>
+        [].slice.call(document.querySelectorAll('.dotstyle > ul')).forEach(function(nav) {
+            new DotNav(nav, {
+                callback: function(idx) {
+                    //console.log( idx )
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

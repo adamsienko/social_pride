@@ -272,7 +272,7 @@ body {
         }
     }
     /*  EXTRAS*/
-    /*    SCROLL PAGE*/
+    /* SCROLL PAGE*/
     .cd-scroll-down {
         position: absolute;
         bottom: 20px;
@@ -509,7 +509,7 @@ body {
 /*BLOG*/
 
 #blog1 {
-    position: relative;
+//    position: relative;
     background-color: #fff;
     h2 {
         margin-bottom: 0;
@@ -579,7 +579,7 @@ body {
 }
 
 .blog-all {
-    width: 100%;
+//    width: 100%;
     color: #000;
     background-color: #fff;
     .blog-all-content {
@@ -640,8 +640,7 @@ body {
 #contact1 {
     position: relative;
     background-color: #1f59d1;
-    padding-bottom: 165px;
-    background-image: url(../img/background-contact.png);
+      background-image: url(../img/background-contact.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;

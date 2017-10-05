@@ -27,7 +27,7 @@ $(function () {
 
     //    BLOG SHOW / HIDE
 
-    $('#see-all').click(function () {
+/*    $('#see-all').click(function () {
         $('#blog-all').slideToggle('slow');
 
     });
@@ -38,7 +38,7 @@ $(function () {
         } else {
             $(this).children("#see-all").text("zobacz wszystkie");
         }
-    });
+    });*/
 
     /*HIDE MOBILE MENU AFTER CLICK  */
 
@@ -52,8 +52,10 @@ $(function () {
 
 $(document).ready(function () {
     $('#fullpage').fullpage({
-        anchors: ['main', 'about', 'offer', 'blog', 'blog2', 'contact'],
+        anchors: ['main', 'about', 'offer', 'blog', 'contact'],
         menu: '#myMenu',
+        
+        
 
         afterLoad: function (anchorLink, index) {
             var loadedSection = $(this);
@@ -74,10 +76,7 @@ $(document).ready(function () {
                  $('.dotstyle li:nth-child(4)').addClass('active current');
                 $('.dotstyle li:not(:nth-child(4))').removeClass('active current');
             }  
-          if (anchorLink == 'blog2') {
-                 $('.dotstyle li:nth-child(4)').addClass('active current');
-                $('.dotstyle li:not(:nth-child(4))').removeClass('active current');
-            }
+  
             if (anchorLink == 'contact') {
                   $('.dotstyle li:nth-child(5)').addClass('active current');
                 $('.dotstyle li:not(:nth-child(5))').removeClass('active current');

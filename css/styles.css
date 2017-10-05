@@ -6,7 +6,7 @@ body {
   color: #fff;
   /*NAV MOBILE*/
   /*  EXTRAS*/
-  /*    SCROLL PAGE*/
+  /* SCROLL PAGE*/
   /*SECTIONS*/
   /*MAIN*/
   /*ABOUT*/ }
@@ -457,7 +457,6 @@ body {
 
 /*BLOG*/
 #blog1 {
-  position: relative;
   background-color: #fff; }
   #blog1 h2 {
     margin-bottom: 0; }
@@ -518,7 +517,6 @@ body {
     text-decoration: none; }
 
 .blog-all {
-  width: 100%;
   color: #000;
   background-color: #fff; }
   .blog-all .blog-all-content {
@@ -571,7 +569,6 @@ body {
 #contact1 {
   position: relative;
   background-color: #1f59d1;
-  padding-bottom: 165px;
   background-image: url(../img/background-contact.png);
   background-repeat: no-repeat;
   background-size: auto;

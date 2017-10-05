@@ -1,5 +1,12 @@
 $(function () {
-//    DOTS
+    //   CLICLABLE LIST STYLE DOTS
+
+    $('li').css('cursor', 'pointer')
+
+        .click(function () {
+            window.location = $('a', this).attr('href');
+            return false;
+        });
 
 
     //SIEDEBAR
@@ -46,8 +53,35 @@ $(function () {
 $(document).ready(function () {
     $('#fullpage').fullpage({
         anchors: ['main', 'about', 'offer', 'blog', 'blog2', 'contact'],
-        menu: '#myMenu'
+        menu: '#myMenu',
 
-    });
+        afterLoad: function (anchorLink, index) {
+            var loadedSection = $(this);
+
+            if (anchorLink == 'main') {
+                $('.dotstyle li:nth-child(1)').addClass('active current');
+                $('.dotstyle li:not(:nth-child(1))').removeClass('active current');
+            }
+            if (anchorLink == 'about') {
+                $('.dotstyle li:nth-child(2)').addClass('active current');
+                $('.dotstyle li:not(:nth-child(2))').removeClass('active current');
+            }
+            if (anchorLink == 'offer') {
+                $('.dotstyle li:nth-child(3)').addClass('active current');
+                $('.dotstyle li:not(:nth-child(3))').removeClass('active current');
+            }
+            if (anchorLink == 'blog') {
+                 $('.dotstyle li:nth-child(4)').addClass('active current');
+                $('.dotstyle li:not(:nth-child(4))').removeClass('active current');
+            }  
+          if (anchorLink == 'blog2') {
+                 $('.dotstyle li:nth-child(4)').addClass('active current');
+                $('.dotstyle li:not(:nth-child(4))').removeClass('active current');
+            }
+            if (anchorLink == 'contact') {
+                  $('.dotstyle li:nth-child(5)').addClass('active current');
+                $('.dotstyle li:not(:nth-child(5))').removeClass('active current');
+            }
+        }
+    })
 });
-

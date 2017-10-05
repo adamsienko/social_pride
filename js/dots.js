@@ -1,14 +1,3 @@
-/**
- * menu.js v1.0.0
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2014, Codrops
- * http://www.codrops.com
- */
-
 (function (window) {
 
     'use strict';
@@ -41,7 +30,7 @@
 
         dots.forEach(function (dot, idx) {
             dot.addEventListener('click', function (ev) {
-                ev.preventDefault();
+//                ev.preventDefault();
                 if (idx !== current) {
                     dots[current].className = '';
 
@@ -66,3 +55,4 @@
     window.DotNav = DotNav;
 
 })(window);
+

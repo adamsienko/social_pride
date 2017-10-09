@@ -316,6 +316,9 @@ body {
             }
         }
     }
+    .fp-tableCell {
+        display: block;
+    }
     /*SECTIONS*/
     /*MAIN*/
     #main1 {
@@ -396,7 +399,6 @@ body {
     }
 }
 
-
 /*OFFER*/
 
 #offer1 {
@@ -449,7 +451,7 @@ body {
             @media#{$large} {
                 font-size: 11px;
             }
-             @media#{$desktop} {
+            @media#{$desktop} {
                 font-size: 10px;
             }
         }
@@ -508,8 +510,19 @@ body {
 
 /*BLOG*/
 
+.fp-controlArrow {
+    position: absolute;
+    color: #000;
+    left: 23.2%;
+    width: auto;
+    bottom: 120px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+}
+
 #blog1 {
-//    position: relative;
     background-color: #fff;
     h2 {
         margin-bottom: 0;
@@ -523,7 +536,7 @@ body {
         color: #000;
         width: 100%;
         margin: auto;
-        padding-top: 10px;
+        padding-top: 20px;
         padding-bottom: 0;
         transition: all 0.6s;
         h5 {
@@ -576,61 +589,69 @@ body {
      :hover {
         text-decoration: none;
     }
-}
-
-.blog-all {
-//    width: 100%;
-    color: #000;
-    background-color: #fff;
-    .blog-all-content {
-        transition: all 0.5s linear;
-        background-position: bottom;
-        padding-right: 0;
-        padding-left: 0;
+    .cd-scroll-down {
+        left: 24.5%;
     }
-    .blog-all-content:hover {
-        background-image: url(../img/blog-back.jpg);
-        background-position: bottom;
-        opacity: 0.6;
+    .blog-all {
+        color: #000;
+        background-color: #fff;
+        padding-top: 35px;
+        .blog-all-content {
+            transition: all 0.5s linear;
+            background-position: bottom;
+            padding-right: 0;
+            padding-left: 0;
+        }
+        .blog-all-content:hover {
+            background-image: url(../img/blog-back.jpg);
+            background-position: bottom;
+            opacity: 0.6;
+        }
+        h5 {
+            font-size: 21px;
+            font-family: 'Playfair Display', serif;
+            @media#{$desktop} {
+                font-size: 16px;
+            }
+            @media#{$tablet} {
+                font-size: 13px;
+            }
+        }
+        p {
+            font-size: 12px;
+            font-family: 'Muli', sans-serif;
+            margin-bottom: 0;
+            @media#{$tablet} {
+                font-size: 10px;
+            }
+        }
+        p,
+        h5 {
+            width: 80%;
+            margin: auto;
+            padding-top: 10px;
+        }
+        .more {
+            border-top: solid 1px #1f59d1;
+            width: 70px;
+            margin: auto;
+            margin-top: 10px;
+            a {
+                font-family: 'Saira Extra Condensed', sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                color: #1f59d1;
+            }
+             :hover {
+                text-decoration: none;
+            }
+        }
+        .fp-controlArrow {
+            right: -26%;
+        }
+        .cd-scroll-down {
+        right: -24.7%;
     }
-    h5 {
-        font-size: 21px;
-        font-family: 'Playfair Display', serif;
-        @media#{$desktop} {
-            font-size: 16px;
-        }
-        @media#{$tablet} {
-            font-size: 13px;
-        }
-    }
-    p {
-        font-size: 12px;
-        font-family: 'Muli', sans-serif;
-        margin-bottom: 0;
-        @media#{$tablet} {
-            font-size: 10px;
-        }
-    }
-    p,
-    h5 {
-        width: 80%;
-        margin: auto;
-        padding-top: 10px;
-    }
-    .more {
-        border-top: solid 1px #1f59d1;
-        width: 70px;
-        margin: auto;
-        margin-top: 10px;
-        a {
-            font-family: 'Saira Extra Condensed', sans-serif;
-            font-size: 16px;
-            font-weight: 500;
-            color: #1f59d1;
-        }
-         :hover {
-            text-decoration: none;
-        }
     }
 }
 
@@ -640,7 +661,7 @@ body {
 #contact1 {
     position: relative;
     background-color: #1f59d1;
-      background-image: url(../img/background-contact.png);
+    background-image: url(../img/background-contact.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;

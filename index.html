@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Social Pride</title>
     <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:400,500,700" rel="stylesheet">
     <!--    <link rel="stylesheet" href="../app/font-awesome-4.7.0/css/font-awesome.min.css">-->
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fullpage.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/modernizr.min.js"></script>
 </head>
-
 <body>
     <div id="hamburger">
         <div id="nav-icon2" class="menu">
@@ -41,7 +39,6 @@
             <li data-menuanchor="contact"><a href="#contact">KONTAKT</a></li>
         </ul>
     </div>
-
     <div class="dotstyle dotstyle-tooltip">
         <ul>
             <li class="current"><a href="#main">Strona główna</a></li>
@@ -51,8 +48,6 @@
             <li><a href="#contact">Kontakt</a></li>
         </ul>
     </div>
-
-
     <nav class="navbar navbar-mobile navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -75,11 +70,8 @@
             </div>
         </div>
     </nav>
-
     <div id="fullpage">
-
         <section id="main1" class="section">
-
             <div class="main-header">
                 <img src="img/logo.png" alt="social pride">
                 <h1>Kreatywne<br>pomysły,<br>komercyjna<br>rzeczywistość</h1>
@@ -89,7 +81,6 @@
                 <img id="logo-main" src="img/logo-sm.png" alt="">
             </div>
         </section>
-
         <section id="about1" class="section">
             <h2>O NAS</h2>
             <p class="about-header">Social Pride, czyli kreatywne pomysły i komercyjna rzeczywistość. Jesteśmy agencją inną niż wszystkie inne. W pracy z Klientem stawiamy na zaufanie, a na nie trzeba zapracować. Wiemy, że podpisanie umowy to dopiero początek współpracy i każdy dzień weryfikuje jakość naszych usług. Jesteśmy dumnie z faktu, że klienci zostają z nami na lata.</p>
@@ -155,9 +146,6 @@
             </div>
         </section>
         <section id="blog1" class="section">
-           <div class="slide" data-anchor="slide1"><h2>KOTEK</h2></div>
-           <div class="slide active" data-anchor="slide2"><h2>MUSIU</h2></div>
-           <div class="slide" data-anchor="slide3"><h2>KRÓWKA</h2></div>
             <div class="slide">
                 <h2>BLOG</h2>
                 <div class="blog-main">
@@ -183,20 +171,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="fp-controlArrow fp-next" id="button">
-                    <a class="fp-controlArrow fp-next" href="#/" id="see-all">zobacz wszystkie</a>
+                <div class="fp-controlArrow">
+                    zobacz wszystkie
                 </div>
                 <a href="#contact" class="cd-scroll-down"><img src="img/scroll-black.png" alt=""></a>
                 <div class="logo-sm">
                     <img id="logo-main" src="img/logo-on-white.png" alt="">
                 </div>
             </div>
-
-
-            <div class="container blog-all slide">
+            <div class="slide container blog-all">
                 <div class="row">
                     <div class="col-md-6 blog-all-content">
-                        <h5>Najnowszy lub czwarty wpis na blogu</h5>
+                        <h5>Czwarty wpis na blogu</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque recusandae neque reiciendis veritatis distinctio eaque repellat totam provident animi magni ducimus, eveniet, obcaecati quisquam, earum libero officiis ipsa esse quas!</p>
                         <div class="more">
                             <a href="">WIĘCEJ</a>
@@ -242,24 +228,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 blog-all-content">
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque recusandae neque reiciendis veritatis distinctio eaque rLorem ipsum dolor sit amet, consectetur adipisicing elit.epellat totam provident animi magni ducimus, eveniet, obcaecati quisquam, earum libero officiis ipsa esse quas!</p>
-                        <div class="more">
-                            <a href="">WIĘCEJ</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 blog-all-content">
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque recusandae neque reiciendis veritatis distinctio eaque repellat totam provident animi magni ducimus, eveniet, obcaecati quisquam, earum libero officiis ipsa esse quas!</p>
-                        <div class="more">
-                            <a href="">WIĘCEJ</a>
-                        </div>
-                    </div>
+                 <a href="#contact" class="cd-scroll-down"><img src="img/scroll-black.png" alt=""></a>
+                <div class="fp-controlArrow">
+                    wróć
                 </div>
             </div>
-            
         </section>
         <section id="contact1" class="section">
             <h2>KONTAKT</h2>
@@ -292,13 +265,11 @@
         </section>
     </div>
 
-
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
-    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js"></script>
     <script src="js/dots.js"></script>
-    
     <script>
         [].slice.call(document.querySelectorAll('.dotstyle > ul')).forEach(function(nav) {
             new DotNav(nav, {
@@ -309,5 +280,4 @@
         });
     </script>
 </body>
-
 </html>

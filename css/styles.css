@@ -374,15 +374,23 @@ body {
 
 @media only screen and (max-width: 992px) {
   #offer1 .offer-header {
-    width: 70%;
     font-size: 14px; } }
 
 @media only screen and (max-width: 768px) {
   #offer1 .offer-header {
-    font-size: 12px;
-    width: 80%; } }
+    font-size: 12px; } }
+
+@media only screen and (max-width: 480px) {
+  #offer1 .offer-header {
+    width: 90%; } }
   #offer1 .offer-main {
     width: 80%; }
+
+@media only screen and (max-width: 480px) {
+  #offer1 .offer-main {
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0; } }
     #offer1 .offer-main h4 {
       font-size: 32px;
       font-family: 'Saira Extra Condensed', sans-serif;
@@ -395,6 +403,12 @@ body {
 @media only screen and (max-width: 768px) {
   #offer1 .offer-main h4 {
     font-size: 28px; } }
+
+@media only screen and (max-width: 480px) {
+  #offer1 .offer-main h4 {
+    font-size: 22px;
+    margin-bottom: 2px;
+    margin-top: 0; } }
     #offer1 .offer-main p {
       font-family: 'Muli', sans-serif;
       font-size: 12px; }
@@ -440,6 +454,10 @@ body {
 @media only screen and (max-width: 1200px) {
   #offer1 .offer-main .offer-marketing {
     margin-top: -20px; } }
+
+@media only screen and (max-width: 768px) {
+  #offer1 .offer-main .offer-marketing {
+    margin-top: 0px; } }
     #offer1 .offer-main .offer-social {
       text-align: right;
       margin-top: -115px;
@@ -456,6 +474,10 @@ body {
 @media only screen and (max-width: 768px) {
   #offer1 .offer-main .offer-social {
     text-align: center; } }
+
+@media only screen and (max-width: 480px) {
+  #offer1 .offer-main .offer-social {
+    margin-top: 0px; } }
     #offer1 .offer-main .offer-szkolenia {
       margin-top: -115px; }
 

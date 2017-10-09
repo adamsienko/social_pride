@@ -433,16 +433,23 @@ body {
         font-family: 'Playfair Display', serif;
         font-size: 15px;
         @media#{$desktop} {
-            width: 70%;
             font-size: 14px;
         }
         @media#{$tablet} {
             font-size: 12px;
-            width: 80%;
+            
+        }
+         @media#{$phone} {
+            width: 90%;
         }
     }
     .offer-main {
         width: 80%;
+         @media#{$phone} {
+            width: 90%;
+             padding-left: 0;
+             padding-right: 0;
+        }
         h4 {
             font-size: 32px;
             font-family: 'Saira Extra Condensed', sans-serif;
@@ -453,6 +460,12 @@ body {
             @media#{$tablet} {
                 font-size: 28px;
             }
+            @media#{$phone} {
+                font-size: 22px;
+                margin-bottom: 2px;
+                margin-top: 0;
+            }
+            
         }
         p {
             font-family: 'Muli', sans-serif;
@@ -491,6 +504,9 @@ body {
             padding-top: 0;
             @media#{$large} {
                 margin-top: -20px;
+            } 
+            @media#{$tablet} {
+                margin-top: 0px;
             }
         }
         .offer-social {
@@ -505,6 +521,9 @@ body {
             }
             @media#{$tablet} {
                 text-align: center;
+            }
+            @media#{$phone} {
+                margin-top: 0px;
             }
         }
         .offer-szkolenia {

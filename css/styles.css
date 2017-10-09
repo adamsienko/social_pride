@@ -497,6 +497,10 @@ body {
   font-weight: 500;
   border: none; }
 
+@media only screen and (max-width: 480px) {
+  .fp-controlArrow {
+    bottom: 80px; } }
+
 #blog1 {
   background-color: #fff; }
   #blog1 h2 {
@@ -512,6 +516,10 @@ body {
     padding-top: 20px;
     padding-bottom: 0;
     transition: all 0.6s; }
+
+@media only screen and (max-width: 480px) {
+  #blog1 .blog-content {
+    padding-top: 5px; } }
     #blog1 .blog-content h5 {
       margin: auto;
       width: 60%;
@@ -525,6 +533,10 @@ body {
 @media only screen and (max-width: 768px) {
   #blog1 .blog-content h5 {
     font-size: 19px; } }
+
+@media only screen and (max-width: 480px) {
+  #blog1 .blog-content h5 {
+    font-size: 17px; } }
     #blog1 .blog-content p {
       margin: auto;
       width: 60%;
@@ -535,6 +547,10 @@ body {
 @media only screen and (max-width: 768px) {
   #blog1 .blog-content p {
     font-size: 11px; } }
+
+@media only screen and (max-width: 480px) {
+  #blog1 .blog-content p {
+    width: 90%; } }
     #blog1 .blog-content .more {
       border-top: solid 1px #1f59d1;
       width: 70px;

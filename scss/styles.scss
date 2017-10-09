@@ -437,18 +437,17 @@ body {
         }
         @media#{$tablet} {
             font-size: 12px;
-            
         }
-         @media#{$phone} {
+        @media#{$phone} {
             width: 90%;
         }
     }
     .offer-main {
         width: 80%;
-         @media#{$phone} {
+        @media#{$phone} {
             width: 90%;
-             padding-left: 0;
-             padding-right: 0;
+            padding-left: 0;
+            padding-right: 0;
         }
         h4 {
             font-size: 32px;
@@ -465,7 +464,6 @@ body {
                 margin-bottom: 2px;
                 margin-top: 0;
             }
-            
         }
         p {
             font-family: 'Muli', sans-serif;
@@ -504,7 +502,7 @@ body {
             padding-top: 0;
             @media#{$large} {
                 margin-top: -20px;
-            } 
+            }
             @media#{$tablet} {
                 margin-top: 0px;
             }
@@ -548,9 +546,9 @@ body {
     font-size: 18px;
     font-weight: 500;
     border: none;
-     @media#{$phone} {
-                bottom: 80px;
-            }
+    @media#{$phone} {
+        bottom: 80px;
+    }
 }
 
 #blog1 {
@@ -570,9 +568,9 @@ body {
         padding-top: 20px;
         padding-bottom: 0;
         transition: all 0.6s;
-         @media#{$phone} {
-                padding-top: 5px;
-            }
+        @media#{$phone} {
+            padding-top: 5px;
+        }
         h5 {
             margin: auto;
             width: 60%;
@@ -583,7 +581,7 @@ body {
             }
             @media#{$tablet} {
                 font-size: 19px;
-            } 
+            }
             @media#{$phone} {
                 font-size: 17px;
             }
@@ -716,11 +714,12 @@ body {
         margin: auto;
         padding-top: 20px;
         @media#{$desktop} {
+            width: 60%;
+        }
+         @media#{$tablet} {
             width: 70%;
         }
-        @media#{$tablet} {
-            width: 80%;
-        }
+       
         .contact-owner {
             width: 100%;
             padding-top: 20px;

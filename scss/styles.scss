@@ -559,6 +559,9 @@ body {
     .blog-main {
         background-image: url(../img/blog-back.jpg);
         background-position: bottom;
+        @media#{$tablet} {
+            background: none;
+        }
     }
     .blog-content {
         background-color: #fff;
@@ -617,6 +620,9 @@ body {
     }
     .blog-content:hover {
         background: rgba(0, 0, 0, 0.1);
+        @media#{$tablet} {
+            background: none;
+        }
     }
     a {
         font-size: 16px;
@@ -644,6 +650,10 @@ body {
             background-image: url(../img/blog-back.jpg);
             background-position: bottom;
             opacity: 0.6;
+            @media#{$tablet} {
+                opacity: 1;
+                background: none;
+            }
         }
         h5 {
             font-size: 21px;
@@ -716,10 +726,9 @@ body {
         @media#{$desktop} {
             width: 60%;
         }
-         @media#{$tablet} {
+        @media#{$tablet} {
             width: 70%;
         }
-       
         .contact-owner {
             width: 100%;
             padding-top: 20px;

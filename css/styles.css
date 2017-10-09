@@ -508,6 +508,10 @@ body {
   #blog1 .blog-main {
     background-image: url(../img/blog-back.jpg);
     background-position: bottom; }
+
+@media only screen and (max-width: 768px) {
+  #blog1 .blog-main {
+    background: none; } }
   #blog1 .blog-content {
     background-color: #fff;
     color: #000;
@@ -565,6 +569,10 @@ body {
         text-decoration: none; }
   #blog1 .blog-content:hover {
     background: rgba(0, 0, 0, 0.1); }
+
+@media only screen and (max-width: 768px) {
+  #blog1 .blog-content:hover {
+    background: none; } }
   #blog1 a {
     font-size: 16px;
     font-family: 'Saira Extra Condensed', sans-serif;
@@ -587,6 +595,11 @@ body {
       background-image: url(../img/blog-back.jpg);
       background-position: bottom;
       opacity: 0.6; }
+
+@media only screen and (max-width: 768px) {
+  #blog1 .blog-all .blog-all-content:hover {
+    opacity: 1;
+    background: none; } }
     #blog1 .blog-all h5 {
       font-size: 21px;
       font-family: 'Playfair Display', serif; }

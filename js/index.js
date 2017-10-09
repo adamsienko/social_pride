@@ -9,7 +9,6 @@ $(function () {
             return false;
         });
 
-
     //SIEDEBAR
 
     $('.menu').click(function () {

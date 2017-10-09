@@ -164,7 +164,10 @@ body {
         position: absolute;
         font-size: 10px; }
   body .dotstyle-tooltip li.current {
-    background: #1f59d1; }
+    background: #1f59d1;
+    width: 13px;
+    height: 13px;
+    margin-left: 5px; }
     body .dotstyle-tooltip li.current:last-child {
       background: #fff; }
     body .dotstyle-tooltip li.current a {
@@ -232,7 +235,7 @@ body {
     bottom: 20px;
     left: 49%; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   body .cd-scroll-down {
     display: none; } }
   body .shadowfilter {
@@ -255,8 +258,8 @@ body {
 
 @media only screen and (max-width: 768px) {
   body h2 {
-    font-size: 43px;
-    padding-top: 60px; } }
+    font-size: 40px;
+    padding-top: 56px; } }
   body .logo-sm img {
     position: absolute;
     left: 84px;
@@ -291,13 +294,12 @@ body {
 
 @media only screen and (max-width: 992px) {
   body #about1 .about-header {
-    width: 70%;
     font-size: 14px; } }
 
 @media only screen and (max-width: 768px) {
   body #about1 .about-header {
     font-size: 12px;
-    width: 80%; } }
+    width: 90%; } }
     body #about1 .about-main {
       width: 80%;
       padding-top: 40px; }
@@ -305,7 +307,9 @@ body {
 @media only screen and (max-width: 992px) {
   body #about1 .about-main {
     padding-top: 10px;
-    width: 90%; } }
+    width: 90%;
+    padding-right: 0;
+    padding-left: 0; } }
 
 @media only screen and (max-width: 992px) {
   body #about1 .about-main img {
@@ -325,7 +329,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   body #about1 h3 {
-    font-size: 13px; } }
+    font-size: 12px; } }
       body #about1 h3 span {
         font-size: 28px; }
 
@@ -335,7 +339,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   body #about1 h3 span {
-    font-size: 21px; } }
+    font-size: 18px; } }
     body #about1 p {
       font-family: 'Muli', sans-serif;
       font-size: 13px; }

@@ -190,6 +190,9 @@ body {
     .dotstyle-tooltip {
         li.current {
             background: #1f59d1;
+            width: 13px;
+            height: 13px;
+            margin-left: 5px;
             &:last-child {
                 background: #fff;
             }
@@ -277,7 +280,7 @@ body {
         position: absolute;
         bottom: 20px;
         left: 49%;
-        @media#{$tablet} {
+        @media#{$desktop} {
             display: none;
         }
     }
@@ -302,8 +305,8 @@ body {
         padding-top: 3%;
         letter-spacing: 3px;
         @media#{$tablet} {
-            font-size: 43px;
-            padding-top: 60px;
+            font-size: 40px;
+            padding-top: 56px;
         }
     }
     .logo-sm {
@@ -346,12 +349,11 @@ body {
             font-family: 'Playfair Display', serif;
             font-size: 15px;
             @media#{$desktop} {
-                width: 70%;
                 font-size: 14px;
             }
             @media#{$tablet} {
                 font-size: 12px;
-                width: 80%;
+                width: 90%;
             }
         }
         .about-main {
@@ -360,6 +362,8 @@ body {
             @media#{$desktop} {
                 padding-top: 10px;
                 width: 90%;
+                padding-right: 0;
+                padding-left: 0;
             }
             img {
                 @media#{$desktop} {
@@ -378,7 +382,7 @@ body {
                 margin-top: 8px;
             }
             @media#{$tablet} {
-                font-size: 13px;
+                font-size: 12px;
             }
             span {
                 font-size: 28px;
@@ -386,7 +390,7 @@ body {
                     font-size: 23px;
                 }
                 @media#{$tablet} {
-                    font-size: 21px;
+                    font-size: 18px;
                 }
             }
         }
@@ -399,6 +403,7 @@ body {
         }
     }
 }
+
 
 /*OFFER*/
 
@@ -651,8 +656,8 @@ body {
             right: -26%;
         }
         .cd-scroll-down {
-        right: -24.7%;
-    }
+            right: -24.7%;
+        }
     }
 }
 

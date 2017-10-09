@@ -58,12 +58,6 @@ body {
         @media#{$tablet} {
             display: none;
         }
-        img {
-            position: absolute;
-            left: 37px;
-            top: 110px;
-            height: 90vh;
-        }
         .menu {
             width: 40px;
             height: 40px;
@@ -154,36 +148,45 @@ body {
         }
     }
     //    /*DOTS NAV*/
-    .dotstyle ul {
+    .dotstyle {
         @media#{$tablet} {
             display: none;
         }
-        position: fixed;
-        left: 27px;
-        top: 160px;
-        display: inline-block;
-        z-index: 6;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        cursor: default;
-        user-select: none;
-        li {
-            position: relative;
-            display: block;
-            margin: 7px 7px 10vh 7px;
-            width: 10px;
-            height: 10px;
-            a {
-                top: -5px;
-                left: 50px;
-                width: max-content;
-                height: 100%;
-                outline: none;
-                border-radius: 50%;
-                background-color: transparent;
-                position: absolute;
-                font-size: 10px;
+        img {
+            position: absolute;
+            left: 37px;
+            top: 100px;
+            height: 85vh;
+            z-index: 2;
+        }
+        ul {
+            position: fixed;
+            left: 27px;
+            top: 160px;
+            display: inline-block;
+            z-index: 6;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            cursor: default;
+            user-select: none;
+            li {
+                position: relative;
+                display: block;
+                margin: 7px 7px 10vh 7px;
+                width: 10px;
+                height: 10px;
+                a {
+                    top: -5px;
+                    left: 50px;
+                    width: max-content;
+                    height: 100%;
+                    outline: none;
+                    border-radius: 50%;
+                    background-color: transparent;
+                    position: absolute;
+                    font-size: 10px;
+                }
             }
         }
     }

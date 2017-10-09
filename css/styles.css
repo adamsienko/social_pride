@@ -58,11 +58,6 @@ body {
 @media only screen and (max-width: 768px) {
   body #hamburger {
     display: none; } }
-    body #hamburger img {
-      position: absolute;
-      left: 37px;
-      top: 110px;
-      height: 90vh; }
     body #hamburger .menu {
       width: 40px;
       height: 40px;
@@ -132,6 +127,16 @@ body {
         left: calc(50% - 2px);
         top: 23px;
         width: 65%; }
+
+@media only screen and (max-width: 768px) {
+  body .dotstyle {
+    display: none; } }
+  body .dotstyle img {
+    position: absolute;
+    left: 37px;
+    top: 100px;
+    height: 85vh;
+    z-index: 2; }
   body .dotstyle ul {
     position: fixed;
     left: 27px;
@@ -143,10 +148,6 @@ body {
     list-style: none;
     cursor: default;
     user-select: none; }
-
-@media only screen and (max-width: 768px) {
-  body .dotstyle ul {
-    display: none; } }
     body .dotstyle ul li {
       position: relative;
       display: block;

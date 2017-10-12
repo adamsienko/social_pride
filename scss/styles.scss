@@ -319,22 +319,22 @@ body {
     .fp-tableCell {
         display: block;
     }
-    
-//    SVG    
-
+    //    SVG    
     $totalAnim: 5s;
     $circleLen: 188.522;
     .icon-loader {
         width: 120px;
         height: 120px;
-            &__circle {
-            stroke:  #2054be;
-            stroke-dasharray: $circleLen, $circleLen;         
+        &__circle {
+            stroke: #2054be;
+            stroke-dasharray: $circleLen, $circleLen;
             &.m--left {
                 animation: circle-anim $totalAnim forwards;
-               
             }
         }
+        @media#{$desktop} {
+                display: none;
+            }
     }
     @keyframes circle-anim {
         12% {
@@ -395,7 +395,6 @@ body {
                 padding-right: 0;
                 padding-left: 0;
             }
-       
         }
         h3 {
             font-family: 'Playfair Display', serif;
@@ -465,15 +464,26 @@ body {
     }
     .offer-main {
         width: 80%;
+        .icon-loader {
+            width: 100px;
+            height: 100px;
+            margin-top: -17px;
+             @media#{$large} {
+                 width: 100px;
+            }
+             
+        }
         @media#{$phone} {
             width: 90%;
             padding-left: 0;
             padding-right: 0;
+            
         }
         h4 {
             font-size: 32px;
             font-family: 'Saira Extra Condensed', sans-serif;
             font-weight: 700;
+            margin-top: -20px;
             @media#{$desktop} {
                 font-size: 30px;
             }
@@ -496,23 +506,14 @@ body {
                 font-size: 10px;
             }
         }
-        .icon-loader {
-            @media#{$large} {
-                width: 40px;
-            }
-            @media#{$desktop} {
-                display: none;
-            }
-        }
+    
         .offer-marketing,
         .offer-szkolenia {
             text-align: left;
             padding: 0;
-            @media#{$large} {
-                margin-top: 0;
-            }
+           
             @media#{$desktop} {
-                margin-top: 10px;
+                margin-top: 0;
             }
             @media#{$tablet} {
                 text-align: center;
@@ -522,7 +523,7 @@ body {
             margin-top: -50px;
             padding-top: 0;
             @media#{$large} {
-                margin-top: -20px;
+                margin-top: 0;
             }
             @media#{$tablet} {
                 margin-top: 0px;
@@ -536,7 +537,7 @@ body {
                 margin-top: -20px;
             }
             @media#{$desktop} {
-                margin-top: 10px;
+                margin-top: 5px;
             }
             @media#{$tablet} {
                 text-align: center;
@@ -549,6 +550,9 @@ body {
             margin-top: -115px;
             @media#{$large} {
                 margin-top: 0;
+            }
+             @media#{$desktop} {
+                margin-top: 5px;
             }
         }
     }

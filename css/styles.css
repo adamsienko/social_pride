@@ -276,6 +276,10 @@ body {
       body .icon-loader__circle.m--left {
         animation: circle-anim 5s forwards; }
 
+@media only screen and (max-width: 992px) {
+  body .icon-loader {
+    display: none; } }
+
 @keyframes circle-anim {
   12% {
     stroke-dashoffset: 188.522; }
@@ -393,6 +397,14 @@ body {
     width: 90%; } }
   #offer1 .offer-main {
     width: 80%; }
+    #offer1 .offer-main .icon-loader {
+      width: 100px;
+      height: 100px;
+      margin-top: -17px; }
+
+@media only screen and (max-width: 1200px) {
+  #offer1 .offer-main .icon-loader {
+    width: 100px; } }
 
 @media only screen and (max-width: 480px) {
   #offer1 .offer-main {
@@ -402,7 +414,8 @@ body {
     #offer1 .offer-main h4 {
       font-size: 32px;
       font-family: 'Saira Extra Condensed', sans-serif;
-      font-weight: 700; }
+      font-weight: 700;
+      margin-top: -20px; }
 
 @media only screen and (max-width: 992px) {
   #offer1 .offer-main h4 {
@@ -428,28 +441,15 @@ body {
 @media only screen and (max-width: 992px) {
   #offer1 .offer-main p {
     font-size: 10px; } }
-
-@media only screen and (max-width: 1200px) {
-  #offer1 .offer-main .icon-loader {
-    width: 40px; } }
-
-@media only screen and (max-width: 992px) {
-  #offer1 .offer-main .icon-loader {
-    display: none; } }
     #offer1 .offer-main .offer-marketing,
     #offer1 .offer-main .offer-szkolenia {
       text-align: left;
       padding: 0; }
 
-@media only screen and (max-width: 1200px) {
-  #offer1 .offer-main .offer-marketing,
-  #offer1 .offer-main .offer-szkolenia {
-    margin-top: 0; } }
-
 @media only screen and (max-width: 992px) {
   #offer1 .offer-main .offer-marketing,
   #offer1 .offer-main .offer-szkolenia {
-    margin-top: 10px; } }
+    margin-top: 0; } }
 
 @media only screen and (max-width: 768px) {
   #offer1 .offer-main .offer-marketing,
@@ -461,7 +461,7 @@ body {
 
 @media only screen and (max-width: 1200px) {
   #offer1 .offer-main .offer-marketing {
-    margin-top: -20px; } }
+    margin-top: 0; } }
 
 @media only screen and (max-width: 768px) {
   #offer1 .offer-main .offer-marketing {
@@ -477,7 +477,7 @@ body {
 
 @media only screen and (max-width: 992px) {
   #offer1 .offer-main .offer-social {
-    margin-top: 10px; } }
+    margin-top: 5px; } }
 
 @media only screen and (max-width: 768px) {
   #offer1 .offer-main .offer-social {
@@ -492,6 +492,10 @@ body {
 @media only screen and (max-width: 1200px) {
   #offer1 .offer-main .offer-szkolenia {
     margin-top: 0; } }
+
+@media only screen and (max-width: 992px) {
+  #offer1 .offer-main .offer-szkolenia {
+    margin-top: 5px; } }
 
 /*BLOG*/
 .fp-controlArrow {

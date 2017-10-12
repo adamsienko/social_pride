@@ -430,11 +430,11 @@ body {
     font-size: 10px; } }
 
 @media only screen and (max-width: 1200px) {
-  #offer1 .offer-main img {
+  #offer1 .offer-main .icon-loader {
     width: 40px; } }
 
 @media only screen and (max-width: 992px) {
-  #offer1 .offer-main img {
+  #offer1 .offer-main .icon-loader {
     display: none; } }
     #offer1 .offer-main .offer-marketing,
     #offer1 .offer-main .offer-szkolenia {

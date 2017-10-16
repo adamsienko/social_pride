@@ -177,9 +177,9 @@ body {
                 width: 10px;
                 height: 10px;
                 a {
-                    top: -5px;
+                    top: -3px;
                     left: 50px;
-                    width: max-content;
+                    width: 90px;
                     height: 100%;
                     outline: none;
                     border-radius: 50%;
@@ -492,7 +492,6 @@ body {
             @media#{$phone} {
                 font-size: 20px;
                 margin-bottom: 2px;
-                
             }
         }
         p {
@@ -691,7 +690,7 @@ body {
             @media#{$tablet} {
                 font-size: 19px;
             }
-             @media#{$phone} {
+            @media#{$phone} {
                 font-size: 18px;
             }
         }

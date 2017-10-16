@@ -35,8 +35,8 @@ $(document).ready(function () {
     $('#fullpage').fullpage({
         anchors: ['main', 'about', 'offer', 'blog', 'contact'],
         menu: '#myMenu',
-        controlArrows: false,       
-        
+        controlArrows: false,
+
 
         onLeave: function (index, nextIndex, direction) {
             var leavingSection = $(this);
@@ -49,16 +49,14 @@ $(document).ready(function () {
                 $('.dotstyle li:nth-child(2)').addClass('active current');
                 $('.dotstyle li:not(:nth-child(2))').removeClass('active current');
                 $('.about-main .icon-loader__circle').addClass('m--left');
-            } 
-            else {
+            } else {
                 $('.about-main .icon-loader__circle').removeClass('m--left');
             }
             if (nextIndex == 3) {
                 $('.dotstyle li:nth-child(3)').addClass('active current');
                 $('.dotstyle li:not(:nth-child(3))').removeClass('active current');
                 $('.offer-main .icon-loader__circle').addClass('m--left');
-            }
-            else {
+            } else {
                 $('.offer-main .icon-loader__circle').removeClass('m--left');
             }
             if (nextIndex == 4) {
@@ -70,7 +68,7 @@ $(document).ready(function () {
                 $('.dotstyle li:not(:nth-child(5))').removeClass('active current');
             }
         }
-  
+
 
     })
 });

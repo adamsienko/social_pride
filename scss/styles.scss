@@ -698,7 +698,25 @@ body {
         .fp-controlArrow {
             left: 98%;
             border: none;
-            
+            @media#{$desktop} {
+                bottom: 50px;
+                left: 40%;
+            }
+        }
+        .fp-next {
+            @media#{$desktoponly} {
+                display: none;
+            }
+            @media#{$desktop} {
+                left: 60%;
+            }
+        }
+    }
+    #button-back {
+        left: 50%;
+        transform: translateX(-50%);
+        @media#{$desktoponly} {
+            display: none;
         }
     }
 }

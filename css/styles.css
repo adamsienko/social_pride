@@ -632,6 +632,26 @@ body {
       left: 98%;
       border: none; }
 
+@media only screen and (max-width: 992px) {
+  #blog1 .half .fp-controlArrow {
+    bottom: 50px;
+    left: 40%; } }
+
+@media only screen and (min-width: 991px) {
+  #blog1 .half .fp-next {
+    display: none; } }
+
+@media only screen and (max-width: 992px) {
+  #blog1 .half .fp-next {
+    left: 60%; } }
+  #blog1 #button-back {
+    left: 50%;
+    transform: translateX(-50%); }
+
+@media only screen and (min-width: 991px) {
+  #blog1 #button-back {
+    display: none; } }
+
 /*KONTAKT*/
 #contact1 {
   position: relative;

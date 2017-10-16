@@ -487,11 +487,12 @@ body {
             }
             @media#{$tablet} {
                 font-size: 28px;
+                margin-top: 0;
             }
             @media#{$phone} {
                 font-size: 20px;
                 margin-bottom: 2px;
-                margin-top: 0;
+                
             }
         }
         p {

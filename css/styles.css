@@ -427,7 +427,7 @@ body {
 
 @media only screen and (max-width: 480px) {
   #offer1 .offer-main h4 {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 2px;
     margin-top: 0; } }
     #offer1 .offer-main p {
@@ -441,6 +441,10 @@ body {
 @media only screen and (max-width: 992px) {
   #offer1 .offer-main p {
     font-size: 10px; } }
+
+@media only screen and (max-width: 480px) {
+  #offer1 .offer-main p {
+    font-size: 9px; } }
     #offer1 .offer-main .offer-marketing,
     #offer1 .offer-main .offer-szkolenia {
       text-align: left;
@@ -616,7 +620,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   #blog1 .half .blog-main {
-    padding-top: 50px; } }
+    padding-top: 60px; } }
     #blog1 .half h5 {
       font-size: 20px; }
 

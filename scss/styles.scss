@@ -489,7 +489,7 @@ body {
                 font-size: 28px;
             }
             @media#{$phone} {
-                font-size: 22px;
+                font-size: 20px;
                 margin-bottom: 2px;
                 margin-top: 0;
             }
@@ -502,6 +502,9 @@ body {
             }
             @media#{$desktop} {
                 font-size: 10px;
+            }
+            @media#{$phone} {
+                font-size: 9px;
             }
         }
         .offer-marketing,
@@ -679,7 +682,7 @@ body {
         }
         .blog-main {
             @media#{$tablet} {
-                padding-top: 50px;
+                padding-top: 60px;
             }
         }
         h5 {

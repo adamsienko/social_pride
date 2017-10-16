@@ -623,9 +623,18 @@ body {
 @media only screen and (max-width: 768px) {
   #blog1 .half h5 {
     font-size: 19px; } }
+
+@media only screen and (max-width: 480px) {
+  #blog1 .half h5 {
+    font-size: 18px; } }
     #blog1 .half p {
       width: 80%;
       font-size: 11px; }
+
+@media only screen and (max-width: 480px) {
+  #blog1 .half p {
+    font-size: 10px;
+    width: 90%; } }
     #blog1 .half .cd-scroll-down {
       left: 100%; }
     #blog1 .half .fp-controlArrow {
@@ -645,7 +654,7 @@ body {
   #blog1 .half .fp-next {
     left: 60%; } }
   #blog1 #button-back {
-    left: 50%;
+    left: 49%;
     transform: translateX(-50%); }
 
 @media only screen and (min-width: 991px) {

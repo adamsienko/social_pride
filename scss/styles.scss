@@ -687,10 +687,17 @@ body {
             @media#{$tablet} {
                 font-size: 19px;
             }
+             @media#{$phone} {
+                font-size: 18px;
+            }
         }
         p {
             width: 80%;
             font-size: 11px;
+            @media#{$phone} {
+                font-size: 10px;
+                width: 90%;
+            }
         }
         .cd-scroll-down {
             left: 100%;
@@ -713,7 +720,7 @@ body {
         }
     }
     #button-back {
-        left: 50%;
+        left: 49%;
         transform: translateX(-50%);
         @media#{$desktoponly} {
             display: none;

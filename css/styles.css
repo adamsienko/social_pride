@@ -501,13 +501,13 @@ body {
 .fp-controlArrow {
   position: absolute;
   color: #000;
-  left: 23.2%;
   width: auto;
-  bottom: 120px;
+  bottom: 115px;
   font-family: 'Saira Extra Condensed', sans-serif;
   font-size: 18px;
   font-weight: 500;
-  border: none; }
+  border: none;
+  left: 15.5%; }
 
 @media only screen and (max-width: 480px) {
   .fp-controlArrow {
@@ -515,6 +515,8 @@ body {
 
 #blog1 {
   background-color: #fff; }
+  #blog1 .half-middle cd-scroll-down {
+    left: 100%; }
   #blog1 h2 {
     margin-bottom: 0; }
   #blog1 .blog-main {
@@ -533,6 +535,10 @@ body {
     padding-bottom: 0;
     transition: all 0.6s; }
 
+@media only screen and (max-width: 1200px) {
+  #blog1 .blog-content {
+    padding-top: 13px; } }
+
 @media only screen and (max-width: 480px) {
   #blog1 .blog-content {
     padding-top: 5px; } }
@@ -542,7 +548,7 @@ body {
       font-size: 23px;
       font-family: 'Playfair Display', serif; }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
   #blog1 .blog-content h5 {
     font-size: 21px; } }
 
@@ -562,7 +568,8 @@ body {
 
 @media only screen and (max-width: 768px) {
   #blog1 .blog-content p {
-    font-size: 11px; } }
+    font-size: 11px;
+    width: 80%; } }
 
 @media only screen and (max-width: 480px) {
   #blog1 .blog-content p {
@@ -593,65 +600,28 @@ body {
   #blog1 :hover {
     text-decoration: none; }
   #blog1 .cd-scroll-down {
-    left: 24.5%; }
-  #blog1 .blog-all {
-    color: #000;
-    background-color: #fff;
-    padding-top: 35px; }
-    #blog1 .blog-all .blog-all-content {
-      transition: all 0.5s linear;
-      background-position: bottom;
-      padding-right: 0;
-      padding-left: 0; }
-    #blog1 .blog-all .blog-all-content:hover {
-      background-image: url(../img/blog-back.jpg);
-      background-position: bottom;
-      opacity: 0.6; }
-
-@media only screen and (max-width: 768px) {
-  #blog1 .blog-all .blog-all-content:hover {
-    opacity: 1;
-    background: none; } }
-    #blog1 .blog-all h5 {
-      font-size: 21px;
-      font-family: 'Playfair Display', serif; }
+    position: absolute;
+    left: 16.3%; }
+  #blog1 .half {
+    position: relative;
+    width: 16.5% !important; }
 
 @media only screen and (max-width: 992px) {
-  #blog1 .blog-all h5 {
-    font-size: 16px; } }
+  #blog1 .half {
+    width: 33.33% !important; } }
 
 @media only screen and (max-width: 768px) {
-  #blog1 .blog-all h5 {
-    font-size: 13px; } }
-    #blog1 .blog-all p {
-      font-size: 12px;
-      font-family: 'Muli', sans-serif;
-      margin-bottom: 0; }
+  #blog1 .half .blog-main {
+    padding-top: 50px; } }
+    #blog1 .half h5 {
+      font-size: 20px; }
 
 @media only screen and (max-width: 768px) {
-  #blog1 .blog-all p {
-    font-size: 10px; } }
-    #blog1 .blog-all p,
-    #blog1 .blog-all h5 {
+  #blog1 .half h5 {
+    font-size: 19px; } }
+    #blog1 .half p {
       width: 80%;
-      margin: auto;
-      padding-top: 10px; }
-    #blog1 .blog-all .more {
-      border-top: solid 1px #1f59d1;
-      width: 70px;
-      margin: auto;
-      margin-top: 10px; }
-      #blog1 .blog-all .more a {
-        font-family: 'Saira Extra Condensed', sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        color: #1f59d1; }
-      #blog1 .blog-all .more :hover {
-        text-decoration: none; }
-    #blog1 .blog-all .fp-controlArrow {
-      right: -26%; }
-    #blog1 .blog-all .cd-scroll-down {
-      right: -24.7%; }
+      font-size: 11px; }
 
 /*KONTAKT*/
 #contact1 {
@@ -678,7 +648,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   #contact1 .contact-inner {
-    width: 70%; } }
+    width: 90%; } }
     #contact1 .contact-inner .contact-owner {
       width: 100%;
       padding-top: 20px;

@@ -35,7 +35,8 @@ $(document).ready(function () {
     $('#fullpage').fullpage({
         anchors: ['main', 'about', 'offer', 'blog', 'contact'],
         menu: '#myMenu',
-        controlArrows: false,
+        controlArrows: false,       
+        
 
         onLeave: function (index, nextIndex, direction) {
             var leavingSection = $(this);
@@ -69,6 +70,7 @@ $(document).ready(function () {
                 $('.dotstyle li:not(:nth-child(5))').removeClass('active current');
             }
         }
+  
 
     })
 });

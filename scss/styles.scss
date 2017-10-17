@@ -287,18 +287,14 @@ body {
             display: none;
         }
     }
-    h1 {
-        font-family: 'Playfair Display', serif;
-        font-size: 9vh;
-        line-height: 1.3;
-    }
+   
     h2 {
         font-family: 'Saira Extra Condensed', sans-serif;
         color: #1f59d1;
         font-size: 50px;
         font-weight: 700;
         margin-top: 0;
-        padding-top: 3%;
+        padding-top: 73px;
         letter-spacing: 3px;
         @media#{$tablet} {
             font-size: 40px;
@@ -311,6 +307,7 @@ body {
             left: 84px;
             top: 80px;
             z-index: 1;
+            width: 95px;
             @media#{$tablet} {
                 display: none
             }
@@ -361,6 +358,14 @@ body {
         background-size: contain;
         background-position: center;
         .main-header {
+             h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 9vh;
+        line-height: 1.3;
+    }
+            img{
+                width: 150px;
+            }
             position: absolute;
             top: 20%;
             width: 100%;

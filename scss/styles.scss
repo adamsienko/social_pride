@@ -322,6 +322,7 @@ body {
     .icon-loader {
         width: 8.1vw;
         height: 8.1vw;
+        margin-top: 20px;
         &__circle {
             stroke: #2054be;
             stroke-dasharray: $circleLen, $circleLen;
@@ -403,7 +404,7 @@ body {
         h3 {
             font-family: 'Playfair Display', serif;
             font-size: 1.4vw;
-            margin-top: 13px;
+            margin-top: 0;
             @media#{$desktop} {
                 
                 margin-top: 8px;

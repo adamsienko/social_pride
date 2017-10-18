@@ -36,6 +36,8 @@ $(document).ready(function () {
         anchors: ['main', 'about', 'offer', 'blog', 'contact'],
         menu: '#myMenu',
         controlArrows: false,
+//        scrollOverflow:true,
+        hybrid: true,
 
 
         onLeave: function (index, nextIndex, direction) {

@@ -367,22 +367,16 @@ body {
     background-size: 50px 50px;
     z-index: -1; }
   #offer1 .offer-header {
-    width: 60%;
+    width: 50%;
     margin: auto;
     font-family: 'Playfair Display', serif;
-    font-size: 15px; }
-
-@media only screen and (max-width: 992px) {
-  #offer1 .offer-header {
-    font-size: 14px; } }
-
-@media only screen and (max-width: 768px) {
-  #offer1 .offer-header {
-    font-size: 12px; } }
+    font-size: 1.2vw;
+    line-height: 2vw; }
 
 @media only screen and (max-width: 480px) {
   #offer1 .offer-header {
-    width: 90%; } }
+    width: 90%;
+    font-size: 12px; } }
   #offer1 .offer-main {
     width: 80%; }
     #offer1 .offer-main .icon-loader {

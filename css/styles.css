@@ -611,8 +611,16 @@ body {
     display: none; } }
   #blog1 .blog-second h2 {
     width: 200%; }
+
+@media only screen and (max-width: 992px) {
+  #blog1 .blog-second h2 {
+    width: 100%; } }
   #blog1 .blog-third h2 {
     opacity: 0; }
+
+@media only screen and (max-width: 992px) {
+  #blog1 .blog-third h2 {
+    opacity: 1; } }
 
 /*KONTAKT*/
 #contact1 {
@@ -679,9 +687,9 @@ body {
               text-decoration: none; }
   #contact1 address {
     padding-top: 40px;
-    padding-bottom: 10px;
     font-family: 'Muli', sans-serif;
-    font-size: 1.1vw; }
+    font-size: 1.1vw;
+    margin-bottom: 0; }
 
 @media only screen and (max-width: 768px) {
   #contact1 address {

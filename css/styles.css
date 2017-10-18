@@ -366,6 +366,11 @@ body {
     background: linear-gradient(90deg, #2b2c31 47px, transparent 1%) center, linear-gradient(#3c3d41 3px, transparent 1%) center, #2b2c31;
     background-size: 50px 50px;
     z-index: -1; }
+  #offer1 .offer-scroll {
+    width: 100%;
+    margin: 20px; }
+    #offer1 .offer-scroll .cd-scroll-down {
+      position: inherit; }
   #offer1 .offer-header {
     width: 50%;
     margin: auto;

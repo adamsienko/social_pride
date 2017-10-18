@@ -447,6 +447,14 @@ body {
         background-size: 50px 50px;
         z-index: -1;
     }
+    .offer-scroll{
+        width: 100%;
+        margin: 20px;
+        .cd-scroll-down{
+            position: inherit;
+        }
+    }
+    
     .offer-header {
         width: 50%;
         margin: auto;

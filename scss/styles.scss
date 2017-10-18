@@ -433,17 +433,17 @@ body {
                 margin-top: 8px;
                 font-size: 2.4vw;
             }
-             @media#{$tablet} {
-                 font-size: 3.4vw;
+            @media#{$tablet} {
+                font-size: 3.4vw;
             }
             span {
                 font-size: 2.5vw;
                 @media#{$desktop} {
                     font-size: 3.5vw;
                 }
-                 @media#{$tablet} {
-                 font-size: 4.5vw;
-            }
+                @media#{$tablet} {
+                    font-size: 4.5vw;
+                }
             }
         }
         p {
@@ -495,14 +495,18 @@ body {
         font-family: 'Playfair Display', serif;
         font-size: 1.2vw;
         line-height: 2vw;
-        @media#{$phone} {
-            width: 90%;
+        @media#{$desktop} {
+            font-size: 1.8vw;
+            line-height: inherit;
+        }
+        @media#{$tablet} {
+            width: 80%;
             font-size: 12px;
         }
     }
     .offer-main {
         width: 75%;
-        @media#{$phone} {
+        @media#{$tablet} {
             width: 90%;
             padding-left: 0;
             padding-right: 0;
@@ -513,21 +517,20 @@ body {
             font-weight: 700;
             margin-top: -20px;
             @media#{$desktop} {
-                font-size: 30px;
+                font-size: 3.5vw;
             }
             @media#{$tablet} {
-                font-size: 28px;
+                font-size: 4.5vw;
                 margin-top: 0;
-            }
-            @media#{$phone} {
-                font-size: 20px;
-                margin-bottom: 2px;
             }
         }
         p {
             font-family: 'Muli', sans-serif;
             font-size: 1.1vw;
             color: #cfd0d0;
+            @media#{$desktop} {
+                font-size: 1.7vw;
+            }
             @media#{$tablet} {
                 font-size: 11px;
             }

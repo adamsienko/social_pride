@@ -428,14 +428,19 @@ body {
     font-size: 1.2vw;
     line-height: 2vw; }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 992px) {
   #offer1 .offer-header {
-    width: 90%;
+    font-size: 1.8vw;
+    line-height: inherit; } }
+
+@media only screen and (max-width: 768px) {
+  #offer1 .offer-header {
+    width: 80%;
     font-size: 12px; } }
   #offer1 .offer-main {
     width: 75%; }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   #offer1 .offer-main {
     width: 90%;
     padding-left: 0;
@@ -448,21 +453,20 @@ body {
 
 @media only screen and (max-width: 992px) {
   #offer1 .offer-main h4 {
-    font-size: 30px; } }
+    font-size: 3.5vw; } }
 
 @media only screen and (max-width: 768px) {
   #offer1 .offer-main h4 {
-    font-size: 28px;
+    font-size: 4.5vw;
     margin-top: 0; } }
-
-@media only screen and (max-width: 480px) {
-  #offer1 .offer-main h4 {
-    font-size: 20px;
-    margin-bottom: 2px; } }
     #offer1 .offer-main p {
       font-family: 'Muli', sans-serif;
       font-size: 1.1vw;
       color: #cfd0d0; }
+
+@media only screen and (max-width: 992px) {
+  #offer1 .offer-main p {
+    font-size: 1.7vw; } }
 
 @media only screen and (max-width: 768px) {
   #offer1 .offer-main p {

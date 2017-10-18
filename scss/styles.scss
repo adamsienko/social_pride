@@ -330,7 +330,7 @@ body {
                 animation: circle-anim $totalAnim forwards;
             }
         }
-        @media#{$desktop} {
+        @media#{$tablet} {
             display: none;
         }
     }
@@ -644,6 +644,7 @@ body {
         @media#{$desktop} {
             width: 33.33% !important;
         }
+       
         .blog-main {
             @media#{$tablet} {
                 padding-top: 60px;
@@ -691,6 +692,16 @@ body {
         transform: translateX(-50%);
         @media#{$desktoponly} {
             display: none;
+        }
+    }
+    .blog-second{
+        h2{
+            width: 200%;
+        }
+    }
+    .blog-third{
+        h2{
+            opacity: 0;
         }
     }
 }

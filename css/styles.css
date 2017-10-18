@@ -275,7 +275,7 @@ body {
       body .icon-loader__circle.m--left {
         animation: circle-anim 5s forwards; }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
   body .icon-loader {
     display: none; } }
 
@@ -609,6 +609,10 @@ body {
 @media only screen and (min-width: 991px) {
   #blog1 #button-back {
     display: none; } }
+  #blog1 .blog-second h2 {
+    width: 200%; }
+  #blog1 .blog-third h2 {
+    opacity: 0; }
 
 /*KONTAKT*/
 #contact1 {

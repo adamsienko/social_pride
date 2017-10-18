@@ -249,9 +249,12 @@ body {
     padding-top: 73px;
     letter-spacing: 3px; }
 
+@media only screen and (max-width: 992px) {
+  body h2 {
+    font-size: 6vw; } }
+
 @media only screen and (max-width: 768px) {
   body h2 {
-    font-size: 40px;
     padding-top: 56px; } }
   body .logo-sm img {
     position: absolute;
@@ -269,6 +272,10 @@ body {
     width: 8.1vw;
     height: 8.1vw;
     margin-top: 20px; }
+
+@media only screen and (max-width: 992px) {
+  body .icon-loader {
+    margin-top: 0; } }
     body .icon-loader__circle {
       stroke: #2054be;
       stroke-dasharray: 188.522, 188.522; }
@@ -303,8 +310,16 @@ body {
         font-family: 'Playfair Display', serif;
         font-size: 5vw;
         line-height: 1.3; }
+
+@media only screen and (max-width: 768px) {
+  body #main1 .main-header h1 {
+    font-size: 8vw; } }
       body #main1 .main-header img {
         width: 167px; }
+
+@media only screen and (max-width: 768px) {
+  body #main1 .main-header img {
+    width: 130px; } }
   body #about1 {
     position: relative;
     background-image: url(../img/background-main.png);
@@ -322,9 +337,15 @@ body {
       font-size: 1.2vw;
       line-height: 2vw; }
 
+@media only screen and (max-width: 992px) {
+  body #about1 .about-header {
+    font-size: 1.8vw;
+    line-height: inherit; } }
+
 @media only screen and (max-width: 768px) {
   body #about1 .about-header {
-    width: 90%; } }
+    width: 60%;
+    font-size: 12px; } }
     body #about1 .about-main {
       width: 80%;
       padding-top: 10px; }
@@ -332,9 +353,13 @@ body {
 @media only screen and (max-width: 992px) {
   body #about1 .about-main {
     padding-top: 10px;
-    width: 90%;
+    width: 70%;
     padding-right: 0;
     padding-left: 0; } }
+
+@media only screen and (max-width: 992px) {
+  body #about1 .about-main {
+    width: 90%; } }
     body #about1 h3 {
       font-family: 'Playfair Display', serif;
       font-size: 1.4vw;
@@ -342,13 +367,24 @@ body {
 
 @media only screen and (max-width: 992px) {
   body #about1 h3 {
-    margin-top: 8px; } }
+    margin-top: 8px;
+    font-size: 2.4vw; } }
       body #about1 h3 span {
         font-size: 2.5vw; }
+
+@media only screen and (max-width: 992px) {
+  body #about1 h3 span {
+    font-size: 3.5vw; } }
     body #about1 p {
       font-family: 'Muli', sans-serif;
       font-size: 1.1vw;
-      line-height: 1.8vw; }
+      line-height: 1.8vw;
+      color: #cfd0d0; }
+
+@media only screen and (max-width: 992px) {
+  body #about1 p {
+    font-size: 1.7vw;
+    line-height: inherit; } }
 
 @media only screen and (max-width: 768px) {
   body #about1 p {
@@ -416,7 +452,8 @@ body {
     margin-bottom: 2px; } }
     #offer1 .offer-main p {
       font-family: 'Muli', sans-serif;
-      font-size: 1.1vw; }
+      font-size: 1.1vw;
+      color: #cfd0d0; }
 
 @media only screen and (max-width: 768px) {
   #offer1 .offer-main p {

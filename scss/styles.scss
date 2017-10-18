@@ -296,8 +296,10 @@ body {
         margin-bottom: 5px;
         padding-top: 73px;
         letter-spacing: 3px;
-        @media#{$tablet} {
-            font-size: 40px;
+        @media#{$desktop} {
+            font-size: 6vw;
+        }
+         @media#{$tablet} {
             padding-top: 56px;
         }
     }
@@ -323,6 +325,10 @@ body {
         width: 8.1vw;
         height: 8.1vw;
         margin-top: 20px;
+        @media#{$desktop} {
+                    margin-top: 0;
+
+        }
         &__circle {
             stroke: #2054be;
             stroke-dasharray: $circleLen, $circleLen;
@@ -363,9 +369,15 @@ body {
                 font-family: 'Playfair Display', serif;
                 font-size: 5vw;
                 line-height: 1.3;
+                @media#{$tablet} {
+                font-size: 8vw;
+            }
             }
             img {
                 width: 167px;
+                     @media#{$tablet} {
+                width: 130px;
+            } 
             }
             position: absolute;
             top: 20%;
@@ -391,8 +403,13 @@ body {
             font-family: 'Playfair Display', serif;
             font-size: 1.2vw;
             line-height: 2vw;
+            @media#{$desktop} {
+              font-size: 1.8vw;
+            line-height: inherit;  
+            }
             @media#{$tablet} {
-                width: 90%;
+                width: 60%;
+                font-size: 12px;
             }
         }
         .about-main {
@@ -400,9 +417,12 @@ body {
             padding-top: 10px;
             @media#{$desktop} {
                 padding-top: 10px;
-                width: 90%;
+                width: 70%;
                 padding-right: 0;
                 padding-left: 0;
+            }
+            @media#{$desktop} {
+                width: 90%;
             }
         }
         h3 {
@@ -411,15 +431,25 @@ body {
             margin-top: 0;
             @media#{$desktop} {
                 margin-top: 8px;
+                            font-size: 2.4vw;
+
             }
             span {
                 font-size: 2.5vw;
+                @media#{$desktop} {
+                    font-size: 3.5vw;
             }
+        }
         }
         p {
             font-family: 'Muli', sans-serif;
             font-size: 1.1vw;
             line-height: 1.8vw;
+            color: #cfd0d0;
+            @media#{$desktop} {
+                          font-size: 1.7vw;
+  line-height: inherit;
+            }
             @media#{$tablet} {
                 font-size: 11px;
             }
@@ -492,6 +522,7 @@ body {
         p {
             font-family: 'Muli', sans-serif;
             font-size: 1.1vw;
+            color: #cfd0d0;
             @media#{$tablet} {
                 font-size: 11px;
             }

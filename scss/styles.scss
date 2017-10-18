@@ -379,6 +379,12 @@ body {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
+        .scroll {
+            margin: 20px 0 20px;
+            .cd-scroll-down {
+                position: inherit;
+            }
+        }
         .about-header {
             width: 50%;
             margin: auto;
@@ -441,9 +447,9 @@ body {
         background-size: 50px 50px;
         z-index: -1;
     }
-    .offer-scroll {
+    .scroll {
         width: 100%;
-        margin: 20px;
+        margin: 20px 0 20px;
         .cd-scroll-down {
             position: inherit;
         }
@@ -758,7 +764,7 @@ body {
             }
         }
     }
-    address{
+    address {
         padding-top: 40px;
         padding-bottom: 10px;
         font-family: 'Muli', sans-serif;
@@ -766,7 +772,8 @@ body {
         @media#{$tablet} {
             font-size: 13px;
         }
-        .hours{
-        padding-top: 35px;
-        }}
+        .hours {
+            padding-top: 35px;
+        }
+    }
 }

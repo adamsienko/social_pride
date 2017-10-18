@@ -632,6 +632,9 @@ body {
 @media only screen and (max-width: 768px) {
   #contact1 .contact-inner {
     width: 90%; } }
+    #contact1 .contact-inner p {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1vw; }
     #contact1 .contact-inner .contact-owner {
       width: 100%;
       padding-top: 20px;
@@ -660,21 +663,18 @@ body {
           font-size: 25px; }
         #contact1 .contact-inner .contact-owner .contact-data p {
           font-family: 'Muli', sans-serif;
-          font-size: 14px; }
+          font-size: 1.1vw; }
           #contact1 .contact-inner .contact-owner .contact-data p a {
             text-decoration: none;
             color: #fff; }
             #contact1 .contact-inner .contact-owner .contact-data p a :hover {
               text-decoration: none; }
-    #contact1 .contact-inner address,
-    #contact1 .contact-inner p {
-      font-family: 'Muli', sans-serif;
-      font-size: 15px; }
+  #contact1 address {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.1vw; }
 
 @media only screen and (max-width: 768px) {
-  #contact1 .contact-inner address,
-  #contact1 .contact-inner p {
+  #contact1 address {
     font-size: 13px; } }
-    #contact1 .contact-inner address {
-      padding-top: 20px;
-      padding-bottom: 10px; }

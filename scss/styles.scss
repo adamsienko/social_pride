@@ -287,7 +287,6 @@ body {
             display: none;
         }
     }
-   
     h2 {
         font-family: 'Saira Extra Condensed', sans-serif;
         color: #1f59d1;
@@ -360,12 +359,12 @@ body {
         background-size: contain;
         background-position: center;
         .main-header {
-             h1 {
-        font-family: 'Playfair Display', serif;
-        font-size: 5vw;
-        line-height: 1.3;
-    }
-            img{
+            h1 {
+                font-family: 'Playfair Display', serif;
+                font-size: 5vw;
+                line-height: 1.3;
+            }
+            img {
                 width: 167px;
             }
             position: absolute;
@@ -386,9 +385,7 @@ body {
             font-family: 'Playfair Display', serif;
             font-size: 1.2vw;
             line-height: 2vw;
-            
             @media#{$tablet} {
-              
                 width: 90%;
             }
         }
@@ -407,13 +404,10 @@ body {
             font-size: 1.4vw;
             margin-top: 0;
             @media#{$desktop} {
-                
                 margin-top: 8px;
             }
-          
             span {
                 font-size: 2.5vw;
-               
             }
         }
         p {
@@ -436,7 +430,6 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
- 
     &:before {
         content: '';
         position: absolute;
@@ -448,21 +441,19 @@ body {
         background-size: 50px 50px;
         z-index: -1;
     }
-    .offer-scroll{
+    .offer-scroll {
         width: 100%;
         margin: 20px;
-        .cd-scroll-down{
+        .cd-scroll-down {
             position: inherit;
         }
     }
-    
     .offer-header {
         width: 50%;
         margin: auto;
         font-family: 'Playfair Display', serif;
         font-size: 1.2vw;
-            line-height: 2vw;
-       
+        line-height: 2vw;
         @media#{$phone} {
             width: 90%;
             font-size: 12px;
@@ -470,7 +461,6 @@ body {
     }
     .offer-main {
         width: 75%;
-        
         @media#{$phone} {
             width: 90%;
             padding-left: 0;
@@ -496,8 +486,6 @@ body {
         p {
             font-family: 'Muli', sans-serif;
             font-size: 1.1vw;
-            
-           
             @media#{$tablet} {
                 font-size: 11px;
             }
@@ -506,15 +494,12 @@ body {
         .offer-szkolenia {
             text-align: left;
             padding: 0;
-         
             @media#{$tablet} {
                 text-align: center;
             }
         }
         .offer-marketing {
-            
             padding-top: 0;
-           
         }
         .offer-social {
             text-align: right;
@@ -538,7 +523,6 @@ body {
             @media#{$large} {
                 margin-top: 0;
             }
-         
         }
     }
 }
@@ -571,7 +555,6 @@ body {
             }
         }
     }
-    
     .blog-main {
         background-image: url(../img/blog-back.jpg);
         background-position: bottom;
@@ -592,7 +575,6 @@ body {
             width: 60%;
             font-size: 1.8vw;
             font-family: 'Playfair Display', serif;
-          
             @media#{$tablet} {
                 font-size: 19px;
             }
@@ -733,6 +715,10 @@ body {
         @media#{$tablet} {
             width: 90%;
         }
+        p {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1vw;
+        }
         .contact-owner {
             width: 100%;
             padding-top: 20px;
@@ -760,7 +746,7 @@ body {
                 }
                 p {
                     font-family: 'Muli', sans-serif;
-                    font-size: 14px;
+                    font-size: 1.1vw;
                     a {
                         text-decoration: none;
                         color: #fff;
@@ -771,17 +757,15 @@ body {
                 }
             }
         }
-        address,
-        p {
-            font-family: 'Muli', sans-serif;
-            font-size: 15px;
-            @media#{$tablet} {
-                font-size: 13px;
-            }
-        }
-        address {
-            padding-top: 20px;
-            padding-bottom: 10px;
+    }
+    address,
+    {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        font-family: 'Muli', sans-serif;
+        font-size: 1.1vw;
+        @media#{$tablet} {
+            font-size: 13px;
         }
     }
 }

@@ -255,7 +255,8 @@ body {
 
 @media only screen and (max-width: 768px) {
   body h2 {
-    padding-top: 56px; } }
+    padding-top: 56px;
+    font-size: 9vw; } }
   body .logo-sm img {
     position: absolute;
     left: 84px;
@@ -344,7 +345,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   body #about1 .about-header {
-    width: 60%;
+    width: 80%;
     font-size: 12px; } }
     body #about1 .about-main {
       width: 80%;
@@ -369,12 +370,20 @@ body {
   body #about1 h3 {
     margin-top: 8px;
     font-size: 2.4vw; } }
+
+@media only screen and (max-width: 768px) {
+  body #about1 h3 {
+    font-size: 3.4vw; } }
       body #about1 h3 span {
         font-size: 2.5vw; }
 
 @media only screen and (max-width: 992px) {
   body #about1 h3 span {
     font-size: 3.5vw; } }
+
+@media only screen and (max-width: 768px) {
+  body #about1 h3 span {
+    font-size: 4.5vw; } }
     body #about1 p {
       font-family: 'Muli', sans-serif;
       font-size: 1.1vw;

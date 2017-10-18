@@ -299,8 +299,9 @@ body {
         @media#{$desktop} {
             font-size: 6vw;
         }
-         @media#{$tablet} {
+        @media#{$tablet} {
             padding-top: 56px;
+            font-size: 9vw;
         }
     }
     .logo-sm {
@@ -326,8 +327,7 @@ body {
         height: 8.1vw;
         margin-top: 20px;
         @media#{$desktop} {
-                    margin-top: 0;
-
+            margin-top: 0;
         }
         &__circle {
             stroke: #2054be;
@@ -370,14 +370,14 @@ body {
                 font-size: 5vw;
                 line-height: 1.3;
                 @media#{$tablet} {
-                font-size: 8vw;
-            }
+                    font-size: 8vw;
+                }
             }
             img {
                 width: 167px;
-                     @media#{$tablet} {
-                width: 130px;
-            } 
+                @media#{$tablet} {
+                    width: 130px;
+                }
             }
             position: absolute;
             top: 20%;
@@ -404,11 +404,11 @@ body {
             font-size: 1.2vw;
             line-height: 2vw;
             @media#{$desktop} {
-              font-size: 1.8vw;
-            line-height: inherit;  
+                font-size: 1.8vw;
+                line-height: inherit;
             }
             @media#{$tablet} {
-                width: 60%;
+                width: 80%;
                 font-size: 12px;
             }
         }
@@ -431,15 +431,20 @@ body {
             margin-top: 0;
             @media#{$desktop} {
                 margin-top: 8px;
-                            font-size: 2.4vw;
-
+                font-size: 2.4vw;
+            }
+             @media#{$tablet} {
+                 font-size: 3.4vw;
             }
             span {
                 font-size: 2.5vw;
                 @media#{$desktop} {
                     font-size: 3.5vw;
+                }
+                 @media#{$tablet} {
+                 font-size: 4.5vw;
             }
-        }
+            }
         }
         p {
             font-family: 'Muli', sans-serif;
@@ -447,8 +452,8 @@ body {
             line-height: 1.8vw;
             color: #cfd0d0;
             @media#{$desktop} {
-                          font-size: 1.7vw;
-  line-height: inherit;
+                font-size: 1.7vw;
+                line-height: inherit;
             }
             @media#{$tablet} {
                 font-size: 11px;
@@ -675,7 +680,6 @@ body {
         @media#{$desktop} {
             width: 33.33% !important;
         }
-       
         .blog-main {
             @media#{$tablet} {
                 padding-top: 60px;
@@ -725,17 +729,16 @@ body {
             display: none;
         }
     }
-    .blog-second{
-        h2{
+    .blog-second {
+        h2 {
             width: 200%;
-             @media#{$desktop} {
+            @media#{$desktop} {
                 width: 100%;
             }
         }
-       
     }
-    .blog-third{
-        h2{
+    .blog-third {
+        h2 {
             opacity: 0;
             @media#{$desktop} {
                 opacity: 1;

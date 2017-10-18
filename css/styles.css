@@ -371,7 +371,7 @@ body {
     margin: auto;
     font-family: 'Playfair Display', serif;
     font-size: 1.2vw;
-    line-height: 2vw; }
+    line-height: 2.1vw; }
 
 @media only screen and (max-width: 480px) {
   #offer1 .offer-header {
@@ -394,7 +394,7 @@ body {
     padding-left: 0;
     padding-right: 0; } }
     #offer1 .offer-main h4 {
-      font-size: 32px;
+      font-size: 38px;
       font-family: 'Saira Extra Condensed', sans-serif;
       font-weight: 700;
       margin-top: -20px; }
@@ -414,44 +414,26 @@ body {
     margin-bottom: 2px; } }
     #offer1 .offer-main p {
       font-family: 'Muli', sans-serif;
-      font-size: 12px; }
-
-@media only screen and (max-width: 1200px) {
-  #offer1 .offer-main p {
-    font-size: 11px; } }
+      font-size: 16px; }
 
 @media only screen and (max-width: 992px) {
   #offer1 .offer-main p {
-    font-size: 10px; } }
+    font-size: 12px; } }
 
 @media only screen and (max-width: 480px) {
   #offer1 .offer-main p {
-    font-size: 9px; } }
+    font-size: 11px; } }
     #offer1 .offer-main .offer-marketing,
     #offer1 .offer-main .offer-szkolenia {
       text-align: left;
       padding: 0; }
-
-@media only screen and (max-width: 992px) {
-  #offer1 .offer-main .offer-marketing,
-  #offer1 .offer-main .offer-szkolenia {
-    margin-top: 0; } }
 
 @media only screen and (max-width: 768px) {
   #offer1 .offer-main .offer-marketing,
   #offer1 .offer-main .offer-szkolenia {
     text-align: center; } }
     #offer1 .offer-main .offer-marketing {
-      margin-top: -50px;
       padding-top: 0; }
-
-@media only screen and (max-width: 1200px) {
-  #offer1 .offer-main .offer-marketing {
-    margin-top: 0; } }
-
-@media only screen and (max-width: 768px) {
-  #offer1 .offer-main .offer-marketing {
-    margin-top: 0px; } }
     #offer1 .offer-main .offer-social {
       text-align: right;
       margin-top: -115px;
@@ -472,16 +454,10 @@ body {
 @media only screen and (max-width: 480px) {
   #offer1 .offer-main .offer-social {
     margin-top: 0px; } }
-    #offer1 .offer-main .offer-szkolenia {
-      margin-top: -115px; }
 
 @media only screen and (max-width: 1200px) {
   #offer1 .offer-main .offer-szkolenia {
     margin-top: 0; } }
-
-@media only screen and (max-width: 992px) {
-  #offer1 .offer-main .offer-szkolenia {
-    margin-top: 5px; } }
 
 /*BLOG*/
 .fp-controlArrow {

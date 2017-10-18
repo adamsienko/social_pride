@@ -451,7 +451,7 @@ body {
         margin: auto;
         font-family: 'Playfair Display', serif;
         font-size: 1.2vw;
-            line-height: 2vw;
+            line-height: 2.1vw;
        
         @media#{$phone} {
             width: 90%;
@@ -474,7 +474,7 @@ body {
             padding-right: 0;
         }
         h4 {
-            font-size: 32px;
+            font-size: 38px;
             font-family: 'Saira Extra Condensed', sans-serif;
             font-weight: 700;
             margin-top: -20px;
@@ -492,37 +492,28 @@ body {
         }
         p {
             font-family: 'Muli', sans-serif;
-            font-size: 12px;
-            @media#{$large} {
-                font-size: 11px;
-            }
+            font-size: 16px;
+            
             @media#{$desktop} {
-                font-size: 10px;
+                font-size: 12px;
             }
             @media#{$phone} {
-                font-size: 9px;
+                font-size: 11px;
             }
         }
         .offer-marketing,
         .offer-szkolenia {
             text-align: left;
             padding: 0;
-            @media#{$desktop} {
-                margin-top: 0;
-            }
+         
             @media#{$tablet} {
                 text-align: center;
             }
         }
         .offer-marketing {
-            margin-top: -50px;
+            
             padding-top: 0;
-            @media#{$large} {
-                margin-top: 0;
-            }
-            @media#{$tablet} {
-                margin-top: 0px;
-            }
+           
         }
         .offer-social {
             text-align: right;
@@ -542,13 +533,11 @@ body {
             }
         }
         .offer-szkolenia {
-            margin-top: -115px;
+            
             @media#{$large} {
                 margin-top: 0;
             }
-            @media#{$desktop} {
-                margin-top: 5px;
-            }
+         
         }
     }
 }

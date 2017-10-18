@@ -699,26 +699,25 @@ body {
         @media#{$desktop} {
             width: 33.33% !important;
         }
-        .blog-main {
-            @media#{$tablet} {
-                padding-top: 60px;
-            }
-        }
+     
         h5 {
-            font-size: 20px;
-            @media#{$tablet} {
-                font-size: 19px;
+            font-size: 1.6vw;
+            @media#{$desktop} {
+                font-size: 2.6vw;
             }
-            @media#{$phone} {
-                font-size: 18px;
+            @media#{$tablet} {
+                font-size: 17px;
             }
         }
         p {
             width: 80%;
-            font-size: 11px;
-            @media#{$phone} {
-                font-size: 10px;
+            font-size: 1vw;
+            @media#{$desktop} {
+                font-size: 1.8vw;
                 width: 90%;
+            }
+            @media#{$tablet} {
+                font-size: 11px;
             }
         }
         .cd-scroll-down {
@@ -776,10 +775,7 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
-    @media#{$tablet} {
-        padding-bottom: 80px;
-    }
-    h2 {
+        h2 {
         color: #fff;
     }
     .contact-inner {
@@ -790,11 +786,17 @@ body {
             width: 60%;
         }
         @media#{$tablet} {
-            width: 90%;
+            width: 80%;
         }
         p {
             font-family: 'Playfair Display', serif;
             font-size: 1.1vw;
+             @media#{$desktop} {
+           font-size: 2.1vw;
+        }
+            @media#{$tablet} {
+            font-size: 12px;
+        }
         }
         .contact-owner {
             width: 100%;
@@ -802,6 +804,8 @@ body {
             margin-left: -27px;
             @media#{$tablet} {
                 margin-left: 0;
+                            padding-top: 20px;
+
             }
             .photo {
                 text-align: right;
@@ -820,10 +824,22 @@ body {
                     font-family: 'Saira Extra Condensed', sans-serif;
                     font-weight: 700;
                     font-size: 1.8vw;
+                     @media#{$desktop} {
+                     font-size: 2.8vw;    
+                    }
+                    @media#{$tablet} {
+            font-size: 25px;
+        }
                 }
                 p {
                     font-family: 'Muli', sans-serif;
                     font-size: 1.1vw;
+                     @media#{$desktop} {
+                     font-size: 1.8vw;    
+                    }
+                    @media#{$tablet} {
+            font-size: 14px;
+        }
                     a {
                         text-decoration: none;
                         color: #fff;
@@ -841,10 +857,10 @@ body {
         font-size: 1.1vw;
         margin-bottom: 0;
         @media#{$tablet} {
-            font-size: 13px;
+            font-size: 14px;
         }
         .hours {
-            padding-top: 35px;
+            padding-top: 3px;
         }
     }
 }

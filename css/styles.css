@@ -632,28 +632,28 @@ body {
 @media only screen and (max-width: 992px) {
   #blog1 .half {
     width: 33.33% !important; } }
-
-@media only screen and (max-width: 768px) {
-  #blog1 .half .blog-main {
-    padding-top: 60px; } }
     #blog1 .half h5 {
-      font-size: 20px; }
+      font-size: 1.6vw; }
+
+@media only screen and (max-width: 992px) {
+  #blog1 .half h5 {
+    font-size: 2.6vw; } }
 
 @media only screen and (max-width: 768px) {
   #blog1 .half h5 {
-    font-size: 19px; } }
-
-@media only screen and (max-width: 480px) {
-  #blog1 .half h5 {
-    font-size: 18px; } }
+    font-size: 17px; } }
     #blog1 .half p {
       width: 80%;
-      font-size: 11px; }
+      font-size: 1vw; }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 992px) {
   #blog1 .half p {
-    font-size: 10px;
+    font-size: 1.8vw;
     width: 90%; } }
+
+@media only screen and (max-width: 768px) {
+  #blog1 .half p {
+    font-size: 11px; } }
     #blog1 .half .cd-scroll-down {
       left: 100%; }
     #blog1 .half .fp-controlArrow {
@@ -700,10 +700,6 @@ body {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center; }
-
-@media only screen and (max-width: 768px) {
-  #contact1 {
-    padding-bottom: 80px; } }
   #contact1 h2 {
     color: #fff; }
   #contact1 .contact-inner {
@@ -717,10 +713,18 @@ body {
 
 @media only screen and (max-width: 768px) {
   #contact1 .contact-inner {
-    width: 90%; } }
+    width: 80%; } }
     #contact1 .contact-inner p {
       font-family: 'Playfair Display', serif;
       font-size: 1.1vw; }
+
+@media only screen and (max-width: 992px) {
+  #contact1 .contact-inner p {
+    font-size: 2.1vw; } }
+
+@media only screen and (max-width: 768px) {
+  #contact1 .contact-inner p {
+    font-size: 12px; } }
     #contact1 .contact-inner .contact-owner {
       width: 100%;
       padding-top: 50px;
@@ -728,7 +732,8 @@ body {
 
 @media only screen and (max-width: 768px) {
   #contact1 .contact-inner .contact-owner {
-    margin-left: 0; } }
+    margin-left: 0;
+    padding-top: 20px; } }
       #contact1 .contact-inner .contact-owner .photo {
         text-align: right; }
 
@@ -747,9 +752,25 @@ body {
           font-family: 'Saira Extra Condensed', sans-serif;
           font-weight: 700;
           font-size: 1.8vw; }
+
+@media only screen and (max-width: 992px) {
+  #contact1 .contact-inner .contact-owner .contact-data h6 {
+    font-size: 2.8vw; } }
+
+@media only screen and (max-width: 768px) {
+  #contact1 .contact-inner .contact-owner .contact-data h6 {
+    font-size: 25px; } }
         #contact1 .contact-inner .contact-owner .contact-data p {
           font-family: 'Muli', sans-serif;
           font-size: 1.1vw; }
+
+@media only screen and (max-width: 992px) {
+  #contact1 .contact-inner .contact-owner .contact-data p {
+    font-size: 1.8vw; } }
+
+@media only screen and (max-width: 768px) {
+  #contact1 .contact-inner .contact-owner .contact-data p {
+    font-size: 14px; } }
           #contact1 .contact-inner .contact-owner .contact-data p a {
             text-decoration: none;
             color: #fff; }
@@ -763,6 +784,6 @@ body {
 
 @media only screen and (max-width: 768px) {
   #contact1 address {
-    font-size: 13px; } }
+    font-size: 14px; } }
     #contact1 address .hours {
-      padding-top: 35px; }
+      padding-top: 3px; }

@@ -787,6 +787,7 @@ body {
         }
         @media#{$tablet} {
             width: 80%;
+             padding-top: 0;
         }
         p {
             font-family: 'Playfair Display', serif;
@@ -858,9 +859,13 @@ body {
         margin-bottom: 0;
         @media#{$tablet} {
             font-size: 14px;
+            padding-top: 10px;
         }
         .hours {
             padding-top: 35px;
+             @media#{$tablet} {
+            padding-top: 10px;
+        }
         }
     }
 }

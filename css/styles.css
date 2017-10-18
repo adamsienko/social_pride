@@ -713,7 +713,8 @@ body {
 
 @media only screen and (max-width: 768px) {
   #contact1 .contact-inner {
-    width: 80%; } }
+    width: 80%;
+    padding-top: 0; } }
     #contact1 .contact-inner p {
       font-family: 'Playfair Display', serif;
       font-size: 1.1vw; }
@@ -784,6 +785,11 @@ body {
 
 @media only screen and (max-width: 768px) {
   #contact1 address {
-    font-size: 14px; } }
+    font-size: 14px;
+    padding-top: 10px; } }
     #contact1 address .hours {
       padding-top: 35px; }
+
+@media only screen and (max-width: 768px) {
+  #contact1 address .hours {
+    padding-top: 10px; } }

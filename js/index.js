@@ -36,9 +36,10 @@ $(document).ready(function () {
         anchors: ['main', 'about', 'offer', 'blog', 'contact'],
         menu: '#myMenu',
         controlArrows: false,
-        hybrid: true,
-
-
+        scrollOverflow:true,
+        
+//        hybrid: true,
+        
         onLeave: function (index, nextIndex, direction) {
             var leavingSection = $(this);
 

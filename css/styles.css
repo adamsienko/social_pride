@@ -245,6 +245,7 @@ body {
     font-size: 4vw;
     font-weight: 700;
     margin-top: 0;
+    margin-bottom: 5px;
     padding-top: 73px;
     letter-spacing: 3px; }
 
@@ -375,8 +376,8 @@ body {
     width: 50%;
     margin: auto;
     font-family: 'Playfair Display', serif;
-    font-size: 16px;
-    line-height: 1.8; }
+    font-size: 1.2vw;
+    line-height: 2vw; }
 
 @media only screen and (max-width: 480px) {
   #offer1 .offer-header {
@@ -384,14 +385,6 @@ body {
     font-size: 12px; } }
   #offer1 .offer-main {
     width: 75%; }
-    #offer1 .offer-main .icon-loader {
-      width: 100px;
-      height: 100px;
-      margin-top: -17px; }
-
-@media only screen and (max-width: 1200px) {
-  #offer1 .offer-main .icon-loader {
-    width: 100px; } }
 
 @media only screen and (max-width: 480px) {
   #offer1 .offer-main {
@@ -399,7 +392,7 @@ body {
     padding-left: 0;
     padding-right: 0; } }
     #offer1 .offer-main h4 {
-      font-size: 38px;
+      font-size: 2.7vw;
       font-family: 'Saira Extra Condensed', sans-serif;
       font-weight: 700;
       margin-top: -20px; }
@@ -419,13 +412,9 @@ body {
     margin-bottom: 2px; } }
     #offer1 .offer-main p {
       font-family: 'Muli', sans-serif;
-      font-size: 16px; }
+      font-size: 1.1vw; }
 
-@media only screen and (max-width: 992px) {
-  #offer1 .offer-main p {
-    font-size: 12px; } }
-
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   #offer1 .offer-main p {
     font-size: 11px; } }
     #offer1 .offer-main .offer-marketing,
@@ -489,8 +478,6 @@ body {
 @media only screen and (max-width: 992px) {
   #blog1 .blog-first .fp-controlArrow {
     bottom: 50px; } }
-  #blog1 h2 {
-    margin-bottom: 0; }
   #blog1 .blog-main {
     background-image: url(../img/blog-back.jpg);
     background-position: bottom; }
@@ -517,12 +504,8 @@ body {
     #blog1 .blog-content h5 {
       margin: auto;
       width: 60%;
-      font-size: 23px;
+      font-size: 1.8vw;
       font-family: 'Playfair Display', serif; }
-
-@media only screen and (max-width: 1200px) {
-  #blog1 .blog-content h5 {
-    font-size: 21px; } }
 
 @media only screen and (max-width: 768px) {
   #blog1 .blog-content h5 {
@@ -534,7 +517,7 @@ body {
     #blog1 .blog-content p {
       margin: auto;
       width: 60%;
-      font-size: 13px;
+      font-size: 1.1vw;
       font-family: 'Muli', sans-serif;
       margin-bottom: 0; }
 

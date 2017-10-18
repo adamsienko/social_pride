@@ -742,7 +742,7 @@ body {
                 h6 {
                     font-family: 'Saira Extra Condensed', sans-serif;
                     font-weight: 700;
-                    font-size: 25px;
+                    font-size: 1.8vw;
                 }
                 p {
                     font-family: 'Muli', sans-serif;
@@ -766,6 +766,7 @@ body {
         @media#{$tablet} {
             font-size: 13px;
         }
+        .hours{
         padding-top: 35px;
-    }
+        }}
 }

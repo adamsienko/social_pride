@@ -660,7 +660,7 @@ body {
         #contact1 .contact-inner .contact-owner .contact-data h6 {
           font-family: 'Saira Extra Condensed', sans-serif;
           font-weight: 700;
-          font-size: 25px; }
+          font-size: 1.8vw; }
         #contact1 .contact-inner .contact-owner .contact-data p {
           font-family: 'Muli', sans-serif;
           font-size: 1.1vw; }
@@ -673,9 +673,10 @@ body {
     padding-top: 40px;
     padding-bottom: 10px;
     font-family: 'Muli', sans-serif;
-    font-size: 1.1vw;
-    padding-top: 35px; }
+    font-size: 1.1vw; }
 
 @media only screen and (max-width: 768px) {
   #contact1 address {
     font-size: 13px; } }
+    #contact1 address .hours {
+      padding-top: 35px; }

@@ -721,7 +721,7 @@ body {
         }
         .contact-owner {
             width: 100%;
-            padding-top: 20px;
+            padding-top: 50px;
             margin-left: -27px;
             @media#{$tablet} {
                 margin-left: 0;
@@ -758,14 +758,14 @@ body {
             }
         }
     }
-    address,
-    {
-        padding-top: 20px;
+    address{
+        padding-top: 40px;
         padding-bottom: 10px;
         font-family: 'Muli', sans-serif;
         font-size: 1.1vw;
         @media#{$tablet} {
             font-size: 13px;
         }
+        padding-top: 35px;
     }
 }

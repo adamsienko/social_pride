@@ -245,7 +245,7 @@ body {
     font-size: 4vw;
     font-weight: 700;
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding-top: 73px;
     letter-spacing: 3px; }
 
@@ -554,11 +554,11 @@ body {
       font-size: 1.8vw;
       font-family: 'Playfair Display', serif; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   #blog1 .blog-content h5 {
-    font-size: 19px; } }
+    font-size: 2.8vw; } }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   #blog1 .blog-content h5 {
     font-size: 17px; } }
     #blog1 .blog-content p {
@@ -567,6 +567,10 @@ body {
       font-size: 1.1vw;
       font-family: 'Muli', sans-serif;
       margin-bottom: 0; }
+
+@media only screen and (max-width: 992px) {
+  #blog1 .blog-content p {
+    font-size: 1.8vw; } }
 
 @media only screen and (max-width: 768px) {
   #blog1 .blog-content p {

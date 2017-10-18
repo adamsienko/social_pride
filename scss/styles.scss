@@ -293,7 +293,7 @@ body {
         font-size: 4vw;
         font-weight: 700;
         margin-top: 0;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         padding-top: 73px;
         letter-spacing: 3px;
         @media#{$desktop} {
@@ -620,10 +620,10 @@ body {
             width: 60%;
             font-size: 1.8vw;
             font-family: 'Playfair Display', serif;
-            @media#{$tablet} {
-                font-size: 19px;
+            @media#{$desktop} {
+                font-size: 2.8vw;
             }
-            @media#{$phone} {
+            @media#{$tablet} {
                 font-size: 17px;
             }
         }
@@ -633,6 +633,10 @@ body {
             font-size: 1.1vw;
             font-family: 'Muli', sans-serif;
             margin-bottom: 0;
+             @media#{$desktop} {
+                font-size: 1.8vw;
+            }
+            
             @media#{$tablet} {
                 font-size: 11px;
                 width: 80%;

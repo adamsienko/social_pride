@@ -464,7 +464,7 @@ body {
   .fp-controlArrow span {
     color: #000;
     font-family: 'Saira Extra Condensed', sans-serif;
-    font-size: 18px;
+    font-size: 1.35vw;
     font-weight: 500;
     border: none; }
 
@@ -488,15 +488,8 @@ body {
   #blog1 .blog-content {
     background-color: #fff;
     color: #000;
-    width: 100%;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 0;
+    padding-top: 40px;
     transition: all 0.6s; }
-
-@media only screen and (max-width: 1200px) {
-  #blog1 .blog-content {
-    padding-top: 13px; } }
 
 @media only screen and (max-width: 480px) {
   #blog1 .blog-content {
@@ -536,7 +529,7 @@ body {
       margin-top: 10px; }
       #blog1 .blog-content .more a {
         font-family: 'Saira Extra Condensed', sans-serif;
-        font-size: 16px;
+        font-size: 1.3vw;
         font-weight: 500;
         color: #1f59d1; }
       #blog1 .blog-content .more :hover {

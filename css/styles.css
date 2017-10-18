@@ -522,6 +522,14 @@ body {
     font-weight: 500;
     border: none; }
 
+@media only screen and (max-width: 992px) {
+  .fp-controlArrow span {
+    font-size: 2.35vw; } }
+
+@media only screen and (max-width: 768px) {
+  .fp-controlArrow span {
+    font-size: 3.35vw; } }
+
 #blog1 {
   background-color: #fff; }
   #blog1 .blog-first {
@@ -590,6 +598,14 @@ body {
         font-size: 1.3vw;
         font-weight: 500;
         color: #1f59d1; }
+
+@media only screen and (max-width: 992px) {
+  #blog1 .blog-content .more a {
+    font-size: 2.3vw; } }
+
+@media only screen and (max-width: 768px) {
+  #blog1 .blog-content .more a {
+    font-size: 3.3vw; } }
       #blog1 .blog-content .more :hover {
         text-decoration: none; }
   #blog1 .blog-content:hover {

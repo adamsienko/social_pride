@@ -286,6 +286,20 @@ body {
 @media only screen and (max-width: 768px) {
   body .icon-loader {
     display: none; } }
+    body .icon-loader .scale {
+      opacity: 0; }
+    body .icon-loader .scale-icon {
+      animation: scale 1s forwards;
+      animation-delay: 0.5s;
+      transform-origin: 50% 50%; }
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+    opacity: 1; }
+  100% {
+    transform: scale(1);
+    opacity: 1; } }
 
 @keyframes circle-anim {
   12% {

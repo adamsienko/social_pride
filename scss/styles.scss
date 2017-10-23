@@ -319,7 +319,7 @@ body {
     .fp-tableCell {
         display: block;
     }
-    //    SVG    
+    //    SVG           
     $totalAnim: 5s;
     $circleLen: 188.522;
     .icon-loader {
@@ -338,6 +338,24 @@ body {
         }
         @media#{$tablet} {
             display: none;
+        }
+        .scale{
+            opacity: 0;
+        }
+        .scale-icon {
+            animation: scale 1s forwards;
+            animation-delay: 0.5s;
+            transform-origin: 50% 50%;            
+        }
+    }
+    @keyframes scale {
+        0% {
+            transform: scale(0);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
         }
     }
     @keyframes circle-anim {
@@ -587,11 +605,11 @@ body {
         font-weight: 500;
         border: none;
         @media#{$desktop} {
-                font-size: 2.35vw;
-            }
-            @media#{$tablet} {
-                font-size: 3.35vw;
-            }
+            font-size: 2.35vw;
+        }
+        @media#{$tablet} {
+            font-size: 3.35vw;
+        }
     }
 }
 
@@ -639,10 +657,9 @@ body {
             font-size: 1.1vw;
             font-family: 'Muli', sans-serif;
             margin-bottom: 0;
-             @media#{$desktop} {
+            @media#{$desktop} {
                 font-size: 1.8vw;
             }
-            
             @media#{$tablet} {
                 font-size: 11px;
                 width: 80%;
@@ -661,12 +678,12 @@ body {
                 font-size: 1.3vw;
                 font-weight: 500;
                 color: #1f59d1;
-                 @media#{$desktop} {
-                font-size: 2.3vw;
-            }     
+                @media#{$desktop} {
+                    font-size: 2.3vw;
+                }
                 @media#{$tablet} {
-                font-size: 3.3vw;
-            }
+                    font-size: 3.3vw;
+                }
             }
              :hover {
                 text-decoration: none;
@@ -699,7 +716,6 @@ body {
         @media#{$desktop} {
             width: 33.33% !important;
         }
-     
         h5 {
             font-size: 1.6vw;
             @media#{$desktop} {
@@ -775,7 +791,7 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
-        h2 {
+    h2 {
         color: #fff;
     }
     .contact-inner {
@@ -787,17 +803,17 @@ body {
         }
         @media#{$tablet} {
             width: 80%;
-             padding-top: 0;
+            padding-top: 0;
         }
         p {
             font-family: 'Playfair Display', serif;
             font-size: 1.1vw;
-             @media#{$desktop} {
-           font-size: 2.1vw;
-        }
+            @media#{$desktop} {
+                font-size: 2.1vw;
+            }
             @media#{$tablet} {
-            font-size: 12px;
-        }
+                font-size: 12px;
+            }
         }
         .contact-owner {
             width: 100%;
@@ -805,8 +821,7 @@ body {
             margin-left: -27px;
             @media#{$tablet} {
                 margin-left: 0;
-                            padding-top: 20px;
-
+                padding-top: 20px;
             }
             .photo {
                 text-align: right;
@@ -825,22 +840,22 @@ body {
                     font-family: 'Saira Extra Condensed', sans-serif;
                     font-weight: 700;
                     font-size: 1.8vw;
-                     @media#{$desktop} {
-                     font-size: 2.8vw;    
+                    @media#{$desktop} {
+                        font-size: 2.8vw;
                     }
                     @media#{$tablet} {
-            font-size: 25px;
-        }
+                        font-size: 25px;
+                    }
                 }
                 p {
                     font-family: 'Muli', sans-serif;
                     font-size: 1.1vw;
-                     @media#{$desktop} {
-                     font-size: 1.8vw;    
+                    @media#{$desktop} {
+                        font-size: 1.8vw;
                     }
                     @media#{$tablet} {
-            font-size: 14px;
-        }
+                        font-size: 14px;
+                    }
                     a {
                         text-decoration: none;
                         color: #fff;
@@ -863,9 +878,9 @@ body {
         }
         .hours {
             padding-top: 35px;
-             @media#{$tablet} {
-            padding-top: 10px;
-        }
+            @media#{$tablet} {
+                padding-top: 10px;
+            }
         }
     }
 }

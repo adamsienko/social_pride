@@ -29,11 +29,27 @@ $(function () {
     });
 });
 
-/*FULL PAGE JS*/
+//BLOG - JUMPING TO POSTS
 
+$(document).on('click', '#post-1', function () {
+    $.fn.fullpage.silentMoveTo('blog-posts', 0);
+});
+$(document).on('click', '#back-blog-main', function () {
+    $.fn.fullpage.silentMoveTo('blog', 0);
+});
+
+
+
+$(document).on('click', '#post-2', function () {
+    $.fn.fullpage.silentMoveTo('blog-posts', 1);
+});
+$(document).on('click', '#post-3', function () {
+    $.fn.fullpage.silentMoveTo('blog-posts', 2);
+});
+/*FULL PAGE JS*/
 $(document).ready(function () {
     $('#fullpage').fullpage({
-        anchors: ['main', 'about', 'offer', 'blog', 'contact'],
+        anchors: ['main', 'about', 'offer', 'blog', 'contact', 'blog-posts'],
         menu: '#myMenu',
         controlArrows: false,
         scrollOverflow: true,
@@ -53,6 +69,8 @@ $(document).ready(function () {
             } else {
                 $('.about-main .icon-loader__circle').removeClass('m--left');
             }
+            //SCALING ICONS
+
             if (nextIndex == 2) {
                 $('.about-main .scale').addClass('scale-icon');
             } else {
@@ -67,7 +85,7 @@ $(document).ready(function () {
             } else {
                 $('.offer-main .icon-loader__circle').removeClass('m--left');
             }
-
+            //SCALING ICONS
             if (nextIndex == 3) {
                 $('.offer-main .scale').addClass('scale-icon');
             } else {
@@ -82,6 +100,11 @@ $(document).ready(function () {
             if (nextIndex == 5) {
                 $('.dotstyle li:nth-child(5)').addClass('active current');
                 $('.dotstyle li:not(:nth-child(5))').removeClass('active current');
+
+                // LOCK SCROLL BLOG POSTS
+                $.fn.fullpage.setAllowScrolling(false, 'down');
+            } else {
+                $.fn.fullpage.setAllowScrolling(true, 'down');
             }
         }
 

@@ -339,14 +339,13 @@ body {
         @media#{$tablet} {
             display: none;
         }
-        .scale{
+        .scale {
             opacity: 0;
         }
         .scale-icon {
             animation: scale 1s forwards;
             animation-delay: 0.5s;
             transform-origin: 50% 50%;
-            
         }
     }
     @keyframes scale {
@@ -479,408 +478,476 @@ body {
             }
         }
     }
-}
-
-
-/*OFFER*/
-
-#offer1 {
-    position: relative;
-    background-image: url(../img/background-offer.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-    &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: linear-gradient(90deg, #2b2c31 47px, transparent 1%) center, linear-gradient(#3c3d41 3px, transparent 1%) center, #2b2c31;
-        background-size: 50px 50px;
-        z-index: -1;
-    }
-    .scroll {
-        width: 100%;
-        margin: 20px 0 20px;
-        .cd-scroll-down {
-            position: inherit;
-        }
-    }
-    .offer-header {
-        width: 50%;
-        margin: auto;
-        font-family: 'Playfair Display', serif;
-        font-size: 1.2vw;
-        line-height: 2vw;
-        @media#{$desktop} {
-            font-size: 1.8vw;
-            line-height: inherit;
-        }
-        @media#{$tablet} {
-            width: 80%;
-            font-size: 12px;
-        }
-    }
-    .offer-main {
-        width: 75%;
-        @media#{$tablet} {
-            width: 90%;
-            padding-left: 0;
-            padding-right: 0;
-        }
-        h4 {
-            font-size: 2.7vw;
-            font-family: 'Saira Extra Condensed', sans-serif;
-            font-weight: 700;
-            margin-top: -20px;
-            @media#{$desktop} {
-                font-size: 3.5vw;
-            }
-            @media#{$tablet} {
-                font-size: 4.5vw;
-                margin-top: 0;
-            }
-        }
-        p {
-            font-family: 'Muli', sans-serif;
-            font-size: 1.1vw;
-            color: #cfd0d0;
-            @media#{$desktop} {
-                font-size: 1.7vw;
-            }
-            @media#{$tablet} {
-                font-size: 11px;
-            }
-        }
-        .offer-marketing,
-        .offer-szkolenia {
-            text-align: left;
-            padding: 0;
-            @media#{$tablet} {
-                text-align: center;
-            }
-        }
-        .offer-marketing {
-            padding-top: 0;
-        }
-        .offer-social {
-            text-align: right;
-            margin-top: -90px;
-            padding: 0;
-            @media#{$large} {
-                margin-top: -20px;
-            }
-            @media#{$desktop} {
-                margin-top: 5px;
-            }
-            @media#{$tablet} {
-                text-align: center;
-            }
-            @media#{$phone} {
-                margin-top: 0px;
-            }
-        }
-        .offer-szkolenia {
-            margin-top: -80px;
-            @media#{$large} {
-                margin-top: 0;
-            }
-        }
-    }
-}
-
-
-/*BLOG*/
-
-.fp-controlArrow {
-    width: auto;
-    position: absolute;
-    transform: translateX(-50%);
-    bottom: 100px;
-    span {
-        color: #000;
-        font-family: 'Saira Extra Condensed', sans-serif;
-        font-size: 1.35vw;
-        font-weight: 500;
-        border: none;
-        @media#{$desktop} {
-            font-size: 2.35vw;
-        }
-        @media#{$tablet} {
-            font-size: 3.35vw;
-        }
-    }
-}
-
-#blog1 {
-    background-color: #fff;
-    .blog-first {
+    /*OFFER*/
+    #offer1 {
         position: relative;
-        .fp-controlArrow {
-            left: 50%;
-            @media#{$desktop} {
-                bottom: 50px;
+        background-image: url(../img/background-offer.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(90deg, #2b2c31 47px, transparent 1%) center, linear-gradient(#3c3d41 3px, transparent 1%) center, #2b2c31;
+            background-size: 50px 50px;
+            z-index: -1;
+        }
+        .scroll {
+            width: 100%;
+            margin: 20px 0 20px;
+            .cd-scroll-down {
+                position: inherit;
             }
         }
-    }
-    .blog-main {
-        background-image: url(../img/blog-back.jpg);
-        background-position: bottom;
-        @media#{$tablet} {
-            background: none;
-        }
-    }
-    .blog-content {
-        background-color: #fff;
-        color: #000;
-        padding-top: 40px;
-        transition: all 0.6s;
-        @media#{$phone} {
-            padding-top: 5px;
-        }
-        h5 {
+        .offer-header {
+            width: 50%;
             margin: auto;
-            width: 60%;
-            font-size: 1.8vw;
             font-family: 'Playfair Display', serif;
-            @media#{$desktop} {
-                font-size: 2.8vw;
-            }
-            @media#{$tablet} {
-                font-size: 17px;
-            }
-        }
-        p {
-            margin: auto;
-            width: 60%;
-            font-size: 1.1vw;
-            font-family: 'Muli', sans-serif;
-            margin-bottom: 0;
+            font-size: 1.2vw;
+            line-height: 2vw;
             @media#{$desktop} {
                 font-size: 1.8vw;
+                line-height: inherit;
             }
             @media#{$tablet} {
-                font-size: 11px;
                 width: 80%;
-            }
-            @media#{$phone} {
-                width: 90%;
-            }
-        }
-        .more {
-            border-top: solid 1px #1f59d1;
-            width: 70px;
-            margin: auto;
-            margin-top: 10px;
-            a {
-                font-family: 'Saira Extra Condensed', sans-serif;
-                font-size: 1.3vw;
-                font-weight: 500;
-                color: #1f59d1;
-                @media#{$desktop} {
-                    font-size: 2.3vw;
-                }
-                @media#{$tablet} {
-                    font-size: 3.3vw;
-                }
-            }
-             :hover {
-                text-decoration: none;
-            }
-        }
-    }
-    .blog-content:hover {
-        background: rgba(0, 0, 0, 0.1);
-        @media#{$tablet} {
-            background: none;
-        }
-    }
-    a {
-        font-size: 16px;
-        font-family: 'Saira Extra Condensed', sans-serif;
-        color: #000;
-        margin-top: 20px;
-    }
-     :hover {
-        text-decoration: none;
-    }
-    .cd-scroll-down {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .half {
-        position: relative;
-        width: 16.5% !important;
-        @media#{$desktop} {
-            width: 33.33% !important;
-        }
-        h5 {
-            font-size: 1.6vw;
-            @media#{$desktop} {
-                font-size: 2.6vw;
-            }
-            @media#{$tablet} {
-                font-size: 17px;
-            }
-        }
-        p {
-            width: 80%;
-            font-size: 1vw;
-            @media#{$desktop} {
-                font-size: 1.8vw;
-                width: 90%;
-            }
-            @media#{$tablet} {
-                font-size: 11px;
-            }
-        }
-        .cd-scroll-down {
-            left: 100%;
-        }
-        .fp-controlArrow {
-            left: 98%;
-            border: none;
-            @media#{$desktop} {
-                bottom: 50px;
-                left: 40%;
-            }
-        }
-        .fp-next {
-            @media#{$desktoponly} {
-                display: none;
-            }
-            @media#{$desktop} {
-                left: 60%;
-            }
-        }
-    }
-    #button-back {
-        left: 49%;
-        transform: translateX(-50%);
-        @media#{$desktoponly} {
-            display: none;
-        }
-    }
-    .blog-second {
-        h2 {
-            width: 200%;
-            @media#{$desktop} {
-                width: 100%;
-            }
-        }
-    }
-    .blog-third {
-        h2 {
-            opacity: 0;
-            @media#{$desktop} {
-                opacity: 1;
-            }
-        }
-    }
-}
-
-
-/*KONTAKT*/
-
-#contact1 {
-    position: relative;
-    background-color: #1f59d1;
-    background-image: url(../img/background-contact.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-    h2 {
-        color: #fff;
-    }
-    .contact-inner {
-        width: 50%;
-        margin: auto;
-        padding-top: 20px;
-        @media#{$desktop} {
-            width: 60%;
-        }
-        @media#{$tablet} {
-            width: 80%;
-            padding-top: 0;
-        }
-        p {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.1vw;
-            @media#{$desktop} {
-                font-size: 2.1vw;
-            }
-            @media#{$tablet} {
                 font-size: 12px;
             }
         }
-        .contact-owner {
-            width: 100%;
-            padding-top: 50px;
-            margin-left: -27px;
+        .offer-main {
+            width: 75%;
             @media#{$tablet} {
-                margin-left: 0;
-                padding-top: 20px;
+                width: 90%;
+                padding-left: 0;
+                padding-right: 0;
             }
-            .photo {
-                text-align: right;
+            h4 {
+                font-size: 2.7vw;
+                font-family: 'Saira Extra Condensed', sans-serif;
+                font-weight: 700;
+                margin-top: -20px;
+                @media#{$desktop} {
+                    font-size: 3.5vw;
+                }
                 @media#{$tablet} {
-                    text-align: center;
+                    font-size: 4.5vw;
+                    margin-top: 0;
                 }
             }
-            .contact-data {
+            p {
+                font-family: 'Muli', sans-serif;
+                font-size: 1.1vw;
+                color: #cfd0d0;
+                @media#{$desktop} {
+                    font-size: 1.7vw;
+                }
+                @media#{$tablet} {
+                    font-size: 11px;
+                }
+            }
+            .offer-marketing,
+            .offer-szkolenia {
                 text-align: left;
-                padding-left: 9px;
-                margin-top: -7px;
+                padding: 0;
                 @media#{$tablet} {
                     text-align: center;
                 }
-                h6 {
-                    font-family: 'Saira Extra Condensed', sans-serif;
-                    font-weight: 700;
+            }
+            .offer-marketing {
+                padding-top: 0;
+            }
+            .offer-social {
+                text-align: right;
+                margin-top: -90px;
+                padding: 0;
+                @media#{$large} {
+                    margin-top: -20px;
+                }
+                @media#{$desktop} {
+                    margin-top: 5px;
+                }
+                @media#{$tablet} {
+                    text-align: center;
+                }
+                @media#{$phone} {
+                    margin-top: 0px;
+                }
+            }
+            .offer-szkolenia {
+                margin-top: -80px;
+                @media#{$large} {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    /*BLOG*/
+    .fp-controlArrow {
+        width: auto;
+        position: absolute;
+        transform: translateX(-50%);
+        bottom: 100px;
+        span {
+            color: #000;
+            font-family: 'Saira Extra Condensed', sans-serif;
+            font-size: 1.35vw;
+            font-weight: 500;
+            border: none;
+            @media#{$desktop} {
+                font-size: 2.35vw;
+            }
+            @media#{$tablet} {
+                font-size: 3.35vw;
+            }
+        }
+    }
+    h5 {
+        margin: auto;
+        width: 60%;
+        font-size: 1.8vw;
+        font-family: 'Playfair Display', serif;
+        @media#{$desktop} {
+            font-size: 2.8vw;
+        }
+        @media#{$tablet} {
+            font-size: 17px;
+        }
+    }
+    #blog1 {
+        background-color: #fff;
+        .blog-first {
+            position: relative;
+            .fp-controlArrow {
+                left: 50%;
+                @media#{$desktop} {
+                    bottom: 50px;
+                }
+            }
+        }
+        .blog-main {
+            background-image: url(../img/blog-back.jpg);
+            background-position: bottom;
+            @media#{$tablet} {
+                background: none;
+            }
+        }
+        .blog-content {
+            background-color: #fff;
+            color: #000;
+            padding-top: 40px;
+            transition: all 0.6s;
+            @media#{$phone} {
+                padding-top: 5px;
+            }
+            p {
+                margin: auto;
+                width: 60%;
+                font-size: 1.1vw;
+                font-family: 'Muli', sans-serif;
+                margin-bottom: 0;
+                @media#{$desktop} {
                     font-size: 1.8vw;
+                }
+                @media#{$tablet} {
+                    font-size: 11px;
+                    width: 80%;
+                }
+                @media#{$phone} {
+                    width: 90%;
+                }
+            }
+            .more {
+                border-top: solid 1px #1f59d1;
+                width: 70px;
+                margin: auto;
+                margin-top: 10px;
+                cursor: pointer;
+                p {
+                    font-family: 'Saira Extra Condensed', sans-serif;
+                    font-size: 1.3vw;
+                    font-weight: 500;
+                    color: #1f59d1;
                     @media#{$desktop} {
-                        font-size: 2.8vw;
+                        font-size: 2.3vw;
                     }
                     @media#{$tablet} {
-                        font-size: 25px;
+                        font-size: 3.3vw;
                     }
                 }
-                p {
-                    font-family: 'Muli', sans-serif;
-                    font-size: 1.1vw;
-                    @media#{$desktop} {
-                        font-size: 1.8vw;
-                    }
+            }
+        }
+        .blog-content:hover {
+            background: rgba(0, 0, 0, 0.1);
+            @media#{$tablet} {
+                background: none;
+            }
+        }
+        a {
+            font-size: 16px;
+            font-family: 'Saira Extra Condensed', sans-serif;
+            color: #000;
+            margin-top: 20px;
+        }
+         :hover {
+            text-decoration: none;
+        }
+        .cd-scroll-down {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .half {
+            position: relative;
+            width: 16.5% !important;
+            @media#{$desktop} {
+                width: 33.33% !important;
+            }
+            h5 {
+                font-size: 1.6vw;
+                @media#{$desktop} {
+                    font-size: 2.6vw;
+                }
+                @media#{$tablet} {
+                    font-size: 17px;
+                }
+            }
+            p {
+                width: 80%;
+                font-size: 1vw;
+                @media#{$desktop} {
+                    font-size: 1.8vw;
+                    width: 90%;
+                }
+                @media#{$tablet} {
+                    font-size: 11px;
+                }
+            }
+            .cd-scroll-down {
+                left: 100%;
+            }
+            .fp-controlArrow {
+                left: 98%;
+                border: none;
+                @media#{$desktop} {
+                    bottom: 50px;
+                    left: 40%;
+                }
+            }
+            .fp-next {
+                @media#{$desktoponly} {
+                    display: none;
+                }
+                @media#{$desktop} {
+                    left: 60%;
+                }
+            }
+        }
+        #button-back {
+            left: 49%;
+            transform: translateX(-50%);
+            @media#{$desktoponly} {
+                display: none;
+            }
+        }
+        .blog-second {
+            h2 {
+                width: 200%;
+                @media#{$desktop} {
+                    width: 100%;
+                }
+            }
+        }
+        .blog-third {
+            h2 {
+                opacity: 0;
+                @media#{$desktop} {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    /*KONTAKT*/
+    #contact1 {
+        position: relative;
+        background-color: #1f59d1;
+        background-image: url(../img/background-contact.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+        h2 {
+            color: #fff;
+        }
+        .contact-inner {
+            width: 50%;
+            margin: auto;
+            padding-top: 20px;
+            @media#{$desktop} {
+                width: 60%;
+            }
+            @media#{$tablet} {
+                width: 80%;
+                padding-top: 0;
+            }
+            p {
+                font-family: 'Playfair Display', serif;
+                font-size: 1.1vw;
+                @media#{$desktop} {
+                    font-size: 2.1vw;
+                }
+                @media#{$tablet} {
+                    font-size: 12px;
+                }
+            }
+            .contact-owner {
+                width: 100%;
+                padding-top: 50px;
+                margin-left: -27px;
+                @media#{$tablet} {
+                    margin-left: 0;
+                    padding-top: 20px;
+                }
+                .photo {
+                    text-align: right;
                     @media#{$tablet} {
-                        font-size: 14px;
+                        text-align: center;
                     }
-                    a {
-                        text-decoration: none;
-                        color: #fff;
-                         :hover {
+                }
+                .contact-data {
+                    text-align: left;
+                    padding-left: 9px;
+                    margin-top: -7px;
+                    @media#{$tablet} {
+                        text-align: center;
+                    }
+                    h6 {
+                        font-family: 'Saira Extra Condensed', sans-serif;
+                        font-weight: 700;
+                        font-size: 1.8vw;
+                        @media#{$desktop} {
+                            font-size: 2.8vw;
+                        }
+                        @media#{$tablet} {
+                            font-size: 25px;
+                        }
+                    }
+                    p {
+                        font-family: 'Muli', sans-serif;
+                        font-size: 1.1vw;
+                        @media#{$desktop} {
+                            font-size: 1.8vw;
+                        }
+                        @media#{$tablet} {
+                            font-size: 14px;
+                        }
+                        a {
                             text-decoration: none;
+                            color: #fff;
+                             :hover {
+                                text-decoration: none;
+                            }
                         }
                     }
                 }
             }
         }
-    }
-    address {
-        padding-top: 40px;
-        font-family: 'Muli', sans-serif;
-        font-size: 1.1vw;
-        margin-bottom: 0;
-        @media#{$tablet} {
-            font-size: 14px;
-            padding-top: 10px;
-        }
-        .hours {
-            padding-top: 35px;
+        address {
+            padding-top: 40px;
+            font-family: 'Muli', sans-serif;
+            font-size: 1.1vw;
+            margin-bottom: 0;
             @media#{$tablet} {
+                font-size: 14px;
                 padding-top: 10px;
+            }
+            .hours {
+                padding-top: 35px;
+                @media#{$tablet} {
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+    #blog-posts1 {
+        background-color: #fff;
+        .post-inner {
+            width: 50%;
+            margin: auto;
+            @media#{$tablet} {
+                width: 80%;
+            }
+            img {
+                width: 100%;
+            }
+            h5 {
+                color: #1f59d1;
+                padding: 15px;
+            }
+            figure {
+                padding-bottom: 20px;
+                margin: auto;
+                img {
+                    border-radius: 50%;
+                    width: 70px;
+                    display: inline-block;
+                }
+                figcaption {
+                    color: darkgrey;
+                    display: inline-block;
+                    vertical-align: middle;
+                    text-align: left;
+                    font-family: 'Muli', sans-serif;
+                    font-size: 14px;
+                    padding-left: 10px;
+                }
+            }
+            p {
+                color: #000;
+                margin: auto;
+                font-size: 1.1vw;
+                font-family: 'Muli', sans-serif;
+                margin-bottom: 0;
+                @media#{$desktop} {
+                    font-size: 1.8vw;
+                }
+                @media#{$tablet} {
+                    font-size: 11px;
+                }
+            }
+            .back-blog {
+                border: none;
+                background: transparent;
+                outline-style: none;
+                color: #000;
+                font-family: 'Saira Extra Condensed', sans-serif;
+                font-size: 1.35vw;
+                font-weight: 500;
+            }
+            .social-media {
+                padding-top: 20px;
+                .fa {
+                    background-color: #3c5b9a;
+                    border-radius: 50%;
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+                    font-size: 18px;
+                    cursor: pointer;
+                    margin: 10px;
+                    &.fa-twitter {
+                        background-color: #1da1f2;
+                    }
+                    &.fa-linkedin {
+                        background-color: #0077b5;
+                    }
+                }
+                .fa:hover {
+                    transform: scale(1.1);
+                    transition-duration: 0.2s;
+                }
             }
         }
     }

@@ -345,7 +345,8 @@ body {
         .scale-icon {
             animation: scale 1s forwards;
             animation-delay: 0.5s;
-            transform-origin: 50% 50%;            
+            transform-origin: 50% 50%;
+            
         }
     }
     @keyframes scale {

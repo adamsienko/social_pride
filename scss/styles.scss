@@ -5,6 +5,7 @@ body {
     background: #000;
     text-align: center;
     color: #fff;
+    margin: 0;
     //BLUE MENU
     .sidebar {
         @media#{$tablet} {
@@ -383,6 +384,9 @@ body {
         background-size: contain;
         background-position: center;
         .main-header {
+            position: absolute;
+            top: 20%;
+            width: 100%;
             h1 {
                 font-family: 'Playfair Display', serif;
                 font-size: 5vw;
@@ -591,6 +595,7 @@ body {
         position: absolute;
         transform: translateX(-50%);
         bottom: 100px;
+        border: none;
         span {
             color: #000;
             font-family: 'Saira Extra Condensed', sans-serif;
@@ -629,7 +634,7 @@ body {
             }
         }
         .blog-main {
-            background-image: url(../img/blog-back.jpg);
+            background-image: url(../img/blog-post.jpg);
             background-position: bottom;
             @media#{$tablet} {
                 background: none;

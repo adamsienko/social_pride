@@ -4,6 +4,7 @@ body {
   background: #000;
   text-align: center;
   color: #fff;
+  margin: 0;
   /*NAV MOBILE*/
   /*  EXTRAS*/
   /* SCROLL PAGE*/
@@ -323,6 +324,9 @@ body {
     body #main1 .main-header {
       position: absolute;
       top: 20%;
+      width: 100%;
+      position: absolute;
+      top: 20%;
       width: 100%; }
       body #main1 .main-header h1 {
         font-family: 'Playfair Display', serif;
@@ -527,7 +531,8 @@ body {
     width: auto;
     position: absolute;
     transform: translateX(-50%);
-    bottom: 100px; }
+    bottom: 100px;
+    border: none; }
     body .fp-controlArrow span {
       color: #000;
       font-family: 'Saira Extra Condensed', sans-serif;
@@ -566,7 +571,7 @@ body {
   body #blog1 .blog-first .fp-controlArrow {
     bottom: 50px; } }
     body #blog1 .blog-main {
-      background-image: url(../img/blog-back.jpg);
+      background-image: url(../img/blog-post.jpg);
       background-position: bottom; }
 
 @media only screen and (max-width: 768px) {

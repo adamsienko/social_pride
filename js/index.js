@@ -106,8 +106,12 @@ $(document).ready(function () {
             } else {
                 $.fn.fullpage.setAllowScrolling(true, 'down');
             }
+            
+            if (nextIndex == 6) {
+                $.fn.fullpage.setAllowScrolling(false, 'up');
+            }else {
+                $.fn.fullpage.setAllowScrolling(true, 'up');
+            }
         }
-
-
     })
 });

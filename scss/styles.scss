@@ -386,7 +386,14 @@ body {
     /*SECTIONS*/
     /*MAIN*/
     #main1 {
-        background: #000;
+        z-index: 1;
+        .main-background {
+            width: 100%;
+            height: 100%;
+            background: #000;
+            position: absolute;
+            z-index: -9999;
+        }
         .main-header {
             position: absolute;
             top: 20%;
@@ -413,7 +420,13 @@ body {
     }
     /*ABOUT*/
     #about1 {
-        background: #000;
+        .about-background {
+            width: 100%;
+            height: 100%;
+            background: #000;
+            position: absolute;
+            z-index: -9999;
+        }
         .scroll {
             margin: 20px 0 20px;
             .cd-scroll-down {

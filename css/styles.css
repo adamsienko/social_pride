@@ -317,7 +317,8 @@ body {
     stroke-dashoffset: 0; } }
   body canvas {
     height: 90vh;
-    position: fixed;
+    position: absolute;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1; }
@@ -351,22 +352,24 @@ body {
 @media only screen and (max-width: 768px) {
   body #main1 .main-header img {
     width: 130px; } }
-  body #about1 .about-background {
-    width: 100%;
-    height: 100%;
-    background: #000;
-    position: absolute;
-    z-index: -9999; }
-  body #about1 .scroll {
-    margin: 20px 0 20px; }
-    body #about1 .scroll .cd-scroll-down {
-      position: inherit; }
-  body #about1 .about-header {
-    width: 50%;
-    margin: auto;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.2vw;
-    line-height: 2vw; }
+  body #about1 {
+    z-index: 1; }
+    body #about1 .about-background {
+      width: 100%;
+      height: 100%;
+      background: #000;
+      position: absolute;
+      z-index: -9999; }
+    body #about1 .scroll {
+      margin: 20px 0 20px; }
+      body #about1 .scroll .cd-scroll-down {
+        position: inherit; }
+    body #about1 .about-header {
+      width: 50%;
+      margin: auto;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2vw;
+      line-height: 2vw; }
 
 @media only screen and (max-width: 992px) {
   body #about1 .about-header {
@@ -377,9 +380,9 @@ body {
   body #about1 .about-header {
     width: 80%;
     font-size: 12px; } }
-  body #about1 .about-main {
-    width: 80%;
-    padding-top: 10px; }
+    body #about1 .about-main {
+      width: 80%;
+      padding-top: 10px; }
 
 @media only screen and (max-width: 992px) {
   body #about1 .about-main {
@@ -391,10 +394,10 @@ body {
 @media only screen and (max-width: 992px) {
   body #about1 .about-main {
     width: 90%; } }
-  body #about1 h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.4vw;
-    margin-top: 0; }
+    body #about1 h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4vw;
+      margin-top: 0; }
 
 @media only screen and (max-width: 992px) {
   body #about1 h3 {
@@ -404,8 +407,8 @@ body {
 @media only screen and (max-width: 768px) {
   body #about1 h3 {
     font-size: 3.4vw; } }
-    body #about1 h3 span {
-      font-size: 2.5vw; }
+      body #about1 h3 span {
+        font-size: 2.5vw; }
 
 @media only screen and (max-width: 992px) {
   body #about1 h3 span {
@@ -414,11 +417,11 @@ body {
 @media only screen and (max-width: 768px) {
   body #about1 h3 span {
     font-size: 4.5vw; } }
-  body #about1 p {
-    font-family: 'Muli', sans-serif;
-    font-size: 1.1vw;
-    line-height: 1.8vw;
-    color: #cfd0d0; }
+    body #about1 p {
+      font-family: 'Muli', sans-serif;
+      font-size: 1.1vw;
+      line-height: 1.8vw;
+      color: #cfd0d0; }
 
 @media only screen and (max-width: 992px) {
   body #about1 p {

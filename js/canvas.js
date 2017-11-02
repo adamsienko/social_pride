@@ -69,7 +69,8 @@ for (var i = 0; i < randomLinesAmount; i++) {
             ctx.fill();
             ctx.strokeStyle = '#252525';
             ctx.stroke();
-            ctx.closePath();
+            ctx.closePath();    
+         
         }
     }
 
@@ -122,7 +123,7 @@ for (var i = 0; i < randomLinesAmount; i++) {
 
 
     function draw() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height); //2 razy width?
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         for (i = 0; i < circleFloating.length; i++) {
             if (circleFloating[i][0] < circle[i][0] - floatingAmount) {}

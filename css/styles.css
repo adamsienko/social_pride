@@ -353,7 +353,8 @@ body {
   body #main1 .main-header img {
     width: 130px; } }
   body #about1 {
-    z-index: 1; }
+    z-index: 1;
+    position: relative; }
     body #about1 .about-background {
       width: 100%;
       height: 100%;
@@ -431,20 +432,24 @@ body {
 @media only screen and (max-width: 768px) {
   body #about1 p {
     font-size: 11px; } }
-  body #offer1 {
+  body #offer1 .offer-background {
     background: linear-gradient(90deg, #2b2c31 47px, transparent 1%) center, linear-gradient(#3c3d41 3px, transparent 1%) center, #2b2c31;
-    background-size: 50px 50px; }
-    body #offer1 .scroll {
-      width: 100%;
-      margin: 20px 0 20px; }
-      body #offer1 .scroll .cd-scroll-down {
-        position: inherit; }
-    body #offer1 .offer-header {
-      width: 50%;
-      margin: auto;
-      font-family: 'Playfair Display', serif;
-      font-size: 1.2vw;
-      line-height: 2vw; }
+    background-size: 50px 50px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -9999; }
+  body #offer1 .scroll {
+    width: 100%;
+    margin: 20px 0 20px; }
+    body #offer1 .scroll .cd-scroll-down {
+      position: inherit; }
+  body #offer1 .offer-header {
+    width: 50%;
+    margin: auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2vw;
+    line-height: 2vw; }
 
 @media only screen and (max-width: 992px) {
   body #offer1 .offer-header {
@@ -455,19 +460,19 @@ body {
   body #offer1 .offer-header {
     width: 80%;
     font-size: 12px; } }
-    body #offer1 .offer-main {
-      width: 75%; }
+  body #offer1 .offer-main {
+    width: 75%; }
 
 @media only screen and (max-width: 768px) {
   body #offer1 .offer-main {
     width: 90%;
     padding-left: 0;
     padding-right: 0; } }
-      body #offer1 .offer-main h4 {
-        font-size: 2.7vw;
-        font-family: 'Saira Extra Condensed', sans-serif;
-        font-weight: 700;
-        margin-top: -20px; }
+    body #offer1 .offer-main h4 {
+      font-size: 2.7vw;
+      font-family: 'Saira Extra Condensed', sans-serif;
+      font-weight: 700;
+      margin-top: -20px; }
 
 @media only screen and (max-width: 992px) {
   body #offer1 .offer-main h4 {
@@ -477,10 +482,10 @@ body {
   body #offer1 .offer-main h4 {
     font-size: 4.5vw;
     margin-top: 0; } }
-      body #offer1 .offer-main p {
-        font-family: 'Muli', sans-serif;
-        font-size: 1.1vw;
-        color: #cfd0d0; }
+    body #offer1 .offer-main p {
+      font-family: 'Muli', sans-serif;
+      font-size: 1.1vw;
+      color: #cfd0d0; }
 
 @media only screen and (max-width: 992px) {
   body #offer1 .offer-main p {
@@ -489,21 +494,21 @@ body {
 @media only screen and (max-width: 768px) {
   body #offer1 .offer-main p {
     font-size: 11px; } }
-      body #offer1 .offer-main .offer-marketing,
-      body #offer1 .offer-main .offer-szkolenia {
-        text-align: left;
-        padding: 0; }
+    body #offer1 .offer-main .offer-marketing,
+    body #offer1 .offer-main .offer-szkolenia {
+      text-align: left;
+      padding: 0; }
 
 @media only screen and (max-width: 768px) {
   body #offer1 .offer-main .offer-marketing,
   body #offer1 .offer-main .offer-szkolenia {
     text-align: center; } }
-      body #offer1 .offer-main .offer-marketing {
-        padding-top: 0; }
-      body #offer1 .offer-main .offer-social {
-        text-align: right;
-        margin-top: -90px;
-        padding: 0; }
+    body #offer1 .offer-main .offer-marketing {
+      padding-top: 0; }
+    body #offer1 .offer-main .offer-social {
+      text-align: right;
+      margin-top: -90px;
+      padding: 0; }
 
 @media only screen and (max-width: 1200px) {
   body #offer1 .offer-main .offer-social {
@@ -520,8 +525,8 @@ body {
 @media only screen and (max-width: 480px) {
   body #offer1 .offer-main .offer-social {
     margin-top: 0px; } }
-      body #offer1 .offer-main .offer-szkolenia {
-        margin-top: -80px; }
+    body #offer1 .offer-main .offer-szkolenia {
+      margin-top: -80px; }
 
 @media only screen and (max-width: 1200px) {
   body #offer1 .offer-main .offer-szkolenia {

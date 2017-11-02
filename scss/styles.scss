@@ -422,6 +422,7 @@ body {
     /*ABOUT*/
     #about1 {
         z-index: 1;
+        position: relative;
         .about-background {
             width: 100%;
             height: 100%;
@@ -500,8 +501,14 @@ body {
     }
     /*OFFER*/
     #offer1 {
-        background: linear-gradient(90deg, #2b2c31 47px, transparent 1%) center, linear-gradient(#3c3d41 3px, transparent 1%) center, #2b2c31;
-        background-size: 50px 50px;
+        .offer-background {
+            background: linear-gradient(90deg, #2b2c31 47px, transparent 1%) center, linear-gradient(#3c3d41 3px, transparent 1%) center, #2b2c31;
+            background-size: 50px 50px;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -9999;
+        }
         .scroll {
             width: 100%;
             margin: 20px 0 20px;

@@ -1,59 +1,140 @@
+var time = 0;
+
 var canvas = document.querySelector('canvas');
 
-canvas.width = 750;
-canvas.height = 714;
+//canvas.width = window.innerWidth;
+//canvas.height = window.innerHeight;
+
+var ctx = canvas.getContext('2d');
+
+var numberOfSides = 130,
+    size = 220,
+    Xcenter = 240,
+    Ycenter = 240,
+    floatingAmount = 20,
+    pointSpeedFactor = 15;
+
+var randomLinesAmount = Math.random() * 90;
+var randomLines = new Array();
+var circle = new Array();
+var circleFloating = new Array();
 
 
-var c = canvas.getContext('2d');
+for (var i = 1; i <= numberOfSides; i += 1) {
+    x = Xcenter + size * Math.cos(i * 2 * Math.PI / numberOfSides) + Math.random() * 80;
+    y = Ycenter + size * Math.sin(i * 2 * Math.PI / numberOfSides) + Math.random() * 80;
+    circle.push([x, y]);
+    circleFloating.push([x, y, '', '']);
+}
+
+for (var i = 0; i < randomLinesAmount; i++) {
+    randomLines.push(Math.floor(Math.random() * circleFloating.length));
+}
+
+/*function drawlines() {
+    for (var i = 0; i < randomLinesAmount; i++) {
+        ctx.beginPath();
+        ctx.moveTo(circleFloating[randomLines[i]][0], circleFloating[randomLines[i]][1]);
+        if (i > 0) {
+            ctx.lineTo(circleFloating[randomLines[i - 1]][0], circleFloating[randomLines[i - 1]][1]);
+        } else {
+            ctx.lineTo(circleFloating[randomLines[0]][0], circleFloating[randomLines[0]][1]);
+
+        }
+        ctx.strokeStyle = "#252525";
+            ctx.lineWidth = 0.3;
+            ctx.stroke();
+        
+        ctx.closePath();
+        
+    }
+}*/
+
+    function drawCircle() {
+        for (i = 0; i < circle.length; i++) {
+            ctx.beginPath();
+            ctx.moveTo(circleFloating[i][0], circleFloating[i][1]);
+            if (i > 0) {
+                ctx.lineTo(circleFloating[i - 1][0], circleFloating[i - 1][1]);
+            } else {
+                ctx.lineTo(circleFloating[0][0], circleFloating[0][1]);
+            }
+            ctx.strokeStyle = "#252525";
+            ctx.lineWidth = 1;
+            ctx.stroke();
+            ctx.closePath();
 
 
-c.beginPath();
-c.moveTo(133, 24);
-c.lineTo(190, 85);
-c.lineTo(215, 107);
-c.lineTo(201, 42);
-c.lineTo(186, 105);
-c.lineTo(177, 123);
-c.lineTo(165, 141);
-c.lineTo(127, 84);
-c.lineTo(177, 123);
-c.lineTo(215, 107);
-c.lineTo(186, 105);
-c.lineTo(127, 84);
-c.lineTo(190, 85);
+            ctx.beginPath();
+            ctx.arc(circleFloating[i][0], circleFloating[i][1], 2, 0, Math.PI * 2, false);
+            ctx.fillStyle = '#252525';
+            ctx.fill();
+            ctx.strokeStyle = '#252525';
+            ctx.stroke();
+            ctx.closePath();
+        }
+    }
 
-c.lineWidth=2;
-c.strokeStyle = 'darkgrey';
-c.stroke();
+    function floatingCoordinates() {
 
+        for (i = 0; i < circle.length; i++) {
 
-c.beginPath();
-c.moveTo(78, 116);
-c.lineTo(102, 166);
-c.lineTo(96, 235);
-c.lineTo(28, 183);
-c.lineTo(102, 166);
-c.lineTo(165, 141);
-c.lineTo(107, 98);
-c.lineTo(102, 166);
-c.lineTo(32, 126);
+            if (circleFloating[i][0] === circle[i][0]) {
+                if (Math.random() > 0.5) {
+                    circleFloating[i][2] = "right";
+                } else {
+                    circleFloating[i][2] = "left";
+                }
+            }
 
-c.lineWidth=2;
-c.strokeStyle = 'darkgrey';
-c.stroke();
-
-c.beginPath();
-c.moveTo(88, 288);
-c.lineTo(96, 235);
-c.lineTo(44, 237);
-c.lineTo(88, 288);
-c.lineTo(105, 313);
-c.lineTo(91, 330);
-c.lineTo(88, 288);
-c.lineTo(34, 281);
-c.lineTo(91, 331);
+            if (circleFloating[i][0] <= circle[i][0] - floatingAmount) {
+                circleFloating[i][2] = "right";
+            } else if (circleFloating[i][0] >= circle[i][0] + floatingAmount) {
+                circleFloating[i][2] = "left";
+            }
 
 
-c.lineWidth=2;
-c.strokeStyle = 'darkgrey';
-c.stroke();
+            if (circleFloating[i][2] == "right") {
+                circleFloating[i][0] = circleFloating[i][0] + Math.random() / pointSpeedFactor;
+            } else if (circleFloating[i][2] == "left") {
+                circleFloating[i][0] = circleFloating[i][0] - Math.random() / pointSpeedFactor;
+            }
+
+            if (circleFloating[i][1] === circle[i][1]) {
+                if (Math.random() > 0.5) {
+                    circleFloating[i][3] = "up";
+                } else {
+                    circleFloating[i][3] = "down";
+                }
+            }
+
+            if (circleFloating[i][1] <= circle[i][1] - floatingAmount) {
+                circleFloating[i][3] = "up";
+            } else if (circleFloating[i][1] >= circle[i][1] + floatingAmount) {
+                circleFloating[i][3] = "down";
+            }
+
+            if (circleFloating[i][3] == "up") {
+                circleFloating[i][1] = circleFloating[i][1] + Math.random() / pointSpeedFactor;
+            } else if (circleFloating[i][3] == "down") {
+                circleFloating[i][1] = circleFloating[i][1] - Math.random() / pointSpeedFactor;
+            }
+        }
+    }
+
+
+    function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height); //2 razy width?
+
+        for (i = 0; i < circleFloating.length; i++) {
+            if (circleFloating[i][0] < circle[i][0] - floatingAmount) {}
+        }
+        floatingCoordinates();
+        drawCircle();
+//        drawlines();
+        time++;
+        setTimeout(function () {
+            window.requestAnimationFrame(draw)
+        }, 16);
+    }
+    draw();

@@ -1,7 +1,6 @@
 body {
   width: 100%;
   height: 100%;
-  background: #000;
   text-align: center;
   color: #fff;
   margin: 0;
@@ -316,15 +315,19 @@ body {
     stroke-dashoffset: 0; }
   100% {
     stroke-dashoffset: 0; } }
+  body canvas {
+    height: 100vh;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; }
   body #main1 {
-    background-image: url(../img/background-main.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center; }
+    background: #000; }
     body #main1 .main-header {
       position: absolute;
       top: 20%;
       width: 100%;
+      z-index: 1;
       position: absolute;
       top: 20%;
       width: 100%; }
@@ -343,11 +346,7 @@ body {
   body #main1 .main-header img {
     width: 130px; } }
   body #about1 {
-    position: relative;
-    background-image: url(../img/background-main.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center; }
+    background: #000; }
     body #about1 .scroll {
       margin: 20px 0 20px; }
       body #about1 .scroll .cd-scroll-down {
@@ -420,21 +419,8 @@ body {
   body #about1 p {
     font-size: 11px; } }
   body #offer1 {
-    position: relative;
-    background-image: url(../img/background-offer.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center; }
-    body #offer1:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: linear-gradient(90deg, #2b2c31 47px, transparent 1%) center, linear-gradient(#3c3d41 3px, transparent 1%) center, #2b2c31;
-      background-size: 50px 50px;
-      z-index: -1; }
+    background: linear-gradient(90deg, #2b2c31 47px, transparent 1%) center, linear-gradient(#3c3d41 3px, transparent 1%) center, #2b2c31;
+    background-size: 50px 50px; }
     body #offer1 .scroll {
       width: 100%;
       margin: 20px 0 20px; }
@@ -708,12 +694,7 @@ body {
   body #blog1 .blog-third h2 {
     opacity: 1; } }
   body #contact1 {
-    position: relative;
-    background-color: #1f59d1;
-    background-image: url(../img/background-contact.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center; }
+    background-color: #1f59d1; }
     body #contact1 h2 {
       color: #fff; }
     body #contact1 .contact-inner {

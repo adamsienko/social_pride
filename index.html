@@ -70,8 +70,11 @@
             </div>
         </div>
     </nav>
+    <div class="parallax">
+        <canvas height="550" width="600"></canvas>
+    </div>
     <div id="fullpage">
-        <section id="main1" class="section">      
+        <section id="main1" class="section">
            
             <div class="main-header">
                 <img src="img/logo.png" alt="social pride">
@@ -80,6 +83,7 @@
             <a href="#about" class="cd-scroll-down"><img src="img/scroll.png" alt=""></a>
         </section>
         <section id="about1" class="section">
+          
             <h2>O NAS</h2>
             <p class="about-header">Social Pride, czyli kreatywne pomysły i komercyjna rzeczywistość. Jesteśmy agencją inną niż wszystkie inne. W pracy z Klientem stawiamy na zaufanie, a na nie trzeba zapracować. Wiemy, że podpisanie umowy to dopiero początek współpracy i każdy dzień weryfikuje jakość naszych usług. Jesteśmy dumni z faktu, że klienci zostają z nami na lata.</p>
             <div class="container about-main">
@@ -122,6 +126,7 @@
             </div>
         </section>
         <section id="offer1" class="section">
+           
             <h2>OFERTA</h2>
             <p class="offer-header">Tworzymy rozwiązania na miarę potrzeb klienta. Dzięki połączeniu wiedzy, pasji i doświadczenia, budujemy wizerunek firm głónie w oparciu o skuteczne narzędzia content marketingowe. Nasze usługi poprawiają transparentność komunikacji misji i wizji firm, z którymi współpracujemy, a także, zwiększają zainteresowanie ofertą klienta. Prowadzone przez nas projekty w Social Media pomagają w dotarciu i pozyskaniu nowych klientów oraz w zintensyfikowaniu współpracy z klientami dotychczasowymi.</p>
             <div class="container offer-main">
@@ -320,7 +325,7 @@
                         </figcaption>
                     </figure>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore voluptate voluptatum, nesciunt sint culpa ut, aperiam enim iure fuga. Excepturi laborum eveniet ab odio tenetur ea quisquam optio labore perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore voluptate voluptatum, nesciunt sint culpa ut, aperiam enim iure fuga. Excepturi laborum eveniet ab odio tenetur ea quisquam optio labore perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore voluptate voluptatum, nesciunt sint culpa ut, aperiam enim iure fuga. Excepturi laborum eveniet ab odio tenetur ea quisquam optio labore perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore voluptate voluptatum, nesciunt sint culpa ut, aperiam enim iure fuga. Excepturi laborum eveniet ab odio tenetur ea quisquam optio labore perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore voluptate voluptatum, nesciunt sint culpa ut, aperiam enim iure fuga. Excepturi laborum eveniet ab odio tenetur ea quisquam optio labore perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore voluptate voluptatum, nesciunt sint culpa ut, aperiam enim iure fuga. Excepturi laborum eveniet ab odio tenetur ea quisquam optio labore perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore voluptate voluptatum, nesciunt sint culpa ut, aperiam enim iure fuga. Excepturi laborum eveniet ab odio tenetur ea quisquam optio labore perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore voluptate voluptatum, nesciunt sint culpa ut, aperiam enim iure fuga. Excepturi laborum eveniet ab odio tenetur ea quisquam optio labore perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore voluptate voluptatum, nesciunt sint culpa ut, aperiam enim iure fuga. Excepturi laborum eveniet ab odio tenetur ea quisquam optio labore perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore voluptate voluptatum, nesciunt sint culpa ut, aperiam enim iure fuga. Excepturi laborum eveniet ab odio tenetur ea quisquam optio labore perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore voluptate voluptatum, nesciunt sint culpa ut, aperiam enim iure fuga. Excepturi laborum eveniet ab odio tenetur ea quisquam optio labore perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore voluptate voluptatum, nesciunt sint culpa ut, aperiam enim iure fuga. Excepturi laborum eveniet ab odio tenetur ea quisquam optio labore perferendis.</p>
-                    
+
                     <figure class="social-media">
                         <figcaption>
                             Podobał Ci się artykuł? Udostępnij:
@@ -329,8 +334,8 @@
                         <i class="fa fa-twitter" aria-hidden="true"></i>
                         <i class="fa fa-linkedin" aria-hidden="true"></i>
                     </figure>
-                    
-                    
+
+
                     <button id="back-blog-main" class="back-blog">wróć</button>
                 </div>
 
@@ -352,12 +357,12 @@
     <script src="js/scrolloverflow.min.js"></script>
     <script src="js/jquery.fullPage.js"></script>
     <script src="js/dots.js"></script>
-<!--    <script src="js/canvas.js"></script>-->
+    <script src="js/canvas.js"></script>
+<!--    <script src="js/parallax.js"></script>-->
     <script>
         [].slice.call(document.querySelectorAll('.dotstyle > ul')).forEach(function(nav) {
             new DotNav(nav, {
-                callback: function(idx) {
-                }
+                callback: function(idx) {}
             });
         });
     </script>

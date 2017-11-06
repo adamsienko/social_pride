@@ -10,7 +10,7 @@ var numberOfSides = 130,
     Xcenter = 240,
     Ycenter = 240,
     floatingAmount = 20,
-    pointSpeedFactor = 15;
+    pointSpeedFactor = 10;
 
 var randomLinesAmount = Math.random() * 90;
 var randomLines = new Array();
